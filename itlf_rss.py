@@ -3,6 +3,7 @@
 import hashlib
 import json
 import logging
+from collections import Counter
 import os
 import re
 import tempfile
@@ -21,6 +22,11 @@ DEPTS = {'54', '55', '57', '88'}
 # Approximate envelope is a candidate filter, NOT proof of belonging to Lorraine.
 BBOX = (47.7, 4.7, 49.7, 7.7)
 MAX_MISSES = 2
+# Optional official departmental boundaries as GeoJSON (54, 55, 57, 88).
+# Without this file, only a broad candidate bounding box is available.
+BOUNDARIES = Path(os.getenv('ITLF_BOUNDARIES_PATH', 'lorraine_departements.geojson'))
+REJECT_REPORT = Path(os.getenv('ITLF_REJECT_REPORT', 'rejets.json'))
+
 LABELS = {'accident': '🚨 Accident', 'closure': '⛔ Fermeture', 'jam': '🚗 Bouchon', 'works': '🚧 Travaux', 'obstacle': '⚠️ Obstacle'}
 XSI_TYPE = '{http://www.w3.org/2001/XMLSchema-instance}type'
 
@@ -104,9 +110,59 @@ def coordinates(record):
     return None
 
 
-def location(record):
+def inside_polygon(lon, lat, ring):
+    """Ray casting on GeoJSON [longitude, latitude] rings."""
+    inside = False
+    j = len(ring) - 1
+    for i in range(len(ring)):
+        x1, y1 = ring[i]
+        x2, y2 = ring[j]
+        if (y1 > lat) != (y2 > lat):
+            x_cross = (x2 - x1) * (lat - y1) / (y2 - y1) + x1
+            if lon < x_cross:
+                inside = not inside
+        j = i
+    return inside
+
+
+def department_from_boundaries(point, boundaries):
+    """Return department only when a point is inside a supplied polygon."""
+    if not point or not boundaries:
+        return ''
+    lat, lon = point
+    for feature in boundaries.get('features', []):
+        props = feature.get('properties') or {}
+        dep = str(props.get('code') or props.get('code_departement') or
+                  props.get('department') or props.get('dep') or '').zfill(2)
+        if dep not in DEPTS:
+            continue
+        geometry = feature.get('geometry') or {}
+        typ = geometry.get('type')
+        coords = geometry.get('coordinates') or []
+        polygons = [coords] if typ == 'Polygon' else coords if typ == 'MultiPolygon' else []
+        for polygon in polygons:
+            if polygon and inside_polygon(lon, lat, polygon[0]) and not any(
+                    inside_polygon(lon, lat, hole) for hole in polygon[1:]):
+                return dep
+    return ''
+
+
+def load_boundaries():
+    if not BOUNDARIES.exists():
+        logging.warning('No departmental GeoJSON: approximate bounding-box filtering only')
+        return None
+    data = json.loads(BOUNDARIES.read_text(encoding='utf-8'))
+    if data.get('type') != 'FeatureCollection':
+        raise ValueError('Invalid department boundaries GeoJSON')
+    found = {str((f.get('properties') or {}).get('code', '')).zfill(2)
+             for f in data.get('features', [])}
+    if not DEPTS.issubset(found):
+        raise ValueError('Boundary GeoJSON must contain departments 54, 55, 57 and 88 (property code)')
+    return data
+
+
+def location(record, boundaries=None):
     dept = ''
-    # Explicit department code is stronger evidence than the coarse geographic envelope.
     for el in walk(record, 'department', 'departmentCode', 'departement'):
         val = text_clean(el.text)
         if val:
@@ -115,46 +171,64 @@ def location(record):
     for el in record.iter():
         for key, value in el.attrib.items():
             if local(key).lower() in ('department', 'departmentcode', 'departement'):
-                dept = text_clean(value)
+                dept = text_clean(value).zfill(2)
                 break
     if dept and dept not in DEPTS:
         return None
     point = coordinates(record)
-    if point and not (BBOX[0] <= point[0] <= BBOX[2] and BBOX[1] <= point[1] <= BBOX[3]):
-        return None
-    # Provisional fallback: accept coordinates inside the Lorraine envelope
-    # when the source does not explicitly identify a department.
-    # This is NOT a precise departmental boundary test.
-    if dept not in DEPTS and point is None:
+    if point:
+        if not (BBOX[0] <= point[0] <= BBOX[2] and BBOX[1] <= point[1] <= BBOX[3]):
+            return None
+        if boundaries:
+            mapped = department_from_boundaries(point, boundaries)
+            if not mapped:
+                return None
+            if dept and dept != mapped:
+                return None
+            dept = mapped
+    if not dept and not point:
         return None
     road = normalize_road(first(record, 'roadNumber', 'roadName', 'roadIdentifier'))
     town = text_clean(first(record, 'townName', 'city', 'localityName'))
     return {'department': dept, 'road': road, 'town': town, 'point': point}
 
-
 def descriptions(record):
-    candidates = []
-    for el in walk(record, 'value', 'comment', 'commentText'):
-        value = text_clean(el.text)
-        if value and not re.fullmatch(r'\d{4}-\d\d-\d\dT[^ ]+', value):
-            candidates.append(value)
-    # Some DATEX publications supply location text in locationDescriptor.
-    for el in walk(record, 'locationDescriptor', 'locationDescription', 'descriptor'):
-        value = text_clean(el.text)
-        if value and value not in candidates:
-            candidates.append(value)
-    return candidates[:3]
+    """Keep useful public messages, excluding operational metadata."""
+    values = []
+    for el in walk(record, 'comment', 'commentText', 'locationDescriptor',
+                   'locationDescription', 'descriptor', 'value'):
+        val = text_clean(el.text)
+        if not val or len(val) > 400:
+            continue
+        low = val.lower()
+        if re.fullmatch(r'\d{4}-\d\d-\d\d[tT][^ ]+', val):
+            continue
+        if low.startswith(('ge_dire/', 'dir est/', 'point particulier :')):
+            # Location descriptions remain useful even with the technical prefix.
+            if low.startswith('point particulier :'):
+                val = re.sub(r'^Point particulier\s*:\s*', '', val, flags=re.I)
+            else:
+                continue
+        if low in ('aligned', 'opposite', 'both', 'unknown', 'hors voie de circulation'):
+            continue
+        if re.match(r'^de .+ vers .+$', val, re.I):
+            continue
+        if val not in values:
+            values.append(val)
+    return values[:3]
 
 
 def direction(record):
-    """Only publish geographic direction when source explicitly provides it.
-
-    aligned/opposite/both are NOT geographic directions and are never shown.
-    """
+    """Geographic destination only; never publish aligned/opposite or PR senses."""
     for el in walk(record, 'directionDestination', 'destinationName', 'destination'):
         val = text_clean(el.text)
         if val and val.lower() not in ('aligned', 'opposite', 'both', 'unknown'):
             return val
+    for el in walk(record, 'comment', 'commentText', 'value', 'descriptor'):
+        val = text_clean(el.text)
+        match = re.search(r'\bde\s+(.+?)\s+vers\s+([^|;]+)', val, re.I)
+        if match:
+            return match.group(2).strip()
     return ''
 
 
@@ -175,29 +249,39 @@ def active(record, now):
     return True
 
 
-def parse(root):
+def parse(root, boundaries=None):
     publications = walk(root, 'payloadPublication')
     if not publications or not any('SituationPublication' in p.attrib.get(XSI_TYPE, '') or walk(p, 'situation') for p in publications):
         raise ValueError('Not a DATEX II SituationPublication; existing feed preserved')
     now = datetime.now(timezone.utc)
     items = {}
+    rejected = Counter()
     for situation in walk(root, 'situation'):
         sid = situation.attrib.get('id', '')
         for record in walk(situation, 'situationRecord'):
             cat = category(record)
-            if not cat or not active(record, now):
+            if not cat:
+                rejected['unrecognized_category'] += 1
                 continue
-            loc = location(record)
+            if not active(record, now):
+                rejected['inactive_or_outside_validity'] += 1
+                continue
+            loc = location(record, boundaries)
             if loc is None:
+                rejected['outside_area_or_unlocated'] += 1
                 continue
             rid = record.attrib.get('id', '')
             if not sid and not rid:
+                rejected['missing_identifier'] += 1
                 continue
             key = f'bison:{sid}:{rid}'
             label = LABELS[cat]
-            place = ' – '.join(filter(None, (loc['road'], loc['town']))) or f"Département {loc['department']}"
+            place = ' – '.join(filter(None, (loc['road'], loc['town']))) or (
+                f"Département {loc['department']}" if loc['department'] else 'Localisation à préciser')
             title = f'{label} – {place}'
-            desc_parts = [title, f"Département {loc['department']}"]
+            desc_parts = [title]
+            if loc['department']:
+                desc_parts.append(f"Département {loc['department']}")
             geographic_direction = direction(record)
             if geographic_direction:
                 desc_parts.append(f'Direction {geographic_direction}')
@@ -215,7 +299,7 @@ def parse(root):
                 'coordinates': [loc['point'][1], loc['point'][0]] if loc['point'] else None,
                 'misses': 0,
             }
-    return items
+    return items, dict(rejected)
 
 
 def atomic(path, content):
@@ -257,7 +341,9 @@ def geojson(items):
 
 
 def run():
-    fresh = parse(download(SOURCE))
+    boundaries = load_boundaries()
+    fresh, rejected = parse(download(SOURCE), boundaries)
+    logging.info('Source parsing: %d accepted; rejected: %s', len(fresh), rejected)
     if not fresh:
         raise ValueError('No eligible events after filtering: preserving previous RSS and state')
     old = {}
@@ -289,6 +375,12 @@ def run():
     atomic(OUTPUT, rss_text)
     atomic(GEOJSON, geojson_text)
     atomic(STATE, json.dumps(merged, ensure_ascii=False, indent=2) + '\n')
+    atomic(REJECT_REPORT, json.dumps({
+        'generated_at': datetime.now(timezone.utc).isoformat(),
+        'accepted': len(fresh),
+        'rejected_by_reason': rejected,
+        'precise_department_boundaries': boundaries is not None
+    }, ensure_ascii=False, indent=2) + '\n')
     print(f'RSS: {len(merged)} events ({len(fresh)} present in source); GeoJSON: {sum(bool(x.get("coordinates")) for x in merged.values())} points')
 
 
