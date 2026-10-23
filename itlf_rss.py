@@ -333,6 +333,66 @@ def diagnostic_record(record, situation, sid, loc):
     }
 
 
+def management_measure(record):
+    """Only explicitly coded DATEX measures; no inferred road closures."""
+    if not record.attrib.get(XSI_TYPE, '').endswith('RoadOrCarriagewayOrLaneManagement'):
+        return None
+    kind = first(record, 'roadOrCarriagewayOrLaneManagementType')
+    restricted = first(record, 'numberOfLanesRestricted')
+    total = first(record, 'originalNumberOfLanes')
+    if kind == 'laneClosures' and restricted.isdigit() and int(restricted) > 0:
+        if total.isdigit() and int(restricted) > int(total):
+            return None
+        return {'kind': 'lane', 'count': int(restricted), 'total': int(total) if total.isdigit() else None}
+    if kind == 'contraflow':
+        return {'kind': 'contraflow', 'count': None, 'total': None}
+    return None
+
+
+def management_item(sid, records, now):
+    """One alert per situation, with distinct explicitly coded measures."""
+    records = sorted(records, key=lambda x: x[0].attrib.get('id', ''))
+    first_record, first_loc, _ = records[0]
+    roads = sorted({loc['road'] for _, loc, _ in records if loc['road']})
+    road = roads[0] if len(roads) == 1 else ''
+    towns = []
+    for record, loc, _ in records:
+        town = human_place(record, loc)
+        if town and town not in towns:
+            towns.append(town)
+    town = ' / '.join(towns[:3])
+    dept = first_loc['department']
+    kinds = {measure['kind'] for _, _, measure in records}
+    label = ('⚠️ Basculement de circulation et voies fermées' if len(kinds) > 1 else
+             '⚠️ Basculement de circulation' if 'contraflow' in kinds else
+             '⛔ Voie fermée' if len(records) == 1 and records[0][2]['count'] == 1 else
+             '⛔ Fermetures de voies')
+    place = ' – '.join(x for x in (road, town) if x) or f'Département {dept}'
+    title = f'{label} – {place} ({dept})' if place != f'Département {dept}' else f'{label} – {place}'
+    parts = [title]
+    for record, loc, measure in records:
+        desc = ('Basculement de circulation' if measure['kind'] == 'contraflow' else
+                f"{measure['count']} voie(s) fermée(s)" +
+                (f" sur {measure['total']}" if measure['total'] else ''))
+        direct = readable_direction(direction(record))
+        if direct:
+            desc += f' – direction {direct}'
+        detail = next((readable_detail(d) for d in descriptions(record)
+                       if 'situé' in d.lower() or 'bretelle' in d.lower()), '')
+        if detail:
+            desc += f' – {detail}'
+        if desc not in parts:
+            parts.append(desc)
+    when = first(first_record, 'situationRecordCreationTime', 'situationRecordFirstSupplierVersionTime', 'overallStartTime')
+    dt = parse_date(when) or now
+    return {
+        'title': title, 'description': ' | '.join(parts), 'date': dt.isoformat(),
+        'category': 'closure' if kinds == {'lane'} else 'management',
+        'department': dept, 'road': road, 'town': town, 'direction': '',
+        'coordinates': [first_loc['point'][1], first_loc['point'][0]], 'misses': 0,
+    }
+
+
 def parse(root, boundaries=None):
     publications = walk(root, 'payloadPublication')
     if not publications or not any('SituationPublication' in p.attrib.get(XSI_TYPE, '') or walk(p, 'situation') for p in publications):
@@ -347,11 +407,20 @@ def parse(root, boundaries=None):
     unknown_location_reasons = Counter()
     unknown_inactive = Counter()
     diagnostic_records = []
+    management_groups = {}
+    management_stats = Counter()
     for situation in walk(root, 'situation'):
         sid = situation.attrib.get('id', '')
         for record in walk(situation, 'situationRecord'):
             cat = category(record)
             if not cat:
+                measure = management_measure(record)
+                if measure is not None and active(record, now):
+                    management_loc, _ = location(record, boundaries)
+                    if management_loc is not None and (sid or record.attrib.get('id')):
+                        group_id = sid or record.attrib['id']
+                        management_groups.setdefault(group_id, []).append((record, management_loc, measure))
+                        management_stats[measure['kind']] += 1
                 rejected['unrecognized_category'] += 1
                 raw_type = record.attrib.get(XSI_TYPE, '') or '(missing type)'
                 rejected_types[raw_type] += 1
@@ -429,7 +498,13 @@ def parse(root, boundaries=None):
                 'coordinates': [loc['point'][1], loc['point'][0]] if loc['point'] else None,
                 'misses': 0,
             }
+    for group_id, group_records in management_groups.items():
+        # Stable group GUID independent of the number/order of associated measures.
+        key = f'bison:{group_id}:management'
+        items[key] = management_item(group_id, group_records, now)
     return items, {
+        'management_published_records': dict(management_stats),
+        'management_published_situations': len(management_groups),
         'rejected_by_reason': dict(rejected),
         'unrecognized_types': dict(rejected_types.most_common(20)),
         'inactive_statuses': dict(rejected_statuses.most_common(20)),
@@ -517,13 +592,15 @@ def run():
     atomic(STATE, json.dumps(merged, ensure_ascii=False, indent=2) + '\n')
     atomic(Path(os.getenv('ITLF_MEASURES_PATH', 'mesures_a_analyser.json')), json.dumps({
         'generated_at': datetime.now(timezone.utc).isoformat(),
-        'purpose': 'Diagnostic only; none of these records is published automatically',
+        'purpose': 'Diagnostic of unrecognized DATEX types; some explicitly coded lane/contraflow measures are now published',
         'count': len(rejected['diagnostic_records']),
         'records': rejected['diagnostic_records']
     }, ensure_ascii=False, indent=2) + '\n')
     atomic(REJECT_REPORT, json.dumps({
         'generated_at': datetime.now(timezone.utc).isoformat(),
         'accepted': len(fresh),
+        'management_published_records': rejected['management_published_records'],
+        'management_published_situations': rejected['management_published_situations'],
         'rejected_by_reason': rejected['rejected_by_reason'],
         'unrecognized_types': rejected['unrecognized_types'],
         'inactive_statuses': rejected['inactive_statuses'],

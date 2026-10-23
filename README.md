@@ -1,11 +1,9 @@
-# ITLF RSS V3.6 — Diagnostic des mesures DATEX II
+# ITLF RSS V3.7
 
-Remplacer uniquement `itlf_rss.py` dans le dépôt GitHub, puis exécuter le workflow habituel.
+Remplacer `itlf_rss.py` dans le dépôt GitHub. Conserver `lorraine_departements.geojson`, `state.json`, `prepare_boundaries.py` et le workflow existants.
 
-Nouveau fichier généré : `mesures_a_analyser.json`. Il contient les champs DATEX II des enregistrements de catégories inconnues, actifs et situés dans les départements 54, 55, 57 et 88. Aucun de ces enregistrements n’est publié dans le RSS.
+La V3.7 publie uniquement les mesures DATEX explicites `laneClosures` avec au moins une voie restreinte et `contraflow`, après validation temporelle et géographique. Les mesures d’une même situation sont regroupées en une alerte avec un GUID stable. `laneClosures` avec zéro voie restreinte et les mesures `other` restent exclues. Les anciennes catégories RSS sont conservées.
 
-Le flux RSS, les GUID, le GeoJSON, le filtrage géographique et les règles d’expiration restent inchangés.
+Le fichier `rejets.json` expose `management_published_records` et `management_published_situations`. Le diagnostic `mesures_a_analyser.json` reste disponible.
 
-**Attention :** si le workflow ne commit pas `mesures_a_analyser.json`, ajouter ce fichier à l'étape `git add` du workflow (`git add rss.xml traffic.geojson state.json rejets.json mesures_a_analyser.json`), puis relancer. Ne pas supprimer `state.json`.
-
-Transmettre ensuite `mesures_a_analyser.json` pour examiner les valeurs réelles des mesures et leurs attributs.
+**Attention** : le regroupement ne fusionne que les mesures de gestion routière de la même situation, pas les travaux associés. Les coordonnées de l’alerte regroupée correspondent au premier enregistrement; elles ne représentent pas nécessairement toute l’étendue de la mesure. Les catégories historiques et GUID existants sont conservés.
