@@ -1,26 +1,50 @@
 name: Actualisation RSS ITLF
+
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: "*/5 * * * *"
   workflow_dispatch:
+
 permissions:
   contents: write
+
 concurrency:
-  group: itlf-rss
+  group: itlf-rss-update
   cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
         with:
-          python-version: '3.12'
-      - name: Actualiser le flux
+          persist-credentials: true
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Préparer les contours départementaux
+        run: |
+          if [ ! -f lorraine_departements.geojson ]; then
+            python prepare_boundaries.py
+          fi
+
+      - name: Actualiser le flux RSS ITLF
         run: python itlf_rss.py
+
       - name: Publier les fichiers
         run: |
-          git config user.name 'itlf-bot'
-          git config user.email 'itlf-bot@users.noreply.github.com'
-          git add rss.xml state.json traffic.geojson rejets.json
-          git diff --cached --quiet || (git commit -m 'Mise à jour du trafic ITLF' && git push)
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add rss.xml state.json traffic.geojson rejets.json lorraine_departements.geojson
+          if git diff --cached --quiet; then
+            echo "Aucun changement à publier."
+            exit 0
+          fi
+          git commit -m "Mise à jour du trafic ITLF"
+          git push
