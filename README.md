@@ -1,9 +1,13 @@
-# ITLF RSS V3.7
+# ITLF RSS V3.8 — amélioration des descriptions
 
-Remplacer `itlf_rss.py` dans le dépôt GitHub. Conserver `lorraine_departements.geojson`, `state.json`, `prepare_boundaries.py` et le workflow existants.
+Cette mise à jour corrige les accords grammaticaux dans les alertes de gestion des voies :
+- `1 voie fermée sur 3` au lieu de `1 voie(s) fermée(s) sur 3` ;
+- `2 voies fermées sur 3` au lieu de `2 voie(s) fermée(s) sur 3`.
 
-La V3.7 publie uniquement les mesures DATEX explicites `laneClosures` avec au moins une voie restreinte et `contraflow`, après validation temporelle et géographique. Les mesures d’une même situation sont regroupées en une alerte avec un GUID stable. `laneClosures` avec zéro voie restreinte et les mesures `other` restent exclues. Les anciennes catégories RSS sont conservées.
+La logique de publication de la V3.7 est conservée : filtrage géographique, regroupement des mesures d'une même situation, catégories, GUID et exclusion des mesures ambiguës. Les alertes de travaux distinctes ne sont pas supprimées automatiquement car elles peuvent apporter une information complémentaire.
 
-Le fichier `rejets.json` expose `management_published_records` et `management_published_situations`. Le diagnostic `mesures_a_analyser.json` reste disponible.
+## Installation
+Remplacer `itlf_rss.py` à la racine du dépôt GitHub et relancer le workflow. Ne pas effacer `state.json` ni `lorraine_departements.geojson`.
 
-**Attention** : le regroupement ne fusionne que les mesures de gestion routière de la même situation, pas les travaux associés. Les coordonnées de l’alerte regroupée correspondent au premier enregistrement; elles ne représentent pas nécessairement toute l’étendue de la mesure. Les catégories historiques et GUID existants sont conservés.
+## Vérification
+Compilation Python et tests unitaires des accords effectués localement. Exécution sur le flux DATEX distant non réalisée.

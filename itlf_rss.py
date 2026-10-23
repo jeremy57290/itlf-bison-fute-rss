@@ -349,6 +349,12 @@ def management_measure(record):
     return None
 
 
+def lane_closure_phrase(count, total):
+    """Natural French singular/plural for explicit lane closures."""
+    noun = 'voie fermée' if count == 1 else 'voies fermées'
+    return f'{count} {noun}' + (f' sur {total}' if total else '')
+
+
 def management_item(sid, records, now):
     """One alert per situation, with distinct explicitly coded measures."""
     records = sorted(records, key=lambda x: x[0].attrib.get('id', ''))
@@ -372,8 +378,7 @@ def management_item(sid, records, now):
     parts = [title]
     for record, loc, measure in records:
         desc = ('Basculement de circulation' if measure['kind'] == 'contraflow' else
-                f"{measure['count']} voie(s) fermée(s)" +
-                (f" sur {measure['total']}" if measure['total'] else ''))
+                lane_closure_phrase(measure['count'], measure['total']))
         direct = readable_direction(direction(record))
         if direct:
             desc += f' – direction {direct}'
