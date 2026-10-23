@@ -309,13 +309,40 @@ def parse(root, boundaries=None):
     rejected = Counter()
     rejected_types = Counter()
     rejected_statuses = Counter()
+    unknown_in_area = Counter()
+    unknown_in_area_examples = {}
+    unknown_location_reasons = Counter()
+    unknown_inactive = Counter()
     for situation in walk(root, 'situation'):
         sid = situation.attrib.get('id', '')
         for record in walk(situation, 'situationRecord'):
             cat = category(record)
             if not cat:
                 rejected['unrecognized_category'] += 1
-                rejected_types[record.attrib.get(XSI_TYPE, '') or '(missing type)'] += 1
+                raw_type = record.attrib.get(XSI_TYPE, '') or '(missing type)'
+                rejected_types[raw_type] += 1
+                # Diagnostic only: unknown types NEVER enter the published feed.
+                # Evaluate their actual position and validity to distinguish
+                # irrelevant national data from potentially useful local alerts.
+                if not active(record, now):
+                    unknown_inactive[raw_type] += 1
+                else:
+                    unknown_loc, unknown_reason = location(record, boundaries)
+                    if unknown_loc is None:
+                        unknown_location_reasons[unknown_reason] += 1
+                    else:
+                        unknown_in_area[raw_type] += 1
+                        examples = unknown_in_area_examples.setdefault(raw_type, [])
+                        if len(examples) < 5:
+                            examples.append({
+                                'situation_id': sid,
+                                'record_id': record.attrib.get('id', ''),
+                                'department': unknown_loc['department'],
+                                'road': unknown_loc['road'],
+                                'town': unknown_loc['town'],
+                                'coordinates': [unknown_loc['point'][1], unknown_loc['point'][0]],
+                                'details': descriptions(record)[:2]
+                            })
                 continue
             if not active(record, now):
                 rejected['inactive_or_outside_validity'] += 1
@@ -369,7 +396,11 @@ def parse(root, boundaries=None):
     return items, {
         'rejected_by_reason': dict(rejected),
         'unrecognized_types': dict(rejected_types.most_common(20)),
-        'inactive_statuses': dict(rejected_statuses.most_common(20))
+        'inactive_statuses': dict(rejected_statuses.most_common(20)),
+        'unknown_types_in_lorraine': dict(unknown_in_area.most_common()),
+        'unknown_types_in_lorraine_examples': unknown_in_area_examples,
+        'unknown_types_inactive': dict(unknown_inactive.most_common()),
+        'unknown_types_location_rejections': dict(unknown_location_reasons)
     }
 
 
@@ -453,6 +484,10 @@ def run():
         'rejected_by_reason': rejected['rejected_by_reason'],
         'unrecognized_types': rejected['unrecognized_types'],
         'inactive_statuses': rejected['inactive_statuses'],
+        'unknown_types_in_lorraine': rejected['unknown_types_in_lorraine'],
+        'unknown_types_in_lorraine_examples': rejected['unknown_types_in_lorraine_examples'],
+        'unknown_types_inactive': rejected['unknown_types_inactive'],
+        'unknown_types_location_rejections': rejected['unknown_types_location_rejections'],
         'precise_department_boundaries': True,
         'boundary_file': str(BOUNDARIES)
     }, ensure_ascii=False, indent=2) + '\n')
