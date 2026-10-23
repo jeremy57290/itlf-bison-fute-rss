@@ -40,7 +40,7 @@ def main():
     try:
         with os.fdopen(fd, 'w', encoding='utf-8') as f:
             json.dump(out, f, ensure_ascii=False, separators=(',', ':'))
-            f.write('\\n')
+            f.write('\n')
         os.replace(temp, DEST)
     finally:
         if os.path.exists(temp):
