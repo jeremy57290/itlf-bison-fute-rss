@@ -1,19 +1,9 @@
-# ITLF – RSS DATEX II
+# ITLF RSS v2
 
-## Installation
-Python 3.10+ sans dépendance. Exécuter `python itlf_rss.py`.
-Le script télécharge un instantané DATEX II SituationPublication et écrit `rss.xml` et `state.json`.
-Configurer la source via `ITLF_DATEX_URL` si nécessaire.
+Replace `itlf_rss.py` in the GitHub repository. Keep your existing `.github/workflows/rss.yml` and its 5-minute schedule. Python 3.10+ required (`zoneinfo` uses the runner's timezone database).
 
-## Publication
-Déposer les fichiers dans un dépôt GitHub, activer GitHub Actions, puis GitHub Pages pour exposer `rss.xml` (ou héberger ce fichier sur son propre serveur). Le workflow tente une mise à jour toutes les 5 minutes; GitHub Actions peut retarder ou ignorer des exécutions planifiées. Pour une cadence stricte, utiliser un cron sur VPS.
+Run locally: `python itlf_rss.py`.
 
-## Précautions
-- **Prototype à valider sur un XML événementiel réel** : le fichier Myrabel fourni précédemment est un `MeasuredDataPublication`, pas une `SituationPublication`.
-- Le filtre géographique est volontairement conservateur : code département explicite ou coordonnées dans une boîte englobante approximative. Des événements sans ces informations ne seront pas publiés; les coordonnées dans la boîte peuvent inclure des zones limitrophes hors Lorraine. Pour une production fiable, utiliser les limites géographiques exactes des départements.
-- La catégorisation est heuristique : vérifier les variantes DATEX II réelles et les restrictions de voie avant diffusion publique.
-- Les routes étrangères (Luxembourg, Belgique, Allemagne) nécessitent des sources distinctes. Ici seuls les secteurs français sont couverts.
-- Deux absences successives font disparaître un événement du RSS, sans publier d'avis de fin. Une source qui fournit des événements différentiels au lieu d'instantanés complets ne doit pas être utilisée telle quelle.
-- Si le téléchargement ou l'analyse échoue, le flux précédent est conservé.
-- Les descriptions restent génériques si les champs géographiques sont incomplets.
-- Attribution : données Bison Futé / DIR, Licence Ouverte 2.0.
+Outputs: `rss.xml` and `state.json` (keep both committed between successful runs).
+
+Cautions: DATEX II location formats vary; this parser accepts explicit department codes or coordinate pairs within an approximate Lorraine rectangle. This can include neighboring territory and does not constitute precise departmental filtering. `aligned` / `opposite` are left as technical direction codes rather than falsely assigning a destination. Recurring validity schedules and road-network reference tables are not resolved. Check the output against real source events before public alerting. Missing records are removed after two successful snapshots; download failures preserve existing output. No foreign-country source is included.
