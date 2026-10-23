@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T08:34:00.872978+00:00",
+  "generated_at": "2026-10-23T08:46:05.721350+00:00",
   "accepted": 8,
   "rejected_by_reason": {
     "unrecognized_category": 378,
@@ -20,6 +20,117 @@
   "inactive_statuses": {
     "definedByValidityTimeSpec": 91,
     "suspended": 3
+  },
+  "unknown_types_in_lorraine": {
+    "ns2:RoadOrCarriagewayOrLaneManagement": 5,
+    "ns2:GeneralNetworkManagement": 1
+  },
+  "unknown_types_in_lorraine_examples": {
+    "ns2:RoadOrCarriagewayOrLaneManagement": [
+      {
+        "situation_id": "260902-001596",
+        "record_id": "260902-001596-104",
+        "department": "54",
+        "road": "N59",
+        "town": "",
+        "coordinates": [
+          6.772255,
+          48.437614
+        ],
+        "details": [
+          "La mesure est obligatoire",
+          "début : situé 2767 m à l'ouest de Raon-l'Étape, fin : situé 303 m à l'est de Baccarat Bertrichamps"
+        ]
+      },
+      {
+        "situation_id": "260902-001596",
+        "record_id": "260902-001596-102",
+        "department": "54",
+        "road": "N59",
+        "town": "",
+        "coordinates": [
+          6.795612,
+          48.41736
+        ],
+        "details": [
+          "La mesure est obligatoire",
+          "début : situé 1420 m à l'est de Baccarat, fin : situé 2667 m à l'ouest de Raon-l'Étape"
+        ]
+      },
+      {
+        "situation_id": "260902-001596",
+        "record_id": "260902-001596-103",
+        "department": "54",
+        "road": "N59",
+        "town": "",
+        "coordinates": [
+          6.772255,
+          48.437614
+        ],
+        "details": [
+          "La mesure est obligatoire",
+          "début : situé 467 m à l'ouest de Raon-l'Étape, fin : situé 303 m à l'est de Baccarat Bertrichamps"
+        ]
+      },
+      {
+        "situation_id": "261013-000532",
+        "record_id": "261013-000532-1",
+        "department": "54",
+        "road": "A33",
+        "town": "",
+        "coordinates": [
+          6.318854,
+          48.617054
+        ],
+        "details": [
+          "La mesure est obligatoire",
+          "début : situé 1679 m à l'ouest de Rosières-au-Salines, fin : situé 3286 m à l'est de Saint-Nicolas-de-Port"
+        ]
+      },
+      {
+        "situation_id": "261013-001086",
+        "record_id": "261013-001086-1",
+        "department": "54",
+        "road": "",
+        "town": "",
+        "coordinates": [
+          6.096598,
+          48.880287
+        ],
+        "details": [
+          "La mesure est obligatoire",
+          "situé 187 m au sud de Pont-à-Mousson"
+        ]
+      }
+    ],
+    "ns2:GeneralNetworkManagement": [
+      {
+        "situation_id": "261022-002920",
+        "record_id": "261022-002920-104",
+        "department": "54",
+        "road": "",
+        "town": "",
+        "coordinates": [
+          5.7882566,
+          49.50377
+        ],
+        "details": [
+          "La mesure est obligatoire",
+          "situé 3777 m au sud de Longwy"
+        ]
+      }
+    ]
+  },
+  "unknown_types_inactive": {
+    "ns2:RoadOrCarriagewayOrLaneManagement": 64,
+    "ns2:ReroutingManagement": 51,
+    "ns2:SpeedManagement": 11,
+    "ns2:GeneralInstructionOrMessageToRoadUsers": 7,
+    "ns2:GeneralNetworkManagement": 2,
+    "ns2:WeatherRelatedRoadConditions": 1
+  },
+  "unknown_types_location_rejections": {
+    "outside_department": 236
   },
   "precise_department_boundaries": true,
   "boundary_file": "lorraine_departements.geojson"
