@@ -16,6 +16,7 @@ from xml.sax.saxutils import escape
 
 SOURCE = os.getenv('ITLF_DATEX_URL', 'https://tipi.bison-fute.gouv.fr/bison-fute-ouvert/publicationsDIR/Evenementiel-DIR/grt/RRN/content.xml')
 OUTPUT = Path(os.getenv('ITLF_RSS_PATH', 'rss.xml'))
+IFTTT_OUTPUT = Path(os.getenv('ITLF_IFTTT_RSS_PATH', 'rss-ifttt.xml'))
 GEOJSON = Path(os.getenv('ITLF_GEOJSON_PATH', 'traffic.geojson'))
 STATE = Path(os.getenv('ITLF_STATE_PATH', 'state.json'))
 DEPTS = {'54', '55', '57', '88'}
@@ -583,7 +584,7 @@ def atomic(path, content):
             os.unlink(temp)
 
 
-def rss(items):
+def rss(items, ifttt=False):
     lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<rss version="2.0"><channel>',
              '<title>ITLF – Alertes trafic Lorraine et frontières</title>',
              '<link>https://www.bison-fute.gouv.fr/</link>',
@@ -599,10 +600,13 @@ def rss(items):
             item_link = f'https://www.google.com/maps?q={lat:.6f},{lon:.6f}'
         else:
             item_link = 'https://www.bison-fute.gouv.fr/'
+        if ifttt:
+            # Stable, unique HTTPS URL GUID; leave the main feed GUID untouched.
+            guid = item_link + '#itlf-' + hashlib.sha256(key.encode()).hexdigest()
         lines.extend(['<item>', f'<title>{escape(item["title"])}</title>',
                       f'<link>{escape(item_link)}</link>',
                       f'<description>{escape(item["description"])}</description>',
-                      f'<guid isPermaLink="false">{guid}</guid>',
+                      (f'<guid isPermaLink="true">{escape(guid)}</guid>' if ifttt else f'<guid isPermaLink="false">{guid}</guid>'),
                       f'<pubDate>{format_datetime(parse_date(item["date"]) or datetime.now(timezone.utc))}</pubDate>',
                       f'<category>{item["category"]}</category>', '</item>'])
     return '\n'.join(lines + ['</channel></rss>']) + '\n'
@@ -647,10 +651,13 @@ def run():
                 merged[key] = item
     # Validate both representations before replacing the outputs.
     rss_text = rss(merged)
+    ifttt_text = rss(merged, ifttt=True)
     ET.fromstring(rss_text)
+    ET.fromstring(ifttt_text)
     geojson_text = geojson(merged)
     json.loads(geojson_text)
     atomic(OUTPUT, rss_text)
+    atomic(IFTTT_OUTPUT, ifttt_text)
     atomic(GEOJSON, geojson_text)
     atomic(STATE, json.dumps(merged, ensure_ascii=False, indent=2) + '\n')
     atomic(Path(os.getenv('ITLF_MEASURES_PATH', 'mesures_a_analyser.json')), json.dumps({
