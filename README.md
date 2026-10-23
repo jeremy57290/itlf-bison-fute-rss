@@ -1,28 +1,40 @@
-# ITLF RSS – version 3 (prototype prudent)
+# ITLF France – V3.2
 
-Ce générateur produit `rss.xml`, `traffic.geojson` et `state.json` à partir d'un instantané DATEX II SituationPublication. Python 3.10+ ; aucune dépendance externe.
+Cette version ne modifie pas le flux Luxembourg.
 
-## Installation dans le dépôt existant
+## Fichiers
+- `itlf_rss.py` : générateur RSS, GeoJSON et diagnostic.
+- `prepare_boundaries.py` : récupère une fois les polygones des départements 54, 55, 57, 88.
+- `lorraine_departements.geojson` : créé par le script précédent, **non inclus** dans l'archive.
+- `rss.xml`, `state.json`, `traffic.geojson`, `rejets.json` : sorties du générateur.
 
-1. Remplacer `itlf_rss.py` à la racine du dépôt.
-2. Dans le workflow GitHub Actions existant, s'assurer que l'étape de commit inclut **les trois fichiers** : `git add rss.xml state.json traffic.geojson`.
-3. Conserver l'exécution `python itlf_rss.py` et la fréquence existante. Vérifier que `state.json` est bien persisté dans le dépôt.
-4. Tester manuellement via Actions avant d'utiliser les alertes pour des publications publiques.
+## Installation GitHub
+1. Ajoutez/remplacez `itlf_rss.py` et ajoutez `prepare_boundaries.py` à la racine.
+2. Dans `.github/workflows/rss.yml`, avant `python itlf_rss.py`, ajoutez :
 
-## Limitations importantes
+       if [ ! -f lorraine_departements.geojson ]; then python prepare_boundaries.py; fi
 
-- Le filtre territorial est **volontairement strict** : il n'inclut que les enregistrements comportant explicitement un code département 54, 55, 57 ou 88. Les événements sans code département, même réellement situés en Lorraine, seront écartés. La précision doit être validée sur les données DATEX II réelles. Les axes étrangers ne sont pas couverts.
-- Les directions `aligned`, `opposite`, `both` ne sont jamais publiées. Seules les destinations géographiques explicitement présentes sont affichées. Une destination extraite du XML doit être vérifiée avant exploitation automatique.
-- Les calendriers récurrents de validité DATEX II ne sont pas encore entièrement interprétés.
-- Les coordonnées ne sont exportées que si latitude et longitude sont présentes ensemble dans un même élément parent ; certaines formes de géolocalisation DATEX II peuvent ne pas être prises en charge.
-- La conservation sur une absence temporaire est de **une récupération réussie** (`MAX_MISSES=2`). Une réponse XML vide mais valide peut faire disparaître des événements après deux récupérations ; un contrôle de complétude supplémentaire est recommandé avant production.
-- Les champs RSS `pubDate` conservent la date initiale pour les événements déjà connus ; les changements de contenu ne génèrent donc pas forcément de nouvelle notification chez tous les lecteurs RSS.
-- Les trois fichiers sont écrits séparément et non dans une transaction globale ; une interruption entre écritures pourrait les désynchroniser.
+3. Dans l'étape de commit, utilisez :
 
-## Validation
+       git add rss.xml state.json traffic.geojson rejets.json lorraine_departements.geojson
 
-`python -m py_compile itlf_rss.py`
+4. Enregistrez puis exécutez le workflow. La première exécution récupère
+   les limites via france-geojson (GitHub). Les suivantes utilisent la copie
+   conservée dans le dépôt, sans téléchargement supplémentaire.
 
-`python itlf_rss.py`
-
-Puis inspecter les événements, les descriptions et le nombre de points géographiques. Ne pas activer de publication automatique avant vérification humaine.
+## Sécurité / limites
+- Si le fichier de limites manque et que le téléchargement échoue, le programme
+  refuse de remplacer le RSS par un flux approximatif.
+- Seuls les événements ayant un point GPS situé dans un des quatre polygones
+  sont retenus. Les événements sans coordonnées et les tronçons traversant
+  la frontière départementale peuvent être rejetés même s'ils sont pertinents.
+- Les données france-geojson proviennent d'un projet tiers et doivent être
+  vérifiées avant usage de production. Source :
+  https://github.com/gregoiredavid/france-geojson
+- Les compteurs `rejets.json` distinguent désormais :
+  `missing_coordinates`, `outside_department`, `conflicting_location`,
+  ainsi que les catégories et statuts les plus souvent exclus.
+- Les dates de récurrence DATEX II et certaines classifications restent à
+  auditer sur le XML réel. Ne pas automatiser les publications sociales sans
+  validation du flux et de son périmètre.
+- Les tests effectués sont synthétiques, pas un test en ligne de Bison Futé.

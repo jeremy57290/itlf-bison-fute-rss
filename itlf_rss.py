@@ -26,6 +26,10 @@ MAX_MISSES = 2
 # Without this file, only a broad candidate bounding box is available.
 BOUNDARIES = Path(os.getenv('ITLF_BOUNDARIES_PATH', 'lorraine_departements.geojson'))
 REJECT_REPORT = Path(os.getenv('ITLF_REJECT_REPORT', 'rejets.json'))
+# GeoJSON source from france-geojson (open data based on French administrative boundaries).
+# Pinned in the repository by the separate bootstrap script, never silently refreshed.
+BOUNDARIES_SOURCE = 'https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/departements.geojson'
+
 
 LABELS = {'accident': '🚨 Accident', 'closure': '⛔ Fermeture', 'jam': '🚗 Bouchon', 'works': '🚧 Travaux', 'obstacle': '⚠️ Obstacle'}
 XSI_TYPE = '{http://www.w3.org/2001/XMLSchema-instance}type'
@@ -149,8 +153,10 @@ def department_from_boundaries(point, boundaries):
 
 def load_boundaries():
     if not BOUNDARIES.exists():
-        logging.warning('No departmental GeoJSON: approximate bounding-box filtering only')
-        return None
+        raise FileNotFoundError(
+            f'{BOUNDARIES} missing: refusing approximate filtering. '
+            'Run python prepare_boundaries.py and commit the resulting file.'
+        )
     data = json.loads(BOUNDARIES.read_text(encoding='utf-8'))
     if data.get('type') != 'FeatureCollection':
         raise ValueError('Invalid department boundaries GeoJSON')
@@ -158,10 +164,14 @@ def load_boundaries():
              for f in data.get('features', [])}
     if not DEPTS.issubset(found):
         raise ValueError('Boundary GeoJSON must contain departments 54, 55, 57 and 88 (property code)')
+    if any((f.get('geometry') or {}).get('type') not in ('Polygon', 'MultiPolygon')
+           for f in data.get('features', [])):
+        raise ValueError('Invalid department geometry')
     return data
 
 
-def location(record, boundaries=None):
+def location(record, boundaries):
+    """Fail closed when a point is absent or outside the four polygons."""
     dept = ''
     for el in walk(record, 'department', 'departmentCode', 'departement'):
         val = text_clean(el.text)
@@ -173,24 +183,22 @@ def location(record, boundaries=None):
             if local(key).lower() in ('department', 'departmentcode', 'departement'):
                 dept = text_clean(value).zfill(2)
                 break
-    if dept and dept not in DEPTS:
-        return None
     point = coordinates(record)
-    if point:
-        if not (BBOX[0] <= point[0] <= BBOX[2] and BBOX[1] <= point[1] <= BBOX[3]):
-            return None
-        if boundaries:
-            mapped = department_from_boundaries(point, boundaries)
-            if not mapped:
-                return None
-            if dept and dept != mapped:
-                return None
-            dept = mapped
-    if not dept and not point:
-        return None
+    if point is None:
+        return None, 'missing_coordinates'
+    if not (BBOX[0] <= point[0] <= BBOX[2] and BBOX[1] <= point[1] <= BBOX[3]):
+        return None, 'outside_department'
+    mapped = department_from_boundaries(point, boundaries)
+    if not mapped:
+        return None, 'outside_department'
+    if dept and dept not in DEPTS:
+        return None, 'conflicting_location'
+    if dept and dept != mapped:
+        return None, 'conflicting_location'
     road = normalize_road(first(record, 'roadNumber', 'roadName', 'roadIdentifier'))
     town = text_clean(first(record, 'townName', 'city', 'localityName'))
-    return {'department': dept, 'road': road, 'town': town, 'point': point}
+    return {'department': mapped, 'road': road, 'town': town, 'point': point}, None
+
 
 def descriptions(record):
     """Keep useful public messages, excluding operational metadata."""
@@ -256,19 +264,23 @@ def parse(root, boundaries=None):
     now = datetime.now(timezone.utc)
     items = {}
     rejected = Counter()
+    rejected_types = Counter()
+    rejected_statuses = Counter()
     for situation in walk(root, 'situation'):
         sid = situation.attrib.get('id', '')
         for record in walk(situation, 'situationRecord'):
             cat = category(record)
             if not cat:
                 rejected['unrecognized_category'] += 1
+                rejected_types[record.attrib.get(XSI_TYPE, '') or '(missing type)'] += 1
                 continue
             if not active(record, now):
                 rejected['inactive_or_outside_validity'] += 1
+                rejected_statuses[first(record, 'validityStatus') or '(missing status)'] += 1
                 continue
-            loc = location(record, boundaries)
+            loc, reason = location(record, boundaries)
             if loc is None:
-                rejected['outside_area_or_unlocated'] += 1
+                rejected[reason] += 1
                 continue
             rid = record.attrib.get('id', '')
             if not sid and not rid:
@@ -299,7 +311,11 @@ def parse(root, boundaries=None):
                 'coordinates': [loc['point'][1], loc['point'][0]] if loc['point'] else None,
                 'misses': 0,
             }
-    return items, dict(rejected)
+    return items, {
+        'rejected_by_reason': dict(rejected),
+        'unrecognized_types': dict(rejected_types.most_common(20)),
+        'inactive_statuses': dict(rejected_statuses.most_common(20))
+    }
 
 
 def atomic(path, content):
@@ -343,7 +359,7 @@ def geojson(items):
 def run():
     boundaries = load_boundaries()
     fresh, rejected = parse(download(SOURCE), boundaries)
-    logging.info('Source parsing: %d accepted; rejected: %s', len(fresh), rejected)
+    logging.info('Source parsing: %d accepted; rejected: %s', len(fresh), rejected['rejected_by_reason'])
     if not fresh:
         raise ValueError('No eligible events after filtering: preserving previous RSS and state')
     old = {}
@@ -363,8 +379,9 @@ def run():
     for key, item in old.items():
         # Only carry forward v3-format items. This prevents old technical
         # descriptions from leaking into the new feed during migration.
-        if key not in fresh and isinstance(item, dict) and 'department' in item:
-            if item.get('misses', 0) + 1 < MAX_MISSES:
+        if key not in fresh and isinstance(item, dict) and item.get('coordinates'):
+            point = (item['coordinates'][1], item['coordinates'][0])
+            if department_from_boundaries(point, boundaries) and item.get('misses', 0) + 1 < MAX_MISSES:
                 item['misses'] = item.get('misses', 0) + 1
                 merged[key] = item
     # Validate both representations before replacing the outputs.
@@ -378,8 +395,11 @@ def run():
     atomic(REJECT_REPORT, json.dumps({
         'generated_at': datetime.now(timezone.utc).isoformat(),
         'accepted': len(fresh),
-        'rejected_by_reason': rejected,
-        'precise_department_boundaries': boundaries is not None
+        'rejected_by_reason': rejected['rejected_by_reason'],
+        'unrecognized_types': rejected['unrecognized_types'],
+        'inactive_statuses': rejected['inactive_statuses'],
+        'precise_department_boundaries': True,
+        'boundary_file': str(BOUNDARIES)
     }, ensure_ascii=False, indent=2) + '\n')
     print(f'RSS: {len(merged)} events ({len(fresh)} present in source); GeoJSON: {sum(bool(x.get("coordinates")) for x in merged.values())} points')
 
