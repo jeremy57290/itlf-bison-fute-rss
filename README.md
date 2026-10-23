@@ -1,16 +1,11 @@
-# ITLF V3.5 — audit des catégories DATEX II
+# ITLF RSS V3.6 — Diagnostic des mesures DATEX II
 
-Cette version reprend le script V3.4 transmis le 23 octobre 2026.
+Remplacer uniquement `itlf_rss.py` dans le dépôt GitHub, puis exécuter le workflow habituel.
 
-**Aucune catégorie supplémentaire n'est publiée.** Le filtrage géographique, les règles de validité, les titres, les descriptions et la conservation temporaire restent inchangés.
+Nouveau fichier généré : `mesures_a_analyser.json`. Il contient les champs DATEX II des enregistrements de catégories inconnues, actifs et situés dans les départements 54, 55, 57 et 88. Aucun de ces enregistrements n’est publié dans le RSS.
 
-Le fichier `rejets.json` reçoit quatre nouveaux champs :
-- `unknown_types_in_lorraine` : types DATEX II non reconnus, actifs et géolocalisés dans les départements 54, 55, 57, 88 ;
-- `unknown_types_in_lorraine_examples` : jusqu'à cinq exemples par type, pour évaluer les nouvelles catégories pertinentes ;
-- `unknown_types_inactive` : types non reconnus et inactifs ;
-- `unknown_types_location_rejections` : types non reconnus mais rejetés par la géolocalisation.
+Le flux RSS, les GUID, le GeoJSON, le filtrage géographique et les règles d’expiration restent inchangés.
 
-Les totaux `accepted` et `rejected_by_reason` restent calculés selon les règles V3.4.
+**Attention :** si le workflow ne commit pas `mesures_a_analyser.json`, ajouter ce fichier à l'étape `git add` du workflow (`git add rss.xml traffic.geojson state.json rejets.json mesures_a_analyser.json`), puis relancer. Ne pas supprimer `state.json`.
 
-## Installation
-Remplacer uniquement `itlf_rss.py` à la racine du dépôt GitHub et relancer le workflow existant. Ne pas supprimer `state.json` ni `lorraine_departements.geojson`. Après exécution, partager `rejets.json` pour analyser les catégories avant toute activation.
+Transmettre ensuite `mesures_a_analyser.json` pour examiner les valeurs réelles des mesures et leurs attributs.

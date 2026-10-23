@@ -300,6 +300,39 @@ def active(record, now):
     return True
 
 
+def diagnostic_fields(record):
+    """Capture DATEX fields verbatim, bounded, without inferring a restriction."""
+    fields = []
+    for element in record.iter():
+        value = text_clean(element.text)
+        attributes = {local(k): text_clean(v)[:160] for k, v in element.attrib.items()}
+        if not value and not attributes:
+            continue
+        if len(fields) >= 180:
+            break
+        fields.append({'tag': local(element.tag), 'value': value[:350], 'attributes': attributes})
+    return fields
+
+
+def diagnostic_record(record, situation, sid, loc):
+    """Keep relevant record and situation-level measures for manual interpretation."""
+    return {
+        'situation_id': sid,
+        'record_id': record.attrib.get('id', ''),
+        'record_type': record.attrib.get(XSI_TYPE, ''),
+        'department': loc['department'],
+        'road': loc['road'],
+        'coordinates': [loc['point'][1], loc['point'][0]],
+        'validity_status': first(record, 'validityStatus'),
+        'details': descriptions(record),
+        'record_fields': diagnostic_fields(record),
+        'situation_fields': [
+            {'tag': local(child.tag), 'value': text_clean(child.text)[:350]}
+            for child in situation if local(child.tag) != 'situationRecord' and text_clean(child.text)
+        ][:30],
+    }
+
+
 def parse(root, boundaries=None):
     publications = walk(root, 'payloadPublication')
     if not publications or not any('SituationPublication' in p.attrib.get(XSI_TYPE, '') or walk(p, 'situation') for p in publications):
@@ -313,6 +346,7 @@ def parse(root, boundaries=None):
     unknown_in_area_examples = {}
     unknown_location_reasons = Counter()
     unknown_inactive = Counter()
+    diagnostic_records = []
     for situation in walk(root, 'situation'):
         sid = situation.attrib.get('id', '')
         for record in walk(situation, 'situationRecord'):
@@ -332,6 +366,8 @@ def parse(root, boundaries=None):
                         unknown_location_reasons[unknown_reason] += 1
                     else:
                         unknown_in_area[raw_type] += 1
+                        if len(diagnostic_records) < 100:
+                            diagnostic_records.append(diagnostic_record(record, situation, sid, unknown_loc))
                         examples = unknown_in_area_examples.setdefault(raw_type, [])
                         if len(examples) < 5:
                             examples.append({
@@ -400,7 +436,8 @@ def parse(root, boundaries=None):
         'unknown_types_in_lorraine': dict(unknown_in_area.most_common()),
         'unknown_types_in_lorraine_examples': unknown_in_area_examples,
         'unknown_types_inactive': dict(unknown_inactive.most_common()),
-        'unknown_types_location_rejections': dict(unknown_location_reasons)
+        'unknown_types_location_rejections': dict(unknown_location_reasons),
+        'diagnostic_records': diagnostic_records
     }
 
 
@@ -478,6 +515,12 @@ def run():
     atomic(OUTPUT, rss_text)
     atomic(GEOJSON, geojson_text)
     atomic(STATE, json.dumps(merged, ensure_ascii=False, indent=2) + '\n')
+    atomic(Path(os.getenv('ITLF_MEASURES_PATH', 'mesures_a_analyser.json')), json.dumps({
+        'generated_at': datetime.now(timezone.utc).isoformat(),
+        'purpose': 'Diagnostic only; none of these records is published automatically',
+        'count': len(rejected['diagnostic_records']),
+        'records': rejected['diagnostic_records']
+    }, ensure_ascii=False, indent=2) + '\n')
     atomic(REJECT_REPORT, json.dumps({
         'generated_at': datetime.now(timezone.utc).isoformat(),
         'accepted': len(fresh),
