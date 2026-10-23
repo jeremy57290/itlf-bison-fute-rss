@@ -1,13 +1,19 @@
-# ITLF RSS V3.8 — amélioration des descriptions
+# ITLF RSS V3.9 — Diagnostic accidents et obstacles
 
-Cette mise à jour corrige les accords grammaticaux dans les alertes de gestion des voies :
-- `1 voie fermée sur 3` au lieu de `1 voie(s) fermée(s) sur 3` ;
-- `2 voies fermées sur 3` au lieu de `2 voie(s) fermée(s) sur 3`.
+Basée sur la V3.8. Aucun changement de la logique de publication, des catégories, des GUID ou du filtrage territorial.
 
-La logique de publication de la V3.7 est conservée : filtrage géographique, regroupement des mesures d'une même situation, catégories, GUID et exclusion des mesures ambiguës. Les alertes de travaux distinctes ne sont pas supprimées automatiquement car elles peuvent apporter une information complémentaire.
+## Nouveauté
+
+À chaque exécution réussie, création de `diagnostic_incidents.json` :
+- `counts.accident` et `counts.obstacle` : total dans la source, actifs en Lorraine, inactifs, hors Lorraine/non localisables ;
+- `records` : jusqu'à 100 exemples par catégorie, avec type DATEX, éventuels sous-types, détails, validité et localisation.
+
+Les statistiques comptent **tous** les enregistrements de ces deux catégories ; seules les listes d'exemples sont limitées. Les événements non reconnus ne sont pas classés comme accidents par supposition.
 
 ## Installation
-Remplacer `itlf_rss.py` à la racine du dépôt GitHub et relancer le workflow. Ne pas effacer `state.json` ni `lorraine_departements.geojson`.
 
-## Vérification
-Compilation Python et tests unitaires des accords effectués localement. Exécution sur le flux DATEX distant non réalisée.
+Remplacer `itlf_rss.py` dans le dépôt. Conserver les autres fichiers. Dans `.github/workflows/rss.yml`, ajouter `diagnostic_incidents.json` à l'étape `git add` / commit afin de récupérer le diagnostic depuis GitHub. Relancer le workflow et transmettre le JSON.
+
+## Précautions
+
+Le diagnostic n'améliore pas encore les titres des obstacles et ne garantit pas que tous les accidents routiers soient remontés par la source Bison Futé. Les fichiers RSS et GeoJSON restent générés selon les règles V3.8.

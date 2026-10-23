@@ -398,6 +398,37 @@ def management_item(sid, records, now):
     }
 
 
+def incident_diagnostic(record, situation_id, cat, now, boundaries):
+    """Read-only incident audit: never influences publication or rejection."""
+    valid = active(record, now)
+    loc, reason = location(record, boundaries)
+    return {
+        'situation_id': situation_id,
+        'record_id': record.attrib.get('id', ''),
+        'record_type': record.attrib.get(XSI_TYPE, '(missing type)'),
+        'category': cat,
+        'active': valid,
+        'in_lorraine': loc is not None,
+        'exclusion_reason': ('inactive_or_outside_validity' if not valid else reason if loc is None else None),
+        'validity_status': first(record, 'validityStatus'),
+        'department': loc['department'] if loc else None,
+        'road': loc['road'] if loc else None,
+        'town': human_place(record, loc) if loc else None,
+        'coordinates': [loc['point'][1], loc['point'][0]] if loc and loc.get('point') else None,
+        'subtypes': [
+            {'field': local(el.tag), 'value': (el.text or '').strip()}
+            for el in record.iter()
+            if local(el.tag) in (
+                'accidentType', 'accidentCause', 'vehicleObstructionType',
+                'obstructionType', 'numberOfVehiclesInvolved',
+                'numberOfLanesRestricted', 'originalNumberOfLanes',
+                'numberOfPeopleInvolved', 'mobilityType'
+            ) and (el.text or '').strip()
+        ][:30],
+        'details': descriptions(record)[:8],
+    }
+
+
 def parse(root, boundaries=None):
     publications = walk(root, 'payloadPublication')
     if not publications or not any('SituationPublication' in p.attrib.get(XSI_TYPE, '') or walk(p, 'situation') for p in publications):
@@ -414,10 +445,24 @@ def parse(root, boundaries=None):
     diagnostic_records = []
     management_groups = {}
     management_stats = Counter()
+    incident_stats = {name: Counter() for name in ('accident', 'obstacle')}
+    incident_examples = {name: [] for name in ('accident', 'obstacle')}
     for situation in walk(root, 'situation'):
         sid = situation.attrib.get('id', '')
         for record in walk(situation, 'situationRecord'):
             cat = category(record)
+            if cat in incident_stats:
+                audit = incident_diagnostic(record, sid, cat, now, boundaries)
+                stats = incident_stats[cat]
+                stats['total_in_source'] += 1
+                if not audit['active']:
+                    stats['inactive_or_outside_validity'] += 1
+                elif not audit['in_lorraine']:
+                    stats['outside_lorraine_or_unlocated'] += 1
+                else:
+                    stats['active_in_lorraine'] += 1
+                if len(incident_examples[cat]) < 100:
+                    incident_examples[cat].append(audit)
             if not cat:
                 measure = management_measure(record)
                 if measure is not None and active(record, now):
@@ -517,7 +562,12 @@ def parse(root, boundaries=None):
         'unknown_types_in_lorraine_examples': unknown_in_area_examples,
         'unknown_types_inactive': dict(unknown_inactive.most_common()),
         'unknown_types_location_rejections': dict(unknown_location_reasons),
-        'diagnostic_records': diagnostic_records
+        'diagnostic_records': diagnostic_records,
+        'incident_diagnostic': {
+            'counts': {k: dict(v) for k, v in incident_stats.items()},
+            'records': incident_examples,
+            'note': 'Read-only audit; examples capped at 100 per category; totals count all records'
+        }
     }
 
 
@@ -600,6 +650,10 @@ def run():
         'purpose': 'Diagnostic of unrecognized DATEX types; some explicitly coded lane/contraflow measures are now published',
         'count': len(rejected['diagnostic_records']),
         'records': rejected['diagnostic_records']
+    }, ensure_ascii=False, indent=2) + '\n')
+    atomic(Path(os.getenv('ITLF_INCIDENT_DIAGNOSTIC_PATH', 'diagnostic_incidents.json')), json.dumps({
+        'generated_at': datetime.now(timezone.utc).isoformat(),
+        **rejected['incident_diagnostic']
     }, ensure_ascii=False, indent=2) + '\n')
     atomic(REJECT_REPORT, json.dumps({
         'generated_at': datetime.now(timezone.utc).isoformat(),
