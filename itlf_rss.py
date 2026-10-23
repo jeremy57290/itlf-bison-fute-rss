@@ -201,19 +201,38 @@ def location(record, boundaries):
 
 
 def human_place(record, loc):
-    """Only use place names actually supplied by DATEX, never reverse-geocode guesses."""
+    """Prefer explicit locality over towns used only as distance markers."""
     town = text_clean(loc.get('town', ''))
     if town:
         return town
-    for el in walk(record, 'locationDescriptor', 'locationDescription', 'descriptor', 'value', 'commentText', 'comment'):
-        val = text_clean(el.text)
-        # Bison descriptions often say 'situé 423 m à l’ouest de Nancy Laxou'.
+    # DATEX often puts the event locality in a short standalone descriptor,
+    # after longer "debut/fin" reference-point descriptions.
+    details = descriptions(record)
+    for value in reversed(details):
+        candidate = text_clean(value)
+        if (2 <= len(candidate) <= 65
+                and re.fullmatch(r"[A-Za-zÀ-ÖØ-öø-ÿ][A-Za-zÀ-ÖØ-öø-ÿ'’ .-]*", candidate)
+                and not re.search(r"\b(?:direction|début|fin|situé|route|travaux|vitesse|restriction|bretelle|département)\b", candidate, re.I)
+                and candidate.casefold() not in {'nord', 'sud', 'est', 'ouest', 'inconnu'}):
+            return candidate
+    # Last resort: a named reference point is better than a department number.
+    for val in details:
         match = re.search(r"\bsitué(?:e)?\s+\d+\s*m\s+.+?\s+de\s+([^,;|]+)", val, re.I)
         if match:
             place = re.split(r'\s+(?:sur|dans|au niveau de)\s+', match.group(1), maxsplit=1, flags=re.I)[0].strip(' .')
             if place and len(place) <= 75:
                 return place
     return ''
+
+
+def readable_detail(value):
+    """Make DATEX distance-marker prose readable without dropping distances."""
+    value = text_clean(value)
+    value = re.sub(r'\bdébut\s*:\s*situé\s*', 'Début : ', value, flags=re.I)
+    value = re.sub(r'\bfin\s*:\s*situé\s*', 'fin : ', value, flags=re.I)
+    value = re.sub(r"\bsitué\s+(?=\d+\s*m)", '', value, flags=re.I)
+    value = re.sub(r'\s*,\s*fin\s*:', ' ; fin :', value, flags=re.I)
+    return value
 
 
 def readable_direction(value):
@@ -331,7 +350,7 @@ def parse(root, boundaries=None):
             for detail in descriptions(record):
                 normalized = text_clean(detail).casefold()
                 if normalized not in seen and normalized not in (f'département {loc["department"]}'.casefold(),):
-                    desc_parts.append(detail)
+                    desc_parts.append(readable_detail(detail))
                     seen.add(normalized)
             when = first(record, 'situationRecordCreationTime', 'situationRecordFirstSupplierVersionTime', 'overallStartTime')
             dt = parse_date(when) or now
