@@ -592,7 +592,15 @@ def rss(items):
              f'<lastBuildDate>{format_datetime(datetime.now(timezone.utc))}</lastBuildDate>']
     for key, item in sorted(items.items(), key=lambda x: x[1]['date'], reverse=True):
         guid = 'urn:itlf:' + hashlib.sha256(key.encode()).hexdigest()
+        # IFTTT requires a valid URL on every RSS item. Point to the event location.
+        coords = item.get('coordinates')
+        if isinstance(coords, (list, tuple)) and len(coords) == 2 and all(isinstance(v, (int, float)) for v in coords):
+            lon, lat = coords
+            item_link = f'https://www.google.com/maps?q={lat:.6f},{lon:.6f}'
+        else:
+            item_link = 'https://www.bison-fute.gouv.fr/'
         lines.extend(['<item>', f'<title>{escape(item["title"])}</title>',
+                      f'<link>{escape(item_link)}</link>',
                       f'<description>{escape(item["description"])}</description>',
                       f'<guid isPermaLink="false">{guid}</guid>',
                       f'<pubDate>{format_datetime(parse_date(item["date"]) or datetime.now(timezone.utc))}</pubDate>',
