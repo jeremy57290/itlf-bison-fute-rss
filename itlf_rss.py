@@ -122,9 +122,10 @@ def location(record):
     point = coordinates(record)
     if point and not (BBOX[0] <= point[0] <= BBOX[2] and BBOX[1] <= point[1] <= BBOX[3]):
         return None
-    # Conservative inclusion: require positive department evidence. A bbox alone
-    # includes neighboring departments, and is NOT enough to establish Lorraine.
-    if dept not in DEPTS:
+    # Provisional fallback: accept coordinates inside the Lorraine envelope
+    # when the source does not explicitly identify a department.
+    # This is NOT a precise departmental boundary test.
+    if dept not in DEPTS and point is None:
         return None
     road = normalize_road(first(record, 'roadNumber', 'roadName', 'roadIdentifier'))
     town = text_clean(first(record, 'townName', 'city', 'localityName'))
@@ -257,6 +258,8 @@ def geojson(items):
 
 def run():
     fresh = parse(download(SOURCE))
+    if not fresh:
+        raise ValueError('No eligible events after filtering: preserving previous RSS and state')
     old = {}
     if STATE.exists():
         try:
