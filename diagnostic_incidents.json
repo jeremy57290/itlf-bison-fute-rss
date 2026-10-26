@@ -1,51 +1,18 @@
 {
-  "generated_at": "2026-10-26T00:05:53.625579+00:00",
+  "generated_at": "2026-10-26T04:36:55.676864+00:00",
   "counts": {
     "accident": {
-      "total_in_source": 5,
-      "outside_lorraine_or_unlocated": 5
+      "total_in_source": 4,
+      "outside_lorraine_or_unlocated": 4
     },
     "obstacle": {
-      "total_in_source": 32,
-      "outside_lorraine_or_unlocated": 30,
+      "total_in_source": 33,
+      "outside_lorraine_or_unlocated": 31,
       "inactive_or_outside_validity": 2
     }
   },
   "records": {
     "accident": [
-      {
-        "situation_id": "261025-001911",
-        "record_id": "261025-001911-1",
-        "record_type": "ns2:Accident",
-        "category": "accident",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "1"
-          },
-          {
-            "field": "accidentType",
-            "value": "accident"
-          }
-        ],
-        "details": [
-          "Accident entre deux VL à la sortie de Moutiers.",
-          "Villarlurin",
-          "D915"
-        ]
-      },
       {
         "situation_id": "261025-002212",
         "record_id": "261025-002212-1",
@@ -80,37 +47,8 @@
         ]
       },
       {
-        "situation_id": "261026-000005",
-        "record_id": "261026-000005-1",
-        "record_type": "ns2:Accident",
-        "category": "accident",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "originalNumberOfLanes",
-            "value": "5"
-          },
-          {
-            "field": "accidentType",
-            "value": "accident"
-          }
-        ],
-        "details": [
-          "Sur 0 m",
-          "situé 878 m au nord de A3 / A103",
-          "Noisy-le-Sec"
-        ]
-      },
-      {
-        "situation_id": "261026-000009",
-        "record_id": "261026-000009-1",
+        "situation_id": "261026-000071",
+        "record_id": "261026-000071-1",
         "record_type": "ns2:Accident",
         "category": "accident",
         "active": true,
@@ -136,9 +74,9 @@
           }
         ],
         "details": [
-          "situé 1027 m au sud de Aire de Maine de Boixe ouest",
-          "Aussac-Vadalle",
-          "N10"
+          "situé 984 m à l'ouest de Piquet",
+          "Étrelles",
+          "N157"
         ]
       },
       {
@@ -172,6 +110,39 @@
           "situé 7523 m au sud de Vivonne",
           "Payré",
           "N10"
+        ]
+      },
+      {
+        "situation_id": "261026-000099",
+        "record_id": "261026-000099-1",
+        "record_type": "ns2:Accident",
+        "category": "accident",
+        "active": true,
+        "in_lorraine": false,
+        "exclusion_reason": "outside_department",
+        "validity_status": "definedByValidityTimeSpec",
+        "department": null,
+        "road": null,
+        "town": null,
+        "coordinates": null,
+        "subtypes": [
+          {
+            "field": "numberOfLanesRestricted",
+            "value": "1"
+          },
+          {
+            "field": "originalNumberOfLanes",
+            "value": "2"
+          },
+          {
+            "field": "accidentType",
+            "value": "accident"
+          }
+        ],
+        "details": [
+          "situé 1755 m au nord de Le Moulin d'Ecalles",
+          "Rocquemont",
+          "A28"
         ]
       }
     ],
@@ -613,43 +584,6 @@
           "situé 3000 m à l'est de Pacé",
           "DIR Nord-Ouest/District Normandie-Centre/CEI Alençon",
           "Lonrai"
-        ]
-      },
-      {
-        "situation_id": "261024-002088",
-        "record_id": "261024-002088-1",
-        "record_type": "ns2:VehicleObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "1"
-          },
-          {
-            "field": "mobilityType",
-            "value": "stationary"
-          },
-          {
-            "field": "vehicleObstructionType",
-            "value": "brokenDownVehicle"
-          }
-        ],
-        "details": [
-          "situé 12070 m au sud de 27527",
-          "DIR Nord-Ouest/District Normandie-Centre/CEI Évreux",
-          "La Madeleine-de-Nonancourt"
         ]
       },
       {
@@ -1102,9 +1036,9 @@
         ]
       },
       {
-        "situation_id": "261026-000014",
-        "record_id": "261026-000014-1",
-        "record_type": "ns2:AnimalPresenceObstruction",
+        "situation_id": "261026-000046",
+        "record_id": "261026-000046-102",
+        "record_type": "ns2:VehicleObstruction",
         "category": "obstacle",
         "active": true,
         "in_lorraine": false,
@@ -1126,18 +1060,22 @@
           {
             "field": "mobilityType",
             "value": "stationary"
+          },
+          {
+            "field": "vehicleObstructionType",
+            "value": "brokenDownVehicle"
           }
         ],
         "details": [
-          "situé 2540 m à l'est de Pleslin-Trigavou La Rusais",
-          "DIR Ouest/District de Saint-Brieuc/CEI de Pleslin-Trigavou",
-          "Plouër-sur-Rance"
+          "situé 1541 m à l'est de Saint-Genis-Laval centre",
+          "DIR Centre-Est/District Lyon/CEI Pierre-Bénite",
+          "Saint-Genis-Laval"
         ]
       },
       {
-        "situation_id": "261026-000017",
-        "record_id": "261026-000017-1",
-        "record_type": "ns2:AnimalPresenceObstruction",
+        "situation_id": "261026-000046",
+        "record_id": "261026-000046-1",
+        "record_type": "ns2:GeneralObstruction",
         "category": "obstacle",
         "active": true,
         "in_lorraine": false,
@@ -1159,18 +1097,22 @@
           {
             "field": "mobilityType",
             "value": "stationary"
+          },
+          {
+            "field": "obstructionType",
+            "value": "obstructionOnTheRoad"
           }
         ],
         "details": [
-          "situé 1424 m au nord de Kernévez",
-          "DIR Ouest/District de Brest/CEI de Brest",
-          "Dirinon"
+          "situé 1541 m à l'est de Saint-Genis-Laval centre",
+          "DIR Centre-Est/District Lyon/CEI Pierre-Bénite",
+          "Saint-Genis-Laval"
         ]
       },
       {
-        "situation_id": "261026-000021",
-        "record_id": "261026-000021-1",
-        "record_type": "ns2:AnimalPresenceObstruction",
+        "situation_id": "261026-000081",
+        "record_id": "261026-000081-1",
+        "record_type": "ns2:VehicleObstruction",
         "category": "obstacle",
         "active": true,
         "in_lorraine": false,
@@ -1192,12 +1134,78 @@
           {
             "field": "mobilityType",
             "value": "stationary"
+          },
+          {
+            "field": "vehicleObstructionType",
+            "value": "brokenDownVehicle"
           }
         ],
         "details": [
-          "situé 688 m à l'est de Cesson - Porte de la Rigourdiè",
-          "DIR Ouest/District de Rennes/CEI de Châteaubourg",
-          "Cesson-Sévigné"
+          "situé 226 m au nord de Crévin",
+          "DIR Ouest/District de Rennes/CEI de Bain-de-Bretagne",
+          "Bourg-des-Comptes"
+        ]
+      },
+      {
+        "situation_id": "261026-000100",
+        "record_id": "261026-000100-1",
+        "record_type": "ns2:VehicleObstruction",
+        "category": "obstacle",
+        "active": true,
+        "in_lorraine": false,
+        "exclusion_reason": "outside_department",
+        "validity_status": "definedByValidityTimeSpec",
+        "department": null,
+        "road": null,
+        "town": null,
+        "coordinates": null,
+        "subtypes": [
+          {
+            "field": "numberOfLanesRestricted",
+            "value": "0"
+          },
+          {
+            "field": "originalNumberOfLanes",
+            "value": "2"
+          },
+          {
+            "field": "vehicleObstructionType",
+            "value": "brokenDownVehicle"
+          }
+        ],
+        "details": [
+          "situé 1869 m au nord de Pont du Roi",
+          "DIR Méditerranée/District Urbain/CEI Lavéra",
+          "Fos-sur-Mer"
+        ]
+      },
+      {
+        "situation_id": "261026-000104",
+        "record_id": "261026-000104-1",
+        "record_type": "ns2:VehicleObstruction",
+        "category": "obstacle",
+        "active": true,
+        "in_lorraine": false,
+        "exclusion_reason": "outside_department",
+        "validity_status": "definedByValidityTimeSpec",
+        "department": null,
+        "road": null,
+        "town": null,
+        "coordinates": null,
+        "subtypes": [
+          {
+            "field": "originalNumberOfLanes",
+            "value": "3"
+          },
+          {
+            "field": "vehicleObstructionType",
+            "value": "brokenDownVehicle"
+          }
+        ],
+        "details": [
+          "Sur 0 m",
+          "DIR Île-de-France",
+          "Saint-Denis"
         ]
       }
     ]
