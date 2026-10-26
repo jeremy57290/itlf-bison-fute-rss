@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-25T22:01:34.177215+00:00",
+  "generated_at": "2026-10-26T00:05:53.625579+00:00",
   "counts": {
     "accident": {
       "total_in_source": 5,
       "outside_lorraine_or_unlocated": 5
     },
     "obstacle": {
-      "total_in_source": 38,
-      "outside_lorraine_or_unlocated": 36,
+      "total_in_source": 32,
+      "outside_lorraine_or_unlocated": 30,
       "inactive_or_outside_validity": 2
     }
   },
@@ -47,8 +47,8 @@
         ]
       },
       {
-        "situation_id": "261025-002091",
-        "record_id": "261025-002091-1",
+        "situation_id": "261025-002212",
+        "record_id": "261025-002212-1",
         "record_type": "ns2:Accident",
         "category": "accident",
         "active": true,
@@ -74,13 +74,14 @@
           }
         ],
         "details": [
-          "Biran",
-          "N124"
+          "Accident impliquant 1 VL",
+          "Saint-Jean-de-Couz",
+          "D1006"
         ]
       },
       {
-        "situation_id": "261025-002133",
-        "record_id": "261025-002133-1",
+        "situation_id": "261026-000005",
+        "record_id": "261026-000005-1",
         "record_type": "ns2:Accident",
         "category": "accident",
         "active": true,
@@ -93,19 +94,23 @@
         "coordinates": null,
         "subtypes": [
           {
+            "field": "originalNumberOfLanes",
+            "value": "5"
+          },
+          {
             "field": "accidentType",
             "value": "accident"
           }
         ],
         "details": [
-          "CORG 19 (Corrèze)",
-          "situé 1748 m au nord de Donzenac nord - Sadroc",
-          "Sadroc"
+          "Sur 0 m",
+          "situé 878 m au nord de A3 / A103",
+          "Noisy-le-Sec"
         ]
       },
       {
-        "situation_id": "261025-002186",
-        "record_id": "261025-002186-1",
+        "situation_id": "261026-000009",
+        "record_id": "261026-000009-1",
         "record_type": "ns2:Accident",
         "category": "accident",
         "active": true,
@@ -131,14 +136,14 @@
           }
         ],
         "details": [
-          "situé 1658 m au sud de Petit Quévilly Centre-ZI des P",
-          "Le Grand-Quevilly",
-          "N338"
+          "situé 1027 m au sud de Aire de Maine de Boixe ouest",
+          "Aussac-Vadalle",
+          "N10"
         ]
       },
       {
-        "situation_id": "261025-002188",
-        "record_id": "261025-002188-1",
+        "situation_id": "261025-002207",
+        "record_id": "261025-002207-1",
         "record_type": "ns2:Accident",
         "category": "accident",
         "active": true,
@@ -152,7 +157,7 @@
         "subtypes": [
           {
             "field": "numberOfLanesRestricted",
-            "value": "0"
+            "value": "2"
           },
           {
             "field": "originalNumberOfLanes",
@@ -164,9 +169,9 @@
           }
         ],
         "details": [
-          "situé 2782 m à l'est de Joganville - Montebourg",
-          "Fresville",
-          "N13"
+          "situé 7523 m au sud de Vivonne",
+          "Payré",
+          "N10"
         ]
       }
     ],
@@ -924,43 +929,6 @@
         ]
       },
       {
-        "situation_id": "261025-001637",
-        "record_id": "261025-001637-1",
-        "record_type": "ns2:VehicleObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "3"
-          },
-          {
-            "field": "mobilityType",
-            "value": "stationary"
-          },
-          {
-            "field": "vehicleObstructionType",
-            "value": "brokenDownVehicle"
-          }
-        ],
-        "details": [
-          "situé 10778 m au nord de Foucarmont - Londinières",
-          "DIR Nord-Ouest/District Rouen/PE Nord/CEI Bouttencourt",
-          "Blangy-sur-Bresle"
-        ]
-      },
-      {
         "situation_id": "261025-001726",
         "record_id": "261025-001726-1",
         "record_type": "ns2:VehicleObstruction",
@@ -1134,9 +1102,9 @@
         ]
       },
       {
-        "situation_id": "261025-002009",
-        "record_id": "261025-002009-102",
-        "record_type": "ns2:VehicleObstruction",
+        "situation_id": "261026-000014",
+        "record_id": "261026-000014-1",
+        "record_type": "ns2:AnimalPresenceObstruction",
         "category": "obstacle",
         "active": true,
         "in_lorraine": false,
@@ -1158,22 +1126,18 @@
           {
             "field": "mobilityType",
             "value": "stationary"
-          },
-          {
-            "field": "vehicleObstructionType",
-            "value": "brokenDownVehicle"
           }
         ],
         "details": [
-          "situé 61 m au sud de Cestas",
-          "DIR Atlantique/District de Gironde/CEI de Mios",
-          "sur bretelle de sortie"
+          "situé 2540 m à l'est de Pleslin-Trigavou La Rusais",
+          "DIR Ouest/District de Saint-Brieuc/CEI de Pleslin-Trigavou",
+          "Plouër-sur-Rance"
         ]
       },
       {
-        "situation_id": "261025-002009",
-        "record_id": "261025-002009-1",
-        "record_type": "ns2:GeneralObstruction",
+        "situation_id": "261026-000017",
+        "record_id": "261026-000017-1",
+        "record_type": "ns2:AnimalPresenceObstruction",
         "category": "obstacle",
         "active": true,
         "in_lorraine": false,
@@ -1195,210 +1159,45 @@
           {
             "field": "mobilityType",
             "value": "stationary"
-          },
-          {
-            "field": "obstructionType",
-            "value": "obstructionOnTheRoad"
           }
         ],
         "details": [
-          "situé 61 m au sud de Cestas",
-          "DIR Atlantique/District de Gironde/CEI de Mios",
-          "sur bretelle de sortie"
-        ]
-      },
-      {
-        "situation_id": "261025-002165",
-        "record_id": "261025-002165-1",
-        "record_type": "ns2:GeneralObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "originalNumberOfLanes",
-            "value": "3"
-          },
-          {
-            "field": "obstructionType",
-            "value": "obstructionOnTheRoad"
-          }
-        ],
-        "details": [
-          "Sur 0 m",
-          "situé 217 m au sud de Pomponne",
-          "DIR Île-de-France"
-        ]
-      },
-      {
-        "situation_id": "261025-002179",
-        "record_id": "261025-002179-1",
-        "record_type": "ns2:VehicleObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "originalNumberOfLanes",
-            "value": "5"
-          },
-          {
-            "field": "vehicleObstructionType",
-            "value": "brokenDownVehicle"
-          }
-        ],
-        "details": [
-          "Sur 0 m",
-          "situé 2646 m au sud de Marly-le-Roi - Le Chesnay",
-          "DIR Île-de-France"
-        ]
-      },
-      {
-        "situation_id": "261025-002184",
-        "record_id": "261025-002184-1",
-        "record_type": "ns2:VehicleObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "2"
-          },
-          {
-            "field": "mobilityType",
-            "value": "stationary"
-          },
-          {
-            "field": "vehicleObstructionType",
-            "value": "brokenDownVehicle"
-          }
-        ],
-        "details": [
-          "situé 2222 m au nord de Le Grand Large - Meyzieu",
-          "DIR Centre-Est/District Lyon/CEI Saint-Priest",
-          "Décines-Charpieu"
-        ]
-      },
-      {
-        "situation_id": "261025-002192",
-        "record_id": "261025-002192-1",
-        "record_type": "ns2:VehicleObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "3"
-          },
-          {
-            "field": "vehicleObstructionType",
-            "value": "abandonedVehicle"
-          }
-        ],
-        "details": [
-          "situé 311 m à l'ouest de La Penne-sur-Huveaune",
-          "DIR Méditerranée/District Urbain/CAM",
-          "Marseille"
-        ]
-      },
-      {
-        "situation_id": "261025-002193",
-        "record_id": "261025-002193-1",
-        "record_type": "ns2:VehicleObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "originalNumberOfLanes",
-            "value": "3"
-          },
-          {
-            "field": "vehicleObstructionType",
-            "value": "brokenDownVehicle"
-          }
-        ],
-        "details": [
-          "situé 181 m au sud de Roissy-en-France",
-          "DIR Île-de-France",
-          "Gonesse"
-        ]
-      },
-      {
-        "situation_id": "261025-002194",
-        "record_id": "261025-002194-1",
-        "record_type": "ns2:VehicleObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "2"
-          },
-          {
-            "field": "mobilityType",
-            "value": "stationary"
-          },
-          {
-            "field": "vehicleObstructionType",
-            "value": "brokenDownVehicle"
-          }
-        ],
-        "details": [
-          "situé 3063 m à l'ouest de Croas-ar-Nezic",
+          "situé 1424 m au nord de Kernévez",
           "DIR Ouest/District de Brest/CEI de Brest",
-          "Kersaint-Plabennec"
+          "Dirinon"
+        ]
+      },
+      {
+        "situation_id": "261026-000021",
+        "record_id": "261026-000021-1",
+        "record_type": "ns2:AnimalPresenceObstruction",
+        "category": "obstacle",
+        "active": true,
+        "in_lorraine": false,
+        "exclusion_reason": "outside_department",
+        "validity_status": "definedByValidityTimeSpec",
+        "department": null,
+        "road": null,
+        "town": null,
+        "coordinates": null,
+        "subtypes": [
+          {
+            "field": "numberOfLanesRestricted",
+            "value": "0"
+          },
+          {
+            "field": "originalNumberOfLanes",
+            "value": "2"
+          },
+          {
+            "field": "mobilityType",
+            "value": "stationary"
+          }
+        ],
+        "details": [
+          "situé 688 m à l'est de Cesson - Porte de la Rigourdiè",
+          "DIR Ouest/District de Rennes/CEI de Châteaubourg",
+          "Cesson-Sévigné"
         ]
       }
     ]
