@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-10-27T05:25:03.208836+00:00",
-  "accepted": 13,
+  "generated_at": "2026-10-27T10:45:15.880706+00:00",
+  "accepted": 20,
   "management_published_records": {
     "contraflow": 2,
     "lane": 3
   },
   "management_published_situations": 3,
   "rejected_by_reason": {
-    "unrecognized_category": 354,
-    "inactive_or_outside_validity": 64,
-    "outside_department": 158
+    "unrecognized_category": 421,
+    "inactive_or_outside_validity": 72,
+    "outside_department": 273
   },
   "unrecognized_types": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 161,
-    "ns2:ReroutingManagement": 108,
-    "ns2:GeneralNetworkManagement": 34,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 214,
+    "ns2:ReroutingManagement": 121,
+    "ns2:GeneralNetworkManagement": 35,
     "ns2:SpeedManagement": 30,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 14,
     "ns2:RoadsideServiceDisruption": 4,
@@ -22,12 +22,11 @@
     "ns2:WeatherRelatedRoadConditions": 1
   },
   "inactive_statuses": {
-    "definedByValidityTimeSpec": 60,
+    "definedByValidityTimeSpec": 68,
     "suspended": 4
   },
   "unknown_types_in_lorraine": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 6,
-    "ns2:GeneralNetworkManagement": 3
+    "ns2:RoadOrCarriagewayOrLaneManagement": 6
   },
   "unknown_types_in_lorraine_examples": {
     "ns2:RoadOrCarriagewayOrLaneManagement": [
@@ -106,65 +105,18 @@
           "situé 187 m au sud de Pont-à-Mousson"
         ]
       }
-    ],
-    "ns2:GeneralNetworkManagement": [
-      {
-        "situation_id": "261026-002641",
-        "record_id": "261026-002641-103",
-        "department": "54",
-        "road": "",
-        "town": "",
-        "coordinates": [
-          6.208541,
-          48.619286
-        ],
-        "details": [
-          "La mesure est obligatoire",
-          "situé 2267 m à l'est de Ludres"
-        ]
-      },
-      {
-        "situation_id": "261026-002641",
-        "record_id": "261026-002641-104",
-        "department": "54",
-        "road": "",
-        "town": "",
-        "coordinates": [
-          6.3472657,
-          48.60179
-        ],
-        "details": [
-          "Sur 300 m à 0 m de la fin de la bretelle. La mesure est obligatoire",
-          "situé 514 m à l'est de Rosières-au-Salines"
-        ]
-      },
-      {
-        "situation_id": "261026-002641",
-        "record_id": "261026-002641-102",
-        "department": "54",
-        "road": "",
-        "town": "",
-        "coordinates": [
-          6.2127037,
-          48.618298
-        ],
-        "details": [
-          "La mesure est obligatoire",
-          "situé 180 m à l'est de Fléville Z.I."
-        ]
-      }
     ]
   },
   "unknown_types_inactive": {
-    "ns2:ReroutingManagement": 54,
-    "ns2:RoadOrCarriagewayOrLaneManagement": 48,
+    "ns2:ReroutingManagement": 58,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 57,
     "ns2:SpeedManagement": 9,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 6,
     "ns2:GeneralNetworkManagement": 4,
     "ns2:WeatherRelatedRoadConditions": 1
   },
   "unknown_types_location_rejections": {
-    "outside_department": 223
+    "outside_department": 280
   },
   "precise_department_boundaries": true,
   "boundary_file": "lorraine_departements.geojson"
