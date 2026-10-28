@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-10-28T04:42:42.340294+00:00",
-  "accepted": 15,
+  "generated_at": "2026-10-28T10:50:33.368603+00:00",
+  "accepted": 26,
   "management_published_records": {
     "contraflow": 2,
     "lane": 3
   },
   "management_published_situations": 3,
   "rejected_by_reason": {
-    "unrecognized_category": 378,
-    "inactive_or_outside_validity": 66,
-    "outside_department": 182
+    "unrecognized_category": 425,
+    "inactive_or_outside_validity": 79,
+    "outside_department": 270
   },
   "unrecognized_types": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 175,
-    "ns2:ReroutingManagement": 116,
-    "ns2:GeneralNetworkManagement": 35,
-    "ns2:SpeedManagement": 31,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 215,
+    "ns2:ReroutingManagement": 125,
+    "ns2:SpeedManagement": 32,
+    "ns2:GeneralNetworkManagement": 31,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 14,
     "ns2:RoadsideServiceDisruption": 4,
     "ns2:OperatorAction": 2,
-    "ns2:WeatherRelatedRoadConditions": 1
+    "ns2:WeatherRelatedRoadConditions": 1,
+    "ns2:NonWeatherRelatedRoadConditions": 1
   },
   "inactive_statuses": {
-    "definedByValidityTimeSpec": 61,
-    "suspended": 5
+    "definedByValidityTimeSpec": 73,
+    "suspended": 6
   },
   "unknown_types_in_lorraine": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 6,
-    "ns2:GeneralNetworkManagement": 3
+    "ns2:RoadOrCarriagewayOrLaneManagement": 6
   },
   "unknown_types_in_lorraine_examples": {
     "ns2:RoadOrCarriagewayOrLaneManagement": [
@@ -106,65 +106,19 @@
           "situé 187 m au sud de Pont-à-Mousson"
         ]
       }
-    ],
-    "ns2:GeneralNetworkManagement": [
-      {
-        "situation_id": "261027-002648",
-        "record_id": "261027-002648-102",
-        "department": "54",
-        "road": "",
-        "town": "",
-        "coordinates": [
-          6.3627005,
-          48.604675
-        ],
-        "details": [
-          "La mesure est obligatoire",
-          "situé 808 m à l'est de ZI des Sables"
-        ]
-      },
-      {
-        "situation_id": "261027-002648",
-        "record_id": "261027-002648-103",
-        "department": "54",
-        "road": "",
-        "town": "",
-        "coordinates": [
-          6.358534,
-          48.6041
-        ],
-        "details": [
-          "La mesure est obligatoire",
-          "situé 1343 m à l'est de Rosières-au-Salines"
-        ]
-      },
-      {
-        "situation_id": "261027-002648",
-        "record_id": "261027-002648-104",
-        "department": "54",
-        "road": "",
-        "town": "",
-        "coordinates": [
-          6.3474965,
-          48.603733
-        ],
-        "details": [
-          "La mesure est obligatoire",
-          "situé 514 m à l'est de Rosières-au-Salines"
-        ]
-      }
     ]
   },
   "unknown_types_inactive": {
-    "ns2:ReroutingManagement": 60,
-    "ns2:RoadOrCarriagewayOrLaneManagement": 59,
-    "ns2:SpeedManagement": 9,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 65,
+    "ns2:ReroutingManagement": 64,
+    "ns2:SpeedManagement": 10,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 6,
-    "ns2:GeneralNetworkManagement": 5,
-    "ns2:WeatherRelatedRoadConditions": 1
+    "ns2:GeneralNetworkManagement": 4,
+    "ns2:WeatherRelatedRoadConditions": 1,
+    "ns2:NonWeatherRelatedRoadConditions": 1
   },
   "unknown_types_location_rejections": {
-    "outside_department": 229
+    "outside_department": 268
   },
   "precise_department_boundaries": true,
   "boundary_file": "lorraine_departements.geojson"
