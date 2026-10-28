@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-28T16:51:05.622767+00:00",
+  "generated_at": "2026-10-28T21:23:06.220097+00:00",
   "purpose": "Diagnostic of unrecognized DATEX types; some explicitly coded lane/contraflow measures are now published",
-  "count": 6,
+  "count": 7,
   "records": [
     {
       "situation_id": "260902-001596",
@@ -2362,6 +2362,384 @@
         {
           "tag": "situationVersionTime",
           "value": "2026-10-26T05:10:50.997+01:00"
+        }
+      ]
+    },
+    {
+      "situation_id": "261028-005321",
+      "record_id": "261028-005321-102",
+      "record_type": "ns2:RoadOrCarriagewayOrLaneManagement",
+      "department": "55",
+      "road": "N135",
+      "coordinates": [
+        5.28053,
+        48.715813
+      ],
+      "validity_status": "definedByValidityTimeSpec",
+      "details": [
+        "La mesure est obligatoire",
+        "début : situé 1873 m à l'est de Ligny-en-Barrois, fin : situé 0 m à l'ouest de Ligny-en-Barrois",
+        "Tronville-en-Barrois"
+      ],
+      "record_fields": [
+        {
+          "tag": "situationRecord",
+          "value": "",
+          "attributes": {
+            "type": "ns2:RoadOrCarriagewayOrLaneManagement",
+            "id": "261028-005321-102",
+            "version": "1"
+          }
+        },
+        {
+          "tag": "situationRecordCreationReference",
+          "value": "EVE_DIRE_Myrabel-S-261028-0047-EVE_DIRE_Myrabel-SR-261028-000056",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordCreationTime",
+          "value": "2026-10-28T19:36:26.806+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordObservationTime",
+          "value": "2026-10-28T19:36:27.922+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordVersionTime",
+          "value": "2026-10-28T19:36:30.315+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordFirstSupplierVersionTime",
+          "value": "2026-10-28T19:36:26.806+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "probabilityOfOccurrence",
+          "value": "certain",
+          "attributes": {}
+        },
+        {
+          "tag": "sourceIdentification",
+          "value": "Direction interdépartementale des routes/DIR Est",
+          "attributes": {}
+        },
+        {
+          "tag": "sourceType",
+          "value": "mobileTelephoneCaller",
+          "attributes": {}
+        },
+        {
+          "tag": "reliable",
+          "value": "true",
+          "attributes": {}
+        },
+        {
+          "tag": "validityStatus",
+          "value": "definedByValidityTimeSpec",
+          "attributes": {}
+        },
+        {
+          "tag": "overallStartTime",
+          "value": "2026-10-28T19:36:26.683+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "numberOfLanesRestricted",
+          "value": "1",
+          "attributes": {}
+        },
+        {
+          "tag": "originalNumberOfLanes",
+          "value": "1",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "La mesure est obligatoire",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "description",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Point particulier : début : situé 1873 m à l'est de Ligny-en-Barrois, fin : situé 0 m à l'ouest de Ligny-en-Barrois",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "GE_DIRE/Service régional d’exploitation Grand Est (SREX)/District Vitry-Le-François/CEI Ligny-en-Barrois",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "groupOfLocations",
+          "value": "",
+          "attributes": {
+            "type": "ns2:Linear"
+          }
+        },
+        {
+          "tag": "carriageway",
+          "value": "mainCarriageway",
+          "attributes": {}
+        },
+        {
+          "tag": "lane",
+          "value": "allLanesCompleteCarriageway",
+          "attributes": {}
+        },
+        {
+          "tag": "tpegDirection",
+          "value": "bothWays",
+          "attributes": {}
+        },
+        {
+          "tag": "tpegLinearLocationType",
+          "value": "segment",
+          "attributes": {}
+        },
+        {
+          "tag": "to",
+          "value": "",
+          "attributes": {
+            "type": "ns2:TpegNonJunctionPoint"
+          }
+        },
+        {
+          "tag": "latitude",
+          "value": "48.715813",
+          "attributes": {}
+        },
+        {
+          "tag": "longitude",
+          "value": "5.28053",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Tronville-en-Barrois",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "townName",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "N135",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "linkName",
+          "attributes": {}
+        },
+        {
+          "tag": "from",
+          "value": "",
+          "attributes": {
+            "type": "ns2:TpegNonJunctionPoint"
+          }
+        },
+        {
+          "tag": "latitude",
+          "value": "48.720432",
+          "attributes": {}
+        },
+        {
+          "tag": "longitude",
+          "value": "5.269173",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Tronville-en-Barrois",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "townName",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "N135",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "linkName",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLinear",
+          "value": "",
+          "attributes": {
+            "type": "ns2:AlertCMethod4Linear"
+          }
+        },
+        {
+          "tag": "alertCLocationCountryCode",
+          "value": "F",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLocationTableNumber",
+          "value": "32",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLocationTableVersion",
+          "value": "11.0",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCDirectionCoded",
+          "value": "both",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Ligny-en-Barrois",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "specificLocation",
+          "value": "42508",
+          "attributes": {}
+        },
+        {
+          "tag": "offsetDistance",
+          "value": "0",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Ligny-en-Barrois",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "specificLocation",
+          "value": "42507",
+          "attributes": {}
+        },
+        {
+          "tag": "offsetDistance",
+          "value": "1873",
+          "attributes": {}
+        },
+        {
+          "tag": "directionRelativeOnLinearSection",
+          "value": "both",
+          "attributes": {}
+        },
+        {
+          "tag": "roadNumber",
+          "value": "N0135",
+          "attributes": {}
+        },
+        {
+          "tag": "fromPoint",
+          "value": "",
+          "attributes": {
+            "type": "ns2:DistanceFromLinearElementReferent"
+          }
+        },
+        {
+          "tag": "distanceAlong",
+          "value": "500.0",
+          "attributes": {}
+        },
+        {
+          "tag": "referentIdentifier",
+          "value": "55PR10U",
+          "attributes": {}
+        },
+        {
+          "tag": "referentType",
+          "value": "referenceMarker",
+          "attributes": {}
+        },
+        {
+          "tag": "toPoint",
+          "value": "",
+          "attributes": {
+            "type": "ns2:DistanceFromLinearElementReferent"
+          }
+        },
+        {
+          "tag": "distanceAlong",
+          "value": "500.0",
+          "attributes": {}
+        },
+        {
+          "tag": "referentIdentifier",
+          "value": "55PR9U",
+          "attributes": {}
+        },
+        {
+          "tag": "referentType",
+          "value": "referenceMarker",
+          "attributes": {}
+        },
+        {
+          "tag": "safetyRelatedMessage",
+          "value": "false",
+          "attributes": {}
+        },
+        {
+          "tag": "complianceOption",
+          "value": "mandatory",
+          "attributes": {}
+        },
+        {
+          "tag": "roadOrCarriagewayOrLaneManagementType",
+          "value": "roadClosed",
+          "attributes": {}
+        }
+      ],
+      "situation_fields": [
+        {
+          "tag": "overallSeverity",
+          "value": "medium"
+        },
+        {
+          "tag": "situationVersionTime",
+          "value": "2026-10-28T19:36:30.315+01:00"
         }
       ]
     }

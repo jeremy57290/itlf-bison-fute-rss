@@ -1,33 +1,32 @@
 {
-  "generated_at": "2026-10-28T16:51:05.626227+00:00",
-  "accepted": 12,
+  "generated_at": "2026-10-28T21:23:06.224054+00:00",
+  "accepted": 14,
   "management_published_records": {
     "contraflow": 2,
     "lane": 3
   },
   "management_published_situations": 3,
   "rejected_by_reason": {
-    "unrecognized_category": 401,
-    "inactive_or_outside_validity": 97,
-    "outside_department": 234
+    "unrecognized_category": 396,
+    "inactive_or_outside_validity": 69,
+    "outside_department": 197
   },
   "unrecognized_types": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 193,
-    "ns2:ReroutingManagement": 122,
-    "ns2:GeneralNetworkManagement": 32,
-    "ns2:SpeedManagement": 32,
-    "ns2:GeneralInstructionOrMessageToRoadUsers": 14,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 183,
+    "ns2:ReroutingManagement": 119,
+    "ns2:SpeedManagement": 37,
+    "ns2:GeneralNetworkManagement": 31,
+    "ns2:GeneralInstructionOrMessageToRoadUsers": 19,
     "ns2:RoadsideServiceDisruption": 4,
     "ns2:OperatorAction": 2,
-    "ns2:WeatherRelatedRoadConditions": 1,
-    "ns2:NonWeatherRelatedRoadConditions": 1
+    "ns2:WeatherRelatedRoadConditions": 1
   },
   "inactive_statuses": {
-    "definedByValidityTimeSpec": 91,
-    "suspended": 6
+    "definedByValidityTimeSpec": 66,
+    "suspended": 3
   },
   "unknown_types_in_lorraine": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 6
+    "ns2:RoadOrCarriagewayOrLaneManagement": 7
   },
   "unknown_types_in_lorraine_examples": {
     "ns2:RoadOrCarriagewayOrLaneManagement": [
@@ -109,15 +108,15 @@
     ]
   },
   "unknown_types_inactive": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 76,
-    "ns2:ReroutingManagement": 65,
-    "ns2:SpeedManagement": 10,
-    "ns2:GeneralInstructionOrMessageToRoadUsers": 6,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 58,
+    "ns2:ReroutingManagement": 58,
+    "ns2:SpeedManagement": 14,
+    "ns2:GeneralInstructionOrMessageToRoadUsers": 10,
     "ns2:GeneralNetworkManagement": 4,
     "ns2:WeatherRelatedRoadConditions": 1
   },
   "unknown_types_location_rejections": {
-    "outside_department": 233
+    "outside_department": 244
   },
   "precise_department_boundaries": true,
   "boundary_file": "lorraine_departements.geojson"
