@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-10-27T23:59:03.982867+00:00",
-  "accepted": 17,
+  "generated_at": "2026-10-28T04:42:42.340294+00:00",
+  "accepted": 15,
   "management_published_records": {
     "contraflow": 2,
     "lane": 3
   },
   "management_published_situations": 3,
   "rejected_by_reason": {
-    "unrecognized_category": 420,
-    "inactive_or_outside_validity": 61,
-    "outside_department": 239
+    "unrecognized_category": 378,
+    "inactive_or_outside_validity": 66,
+    "outside_department": 182
   },
   "unrecognized_types": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 203,
-    "ns2:ReroutingManagement": 129,
-    "ns2:GeneralNetworkManagement": 36,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 175,
+    "ns2:ReroutingManagement": 116,
+    "ns2:GeneralNetworkManagement": 35,
     "ns2:SpeedManagement": 31,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 14,
     "ns2:RoadsideServiceDisruption": 4,
@@ -22,12 +22,12 @@
     "ns2:WeatherRelatedRoadConditions": 1
   },
   "inactive_statuses": {
-    "definedByValidityTimeSpec": 57,
-    "suspended": 4
+    "definedByValidityTimeSpec": 61,
+    "suspended": 5
   },
   "unknown_types_in_lorraine": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 7,
-    "ns2:GeneralNetworkManagement": 4
+    "ns2:RoadOrCarriagewayOrLaneManagement": 6,
+    "ns2:GeneralNetworkManagement": 3
   },
   "unknown_types_in_lorraine_examples": {
     "ns2:RoadOrCarriagewayOrLaneManagement": [
@@ -152,34 +152,19 @@
           "La mesure est obligatoire",
           "situé 514 m à l'est de Rosières-au-Salines"
         ]
-      },
-      {
-        "situation_id": "261027-002669",
-        "record_id": "261027-002669-102",
-        "department": "54",
-        "road": "",
-        "town": "",
-        "coordinates": [
-          6.1605167,
-          48.749844
-        ],
-        "details": [
-          "La mesure est obligatoire",
-          "situé 164 m au nord de Bouxières"
-        ]
       }
     ]
   },
   "unknown_types_inactive": {
-    "ns2:ReroutingManagement": 57,
-    "ns2:RoadOrCarriagewayOrLaneManagement": 54,
+    "ns2:ReroutingManagement": 60,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 59,
     "ns2:SpeedManagement": 9,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 6,
     "ns2:GeneralNetworkManagement": 5,
     "ns2:WeatherRelatedRoadConditions": 1
   },
   "unknown_types_location_rejections": {
-    "outside_department": 277
+    "outside_department": 229
   },
   "precise_department_boundaries": true,
   "boundary_file": "lorraine_departements.geojson"
