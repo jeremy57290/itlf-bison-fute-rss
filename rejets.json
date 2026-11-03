@@ -1,32 +1,31 @@
 {
-  "generated_at": "2026-11-03T01:13:54.848587+00:00",
-  "accepted": 20,
+  "generated_at": "2026-11-03T07:56:16.265220+00:00",
+  "accepted": 17,
   "management_published_records": {
     "contraflow": 2,
     "lane": 3
   },
   "management_published_situations": 3,
   "rejected_by_reason": {
-    "unrecognized_category": 374,
-    "inactive_or_outside_validity": 57,
-    "outside_department": 271
+    "unrecognized_category": 354,
+    "inactive_or_outside_validity": 69,
+    "outside_department": 250
   },
   "unrecognized_types": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 188,
-    "ns2:ReroutingManagement": 92,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 173,
+    "ns2:ReroutingManagement": 81,
+    "ns2:GeneralNetworkManagement": 40,
     "ns2:SpeedManagement": 36,
-    "ns2:GeneralNetworkManagement": 35,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 19,
-    "ns2:RoadsideServiceDisruption": 3,
+    "ns2:RoadsideServiceDisruption": 4,
     "ns2:WeatherRelatedRoadConditions": 1
   },
   "inactive_statuses": {
-    "definedByValidityTimeSpec": 54,
-    "suspended": 3
+    "definedByValidityTimeSpec": 60,
+    "suspended": 9
   },
   "unknown_types_in_lorraine": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 6,
-    "ns2:GeneralNetworkManagement": 2
+    "ns2:RoadOrCarriagewayOrLaneManagement": 6
   },
   "unknown_types_in_lorraine_examples": {
     "ns2:RoadOrCarriagewayOrLaneManagement": [
@@ -105,50 +104,18 @@
           "situé 187 m au sud de Pont-à-Mousson"
         ]
       }
-    ],
-    "ns2:GeneralNetworkManagement": [
-      {
-        "situation_id": "261102-006693",
-        "record_id": "261102-006693-102",
-        "department": "54",
-        "road": "",
-        "town": "",
-        "coordinates": [
-          6.358534,
-          48.6041
-        ],
-        "details": [
-          "La mesure est obligatoire",
-          "situé 1343 m à l'est de Rosières-au-Salines"
-        ]
-      },
-      {
-        "situation_id": "261102-006726",
-        "record_id": "261102-006726-102",
-        "department": "54",
-        "road": "",
-        "town": "",
-        "coordinates": [
-          6.153625,
-          48.744015
-        ],
-        "details": [
-          "La mesure est obligatoire",
-          "situé 190 m au sud de Frouard"
-        ]
-      }
     ]
   },
   "unknown_types_inactive": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 40,
-    "ns2:ReroutingManagement": 33,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 53,
+    "ns2:ReroutingManagement": 42,
     "ns2:SpeedManagement": 10,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 6,
     "ns2:GeneralNetworkManagement": 2,
     "ns2:WeatherRelatedRoadConditions": 1
   },
   "unknown_types_location_rejections": {
-    "outside_department": 274
+    "outside_department": 234
   },
   "precise_department_boundaries": true,
   "boundary_file": "lorraine_departements.geojson"
