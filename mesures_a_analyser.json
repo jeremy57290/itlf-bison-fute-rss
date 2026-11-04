@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T01:28:36.605190+00:00",
+  "generated_at": "2026-11-04T07:50:50.505755+00:00",
   "purpose": "Diagnostic of unrecognized DATEX types; some explicitly coded lane/contraflow measures are now published",
   "count": 7,
   "records": [
@@ -2366,19 +2366,19 @@
       ]
     },
     {
-      "situation_id": "261103-009271",
-      "record_id": "261103-009271-102",
+      "situation_id": "261104-000264",
+      "record_id": "261104-000264-102",
       "record_type": "ns2:GeneralNetworkManagement",
-      "department": "54",
+      "department": "88",
       "road": "",
       "coordinates": [
-        6.1536365,
-        48.743984
+        6.5863767,
+        48.054512
       ],
       "validity_status": "definedByValidityTimeSpec",
       "details": [
         "La mesure est obligatoire",
-        "situé 190 m au sud de Frouard",
+        "situé 2207 m au nord de Remiremont",
         "sur bretelle d'entrée"
       ],
       "record_fields": [
@@ -2387,33 +2387,33 @@
           "value": "",
           "attributes": {
             "type": "ns2:GeneralNetworkManagement",
-            "id": "261103-009271-102",
+            "id": "261104-000264-102",
             "version": "1"
           }
         },
         {
           "tag": "situationRecordCreationReference",
-          "value": "EVE_DIRE_Myrabel-S-261103-0051-EVE_DIRE_Myrabel-SR-261103-000060",
+          "value": "EVE_DIRE_Myrabel-S-261104-0003-EVE_DIRE_Myrabel-SR-261104-000005",
           "attributes": {}
         },
         {
           "tag": "situationRecordCreationTime",
-          "value": "2026-11-03T21:05:34.831+01:00",
+          "value": "2026-11-04T07:15:25.911+01:00",
           "attributes": {}
         },
         {
           "tag": "situationRecordObservationTime",
-          "value": "2026-11-03T21:05:36.057+01:00",
+          "value": "2026-11-04T07:15:26.971+01:00",
           "attributes": {}
         },
         {
           "tag": "situationRecordVersionTime",
-          "value": "2026-11-03T21:05:38.721+01:00",
+          "value": "2026-11-04T07:15:29.104+01:00",
           "attributes": {}
         },
         {
           "tag": "situationRecordFirstSupplierVersionTime",
-          "value": "2026-11-03T21:05:34.831+01:00",
+          "value": "2026-11-04T07:15:25.911+01:00",
           "attributes": {}
         },
         {
@@ -2443,7 +2443,7 @@
         },
         {
           "tag": "overallStartTime",
-          "value": "2026-11-03T21:05:34.760+01:00",
+          "value": "2026-11-04T07:15:25.700+01:00",
           "attributes": {}
         },
         {
@@ -2453,7 +2453,7 @@
         },
         {
           "tag": "originalNumberOfLanes",
-          "value": "3",
+          "value": "2",
           "attributes": {}
         },
         {
@@ -2470,7 +2470,7 @@
         },
         {
           "tag": "value",
-          "value": "situé 190 m au sud de Frouard",
+          "value": "situé 2207 m au nord de Remiremont",
           "attributes": {
             "lang": "fr"
           }
@@ -2494,7 +2494,7 @@
         },
         {
           "tag": "value",
-          "value": "GE_DIRE/Service régional d’exploitation Grand Est (SREX)/District Nancy/CEI Charmes",
+          "value": "GE_DIRE/Service régional d’exploitation Grand Est (SREX)/District Nancy/CEI Saint Nabord",
           "attributes": {
             "lang": "fr"
           }
@@ -2518,7 +2518,7 @@
         },
         {
           "tag": "value",
-          "value": "De Lyon vers Luxembourg",
+          "value": "De Metz vers Suisse - Lausanne",
           "attributes": {
             "lang": "fr"
           }
@@ -2537,7 +2537,7 @@
         },
         {
           "tag": "externalLocationCode",
-          "value": "54A903145_4D--0",
+          "value": "88N905732_2D--0",
           "attributes": {}
         },
         {
@@ -2564,7 +2564,7 @@
         },
         {
           "tag": "tpegDirection",
-          "value": "northBound",
+          "value": "southBound",
           "attributes": {}
         },
         {
@@ -2581,17 +2581,17 @@
         },
         {
           "tag": "latitude",
-          "value": "48.743984",
+          "value": "48.054512",
           "attributes": {}
         },
         {
           "tag": "longitude",
-          "value": "6.1536365",
+          "value": "6.5863767",
           "attributes": {}
         },
         {
           "tag": "value",
-          "value": "Frouard",
+          "value": "Saint-Nabord",
           "attributes": {
             "lang": "fr"
           }
@@ -2603,7 +2603,7 @@
         },
         {
           "tag": "value",
-          "value": "A31",
+          "value": "N57",
           "attributes": {
             "lang": "fr"
           }
@@ -2642,19 +2642,19 @@
         },
         {
           "tag": "value",
-          "value": "Frouard",
+          "value": "Remiremont",
           "attributes": {
             "lang": "fr"
           }
         },
         {
           "tag": "specificLocation",
-          "value": "12296",
+          "value": "43262",
           "attributes": {}
         },
         {
           "tag": "offsetDistance",
-          "value": "190",
+          "value": "2207",
           "attributes": {}
         },
         {
@@ -2664,7 +2664,7 @@
         },
         {
           "tag": "value",
-          "value": "A31",
+          "value": "N57",
           "attributes": {
             "lang": "fr"
           }
@@ -2678,12 +2678,12 @@
         },
         {
           "tag": "distanceAlong",
-          "value": "411.0",
+          "value": "754.0",
           "attributes": {}
         },
         {
           "tag": "referentIdentifier",
-          "value": "54PR256D",
+          "value": "88PR52D",
           "attributes": {}
         },
         {
@@ -2714,7 +2714,7 @@
         },
         {
           "tag": "situationVersionTime",
-          "value": "2026-11-03T21:05:38.721+01:00"
+          "value": "2026-11-04T07:15:29.104+01:00"
         }
       ]
     }
