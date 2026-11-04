@@ -1,139 +1,15 @@
 {
-  "generated_at": "2026-11-03T21:17:49.493613+00:00",
+  "generated_at": "2026-11-04T01:28:36.607344+00:00",
   "counts": {
-    "accident": {
-      "total_in_source": 4,
-      "outside_lorraine_or_unlocated": 4
-    },
+    "accident": {},
     "obstacle": {
-      "total_in_source": 27,
-      "outside_lorraine_or_unlocated": 25,
+      "total_in_source": 20,
+      "outside_lorraine_or_unlocated": 18,
       "inactive_or_outside_validity": 2
     }
   },
   "records": {
-    "accident": [
-      {
-        "situation_id": "261103-008867",
-        "record_id": "261103-008867-1",
-        "record_type": "ns2:Accident",
-        "category": "accident",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "accidentType",
-            "value": "accident"
-          }
-        ],
-        "details": [
-          "Accident impliquant un poids lourd qui a percuté des câbles et poteaux téléphoniques, qui menacent de tomber sur la chaussée.",
-          "Ugine",
-          "D109"
-        ]
-      },
-      {
-        "situation_id": "261103-008876",
-        "record_id": "261103-008876-1",
-        "record_type": "ns2:Accident",
-        "category": "accident",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "2"
-          },
-          {
-            "field": "accidentType",
-            "value": "accident"
-          }
-        ],
-        "details": [
-          "Accident impliquant deux véhicules légers sur la voie de gauche juste après le tunnel de Ponserand, en direction d'Albertville. Voie de gauche neutralisée dans le tunnel.",
-          "situé 1778 m au sud de Aigueblanche nord",
-          "Aigueblanche"
-        ]
-      },
-      {
-        "situation_id": "261103-008760",
-        "record_id": "261103-008760-1",
-        "record_type": "ns2:Accident",
-        "category": "accident",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "accidentType",
-            "value": "accident"
-          }
-        ],
-        "details": [
-          "Accident impliquant un véhicule léger et une moto, au niveau du passage à niveau de Brison St Innocent.",
-          "Brison-Saint-Innocent",
-          "D991"
-        ]
-      },
-      {
-        "situation_id": "261103-009005",
-        "record_id": "261103-009005-1",
-        "record_type": "ns2:Accident",
-        "category": "accident",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "accidentType",
-            "value": "accident"
-          }
-        ],
-        "details": [
-          "Accident impliquant deux véhicules légers au niveau du Wam Park de Montailleur.",
-          "Montailleur",
-          "D1090"
-        ]
-      }
-    ],
+    "accident": [],
     "obstacle": [
       {
         "situation_id": "260212-002970",
@@ -542,39 +418,6 @@
         ]
       },
       {
-        "situation_id": "261103-008114",
-        "record_id": "261103-008114-1",
-        "record_type": "ns2:VehicleObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "2"
-          },
-          {
-            "field": "vehicleObstructionType",
-            "value": "brokenDownVehicle"
-          }
-        ],
-        "details": [
-          "situé 380 m à l'ouest de Les Pennes-Mirabeau",
-          "DIR Méditerranée/District Urbain/CAM",
-          "Les Pennes-Mirabeau"
-        ]
-      },
-      {
         "situation_id": "261103-008084",
         "record_id": "261103-008084-1",
         "record_type": "ns2:VehicleObstruction",
@@ -612,39 +455,6 @@
         ]
       },
       {
-        "situation_id": "261103-008657",
-        "record_id": "261103-008657-1",
-        "record_type": "ns2:VehicleObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "2"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "4"
-          },
-          {
-            "field": "vehicleObstructionType",
-            "value": "brokenDownVehicle"
-          }
-        ],
-        "details": [
-          "situé 0 m au nord de Les Caillols",
-          "DIR Méditerranée/District Urbain/CAM",
-          "Marseille"
-        ]
-      },
-      {
         "situation_id": "261103-007504",
         "record_id": "261103-007504-1",
         "record_type": "ns2:VehicleObstruction",
@@ -671,117 +481,6 @@
           "CEI Toulon-sur-Allier",
           "situé 279 m au nord de Moulins nord",
           "AURA_DIRCE/District Moulins/CEI Toulon-sur-Allier"
-        ]
-      },
-      {
-        "situation_id": "261103-008981",
-        "record_id": "261103-008981-102",
-        "record_type": "ns2:VehicleObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "1"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "2"
-          },
-          {
-            "field": "mobilityType",
-            "value": "stationary"
-          },
-          {
-            "field": "vehicleObstructionType",
-            "value": "brokenDownVehicle"
-          }
-        ],
-        "details": [
-          "début : situé 531 m au nord de Pontaubault, fin : situé 612 m au sud de Pontaubault",
-          "DIR Nord-Ouest/District Manche-Calvados/PE Saint-Lô/CEI Poilley",
-          "Poilley"
-        ]
-      },
-      {
-        "situation_id": "261103-008981",
-        "record_id": "261103-008981-1",
-        "record_type": "ns2:VehicleObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "2"
-          },
-          {
-            "field": "mobilityType",
-            "value": "stationary"
-          },
-          {
-            "field": "vehicleObstructionType",
-            "value": "brokenDownVehicle"
-          }
-        ],
-        "details": [
-          "situé 612 m au sud de Pontaubault",
-          "DIR Nord-Ouest/District Manche-Calvados/PE Saint-Lô/CEI Poilley",
-          "Poilley"
-        ]
-      },
-      {
-        "situation_id": "261103-009023",
-        "record_id": "261103-009023-1",
-        "record_type": "ns2:VehicleObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "2"
-          },
-          {
-            "field": "mobilityType",
-            "value": "stationary"
-          },
-          {
-            "field": "vehicleObstructionType",
-            "value": "brokenDownVehicle"
-          }
-        ],
-        "details": [
-          "Véhicule en panne sur la descente de Pomblière.",
-          "situé 3889 m au sud de Moûtiers",
-          "DIR Centre-Est/District Chambéry-Grenoble/CEI Aigueblanche"
         ]
       },
       {
@@ -822,33 +521,8 @@
         ]
       },
       {
-        "situation_id": "261103-009184",
-        "record_id": "261103-009184-1",
-        "record_type": "ns2:VehicleObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "vehicleObstructionType",
-            "value": "brokenDownVehicle"
-          }
-        ],
-        "details": [
-          "situé 1805 m à l'ouest de Le Grand-Bourg",
-          "DIR Centre-Ouest/District Guéret/CEI La Souterraine",
-          "Fleurat"
-        ]
-      },
-      {
-        "situation_id": "261103-009251",
-        "record_id": "261103-009251-1",
+        "situation_id": "261103-009436",
+        "record_id": "261103-009436-1",
         "record_type": "ns2:VehicleObstruction",
         "category": "obstacle",
         "active": true,
@@ -862,15 +536,11 @@
         "subtypes": [
           {
             "field": "numberOfLanesRestricted",
-            "value": "1"
+            "value": "0"
           },
           {
             "field": "originalNumberOfLanes",
-            "value": "3"
-          },
-          {
-            "field": "mobilityType",
-            "value": "stationary"
+            "value": "2"
           },
           {
             "field": "vehicleObstructionType",
@@ -878,14 +548,14 @@
           }
         ],
         "details": [
-          "situé 6052 m au sud de L'Hospitalet-du-Larzac",
-          "DIR Massif-Central/District Sud/CEI La-Cavalerie",
-          "L'Hospitalet-du-Larzac"
+          "situé 249 m à l'est de Arles - Fourchon",
+          "DIR Méditerranée/District Urbain/CEI Saint-Martin-de-Crau",
+          "Arles"
         ]
       },
       {
-        "situation_id": "261103-009283",
-        "record_id": "261103-009283-1",
+        "situation_id": "261104-000038",
+        "record_id": "261104-000038-1",
         "record_type": "ns2:VehicleObstruction",
         "category": "obstacle",
         "active": true,
@@ -915,47 +585,14 @@
           }
         ],
         "details": [
-          "situé 4679 m au sud de Clermont-l'Hérault",
-          "DIR Massif-Central/District Sud/CEI Clermont-L'Hérault",
-          "Aspiran"
+          "situé 11622 m au sud de Villedieu-les-Poêles",
+          "DIR Nord-Ouest/District Manche-Calvados/PE Saint-Lô/CEI Fleury",
+          "Braffais"
         ]
       },
       {
-        "situation_id": "261103-009292",
-        "record_id": "261103-009292-1",
-        "record_type": "ns2:AnimalPresenceObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "2"
-          },
-          {
-            "field": "mobilityType",
-            "value": "stationary"
-          }
-        ],
-        "details": [
-          "situé 982 m à l'est de Tôtes",
-          "DIR Nord-Ouest/District Rouen/PE Nord/CEI Maucomble",
-          "Saint-Martin-Osmonville"
-        ]
-      },
-      {
-        "situation_id": "261103-009272",
-        "record_id": "261103-009272-1",
+        "situation_id": "261104-000057",
+        "record_id": "261104-000057-1",
         "record_type": "ns2:VehicleObstruction",
         "category": "obstacle",
         "active": true,
@@ -968,16 +605,8 @@
         "coordinates": null,
         "subtypes": [
           {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
             "field": "originalNumberOfLanes",
-            "value": "3"
-          },
-          {
-            "field": "mobilityType",
-            "value": "stationary"
+            "value": "2"
           },
           {
             "field": "vehicleObstructionType",
@@ -985,9 +614,9 @@
           }
         ],
         "details": [
-          "situé 2773 m au nord de Floirac centre",
-          "DIR Atlantique/District de Gironde/CEI de Lormont",
-          "Floirac"
+          "CEI Bessines",
+          "situé 4572 m au nord de Saint-Sulpice-les-Feuilles",
+          "DIR Centre-Ouest/District A20/CEI Bessines"
         ]
       }
     ]
