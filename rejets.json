@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-11-05T01:44:44.513746+00:00",
-  "accepted": 16,
+  "generated_at": "2026-11-05T08:32:31.885525+00:00",
+  "accepted": 13,
   "management_published_records": {
-    "contraflow": 2,
+    "contraflow": 1,
     "lane": 3
   },
-  "management_published_situations": 3,
+  "management_published_situations": 2,
   "rejected_by_reason": {
-    "unrecognized_category": 348,
-    "inactive_or_outside_validity": 55,
-    "outside_department": 267
+    "unrecognized_category": 349,
+    "inactive_or_outside_validity": 62,
+    "outside_department": 280
   },
   "unrecognized_types": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 174,
-    "ns2:ReroutingManagement": 73,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 178,
+    "ns2:ReroutingManagement": 71,
     "ns2:GeneralNetworkManagement": 40,
-    "ns2:SpeedManagement": 37,
-    "ns2:GeneralInstructionOrMessageToRoadUsers": 19,
+    "ns2:SpeedManagement": 36,
+    "ns2:GeneralInstructionOrMessageToRoadUsers": 18,
     "ns2:RoadsideServiceDisruption": 3,
-    "ns2:WeatherRelatedRoadConditions": 2
+    "ns2:WeatherRelatedRoadConditions": 2,
+    "ns2:DisturbanceActivity": 1
   },
   "inactive_statuses": {
-    "definedByValidityTimeSpec": 53,
-    "suspended": 2
+    "definedByValidityTimeSpec": 57,
+    "suspended": 5
   },
   "unknown_types_in_lorraine": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 7,
-    "ns2:GeneralNetworkManagement": 2
+    "ns2:RoadOrCarriagewayOrLaneManagement": 5
   },
   "unknown_types_in_lorraine_examples": {
     "ns2:RoadOrCarriagewayOrLaneManagement": [
@@ -105,50 +105,18 @@
           "situé 187 m au sud de Pont-à-Mousson"
         ]
       }
-    ],
-    "ns2:GeneralNetworkManagement": [
-      {
-        "situation_id": "261104-002692",
-        "record_id": "261104-002692-104",
-        "department": "57",
-        "road": "",
-        "town": "",
-        "coordinates": [
-          6.1657963,
-          49.29608
-        ],
-        "details": [
-          "La mesure est obligatoire",
-          "situé 3406 m à l'est de Fameck Feltrière"
-        ]
-      },
-      {
-        "situation_id": "261104-002676",
-        "record_id": "261104-002676-102",
-        "department": "57",
-        "road": "",
-        "town": "",
-        "coordinates": [
-          6.185977,
-          49.331398
-        ],
-        "details": [
-          "La mesure est obligatoire",
-          "situé 174 m au sud de Illange"
-        ]
-      }
     ]
   },
   "unknown_types_inactive": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 41,
-    "ns2:ReroutingManagement": 25,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 50,
+    "ns2:ReroutingManagement": 29,
     "ns2:SpeedManagement": 10,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 6,
     "ns2:GeneralNetworkManagement": 2,
     "ns2:WeatherRelatedRoadConditions": 1
   },
   "unknown_types_location_rejections": {
-    "outside_department": 254
+    "outside_department": 246
   },
   "precise_department_boundaries": true,
   "boundary_file": "lorraine_departements.geojson"
