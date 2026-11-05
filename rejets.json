@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-04T21:34:33.434414+00:00",
-  "accepted": 18,
+  "generated_at": "2026-11-05T01:44:44.513746+00:00",
+  "accepted": 16,
   "management_published_records": {
     "contraflow": 2,
     "lane": 3
@@ -8,24 +8,24 @@
   "management_published_situations": 3,
   "rejected_by_reason": {
     "unrecognized_category": 348,
-    "inactive_or_outside_validity": 50,
-    "outside_department": 281
+    "inactive_or_outside_validity": 55,
+    "outside_department": 267
   },
   "unrecognized_types": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 177,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 174,
     "ns2:ReroutingManagement": 73,
+    "ns2:GeneralNetworkManagement": 40,
     "ns2:SpeedManagement": 37,
-    "ns2:GeneralNetworkManagement": 36,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 19,
-    "ns2:WeatherRelatedRoadConditions": 3,
-    "ns2:RoadsideServiceDisruption": 3
+    "ns2:RoadsideServiceDisruption": 3,
+    "ns2:WeatherRelatedRoadConditions": 2
   },
   "inactive_statuses": {
-    "definedByValidityTimeSpec": 48,
+    "definedByValidityTimeSpec": 53,
     "suspended": 2
   },
   "unknown_types_in_lorraine": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 8,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 7,
     "ns2:GeneralNetworkManagement": 2
   },
   "unknown_types_in_lorraine_examples": {
@@ -109,21 +109,6 @@
     "ns2:GeneralNetworkManagement": [
       {
         "situation_id": "261104-002692",
-        "record_id": "261104-002692-103",
-        "department": "57",
-        "road": "",
-        "town": "",
-        "coordinates": [
-          6.125069,
-          49.305706
-        ],
-        "details": [
-          "La mesure est obligatoire",
-          "situé 3064 m à l'ouest de Uckange"
-        ]
-      },
-      {
-        "situation_id": "261104-002692",
         "record_id": "261104-002692-104",
         "department": "57",
         "road": "",
@@ -136,11 +121,26 @@
           "La mesure est obligatoire",
           "situé 3406 m à l'est de Fameck Feltrière"
         ]
+      },
+      {
+        "situation_id": "261104-002676",
+        "record_id": "261104-002676-102",
+        "department": "57",
+        "road": "",
+        "town": "",
+        "coordinates": [
+          6.185977,
+          49.331398
+        ],
+        "details": [
+          "La mesure est obligatoire",
+          "situé 174 m au sud de Illange"
+        ]
       }
     ]
   },
   "unknown_types_inactive": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 40,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 41,
     "ns2:ReroutingManagement": 25,
     "ns2:SpeedManagement": 10,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 6,
