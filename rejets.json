@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-11-05T16:43:36.375372+00:00",
-  "accepted": 12,
+  "generated_at": "2026-11-05T22:19:33.351845+00:00",
+  "accepted": 13,
   "management_published_records": {
     "contraflow": 1,
     "lane": 3
   },
   "management_published_situations": 2,
   "rejected_by_reason": {
-    "unrecognized_category": 341,
-    "inactive_or_outside_validity": 94,
-    "outside_department": 235
+    "unrecognized_category": 342,
+    "inactive_or_outside_validity": 67,
+    "outside_department": 252
   },
   "unrecognized_types": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 178,
-    "ns2:ReroutingManagement": 66,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 179,
+    "ns2:ReroutingManagement": 61,
+    "ns2:GeneralNetworkManagement": 40,
     "ns2:SpeedManagement": 36,
-    "ns2:GeneralNetworkManagement": 33,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 18,
-    "ns2:WeatherRelatedRoadConditions": 5,
-    "ns2:DisturbanceActivity": 3,
+    "ns2:WeatherRelatedRoadConditions": 6,
     "ns2:RoadsideServiceDisruption": 2
   },
   "inactive_statuses": {
-    "definedByValidityTimeSpec": 88,
-    "suspended": 6
+    "definedByValidityTimeSpec": 64,
+    "suspended": 3
   },
   "unknown_types_in_lorraine": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 5
+    "ns2:RoadOrCarriagewayOrLaneManagement": 6,
+    "ns2:GeneralNetworkManagement": 3
   },
   "unknown_types_in_lorraine_examples": {
     "ns2:RoadOrCarriagewayOrLaneManagement": [
@@ -105,18 +105,65 @@
           "situé 187 m au sud de Pont-à-Mousson"
         ]
       }
+    ],
+    "ns2:GeneralNetworkManagement": [
+      {
+        "situation_id": "261105-002615",
+        "record_id": "261105-002615-103",
+        "department": "57",
+        "road": "",
+        "town": "",
+        "coordinates": [
+          6.16743,
+          49.29269
+        ],
+        "details": [
+          "La mesure est obligatoire",
+          "situé 67 m à l'ouest de Uckange"
+        ]
+      },
+      {
+        "situation_id": "261105-002615",
+        "record_id": "261105-002615-104",
+        "department": "57",
+        "road": "",
+        "town": "",
+        "coordinates": [
+          6.125069,
+          49.305706
+        ],
+        "details": [
+          "La mesure est obligatoire",
+          "situé 3064 m à l'ouest de Uckange"
+        ]
+      },
+      {
+        "situation_id": "261105-002683",
+        "record_id": "261105-002683-102",
+        "department": "54",
+        "road": "",
+        "town": "",
+        "coordinates": [
+          6.181605,
+          48.650375
+        ],
+        "details": [
+          "La mesure est obligatoire",
+          "situé 192 m au sud de Heillecourt - Vandœuvre"
+        ]
+      }
     ]
   },
   "unknown_types_inactive": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 62,
-    "ns2:ReroutingManagement": 30,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 42,
+    "ns2:ReroutingManagement": 25,
     "ns2:SpeedManagement": 10,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 6,
     "ns2:GeneralNetworkManagement": 3,
     "ns2:WeatherRelatedRoadConditions": 1
   },
   "unknown_types_location_rejections": {
-    "outside_department": 224
+    "outside_department": 246
   },
   "precise_department_boundaries": true,
   "boundary_file": "lorraine_departements.geojson"
