@@ -1,32 +1,31 @@
 {
-  "generated_at": "2026-11-06T02:34:12.850876+00:00",
-  "accepted": 11,
+  "generated_at": "2026-11-06T09:48:08.540647+00:00",
+  "accepted": 18,
   "management_published_records": {
     "contraflow": 1,
     "lane": 3
   },
   "management_published_situations": 2,
   "rejected_by_reason": {
-    "unrecognized_category": 327,
-    "inactive_or_outside_validity": 66,
-    "outside_department": 203
+    "unrecognized_category": 301,
+    "inactive_or_outside_validity": 73,
+    "outside_department": 213
   },
   "unrecognized_types": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 166,
-    "ns2:ReroutingManagement": 62,
-    "ns2:GeneralNetworkManagement": 37,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 155,
+    "ns2:ReroutingManagement": 55,
     "ns2:SpeedManagement": 36,
+    "ns2:GeneralNetworkManagement": 30,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 18,
-    "ns2:WeatherRelatedRoadConditions": 6,
+    "ns2:WeatherRelatedRoadConditions": 5,
     "ns2:RoadsideServiceDisruption": 2
   },
   "inactive_statuses": {
-    "definedByValidityTimeSpec": 64,
-    "suspended": 2
+    "definedByValidityTimeSpec": 72,
+    "suspended": 1
   },
   "unknown_types_in_lorraine": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 6,
-    "ns2:GeneralNetworkManagement": 2
+    "ns2:RoadOrCarriagewayOrLaneManagement": 5
   },
   "unknown_types_in_lorraine_examples": {
     "ns2:RoadOrCarriagewayOrLaneManagement": [
@@ -105,50 +104,18 @@
           "situé 187 m au sud de Pont-à-Mousson"
         ]
       }
-    ],
-    "ns2:GeneralNetworkManagement": [
-      {
-        "situation_id": "261105-002615",
-        "record_id": "261105-002615-103",
-        "department": "57",
-        "road": "",
-        "town": "",
-        "coordinates": [
-          6.16743,
-          49.29269
-        ],
-        "details": [
-          "La mesure est obligatoire",
-          "situé 67 m à l'ouest de Uckange"
-        ]
-      },
-      {
-        "situation_id": "261105-002615",
-        "record_id": "261105-002615-104",
-        "department": "57",
-        "road": "",
-        "town": "",
-        "coordinates": [
-          6.125069,
-          49.305706
-        ],
-        "details": [
-          "La mesure est obligatoire",
-          "situé 3064 m à l'ouest de Uckange"
-        ]
-      }
     ]
   },
   "unknown_types_inactive": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 40,
-    "ns2:ReroutingManagement": 25,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 46,
+    "ns2:ReroutingManagement": 28,
     "ns2:SpeedManagement": 10,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 6,
-    "ns2:GeneralNetworkManagement": 3,
-    "ns2:WeatherRelatedRoadConditions": 1
+    "ns2:WeatherRelatedRoadConditions": 1,
+    "ns2:GeneralNetworkManagement": 1
   },
   "unknown_types_location_rejections": {
-    "outside_department": 234
+    "outside_department": 204
   },
   "precise_department_boundaries": true,
   "boundary_file": "lorraine_departements.geojson"
