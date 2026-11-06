@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-11-05T22:19:33.351845+00:00",
-  "accepted": 13,
+  "generated_at": "2026-11-06T02:34:12.850876+00:00",
+  "accepted": 11,
   "management_published_records": {
     "contraflow": 1,
     "lane": 3
   },
   "management_published_situations": 2,
   "rejected_by_reason": {
-    "unrecognized_category": 342,
-    "inactive_or_outside_validity": 67,
-    "outside_department": 252
+    "unrecognized_category": 327,
+    "inactive_or_outside_validity": 66,
+    "outside_department": 203
   },
   "unrecognized_types": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 179,
-    "ns2:ReroutingManagement": 61,
-    "ns2:GeneralNetworkManagement": 40,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 166,
+    "ns2:ReroutingManagement": 62,
+    "ns2:GeneralNetworkManagement": 37,
     "ns2:SpeedManagement": 36,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 18,
     "ns2:WeatherRelatedRoadConditions": 6,
@@ -22,11 +22,11 @@
   },
   "inactive_statuses": {
     "definedByValidityTimeSpec": 64,
-    "suspended": 3
+    "suspended": 2
   },
   "unknown_types_in_lorraine": {
     "ns2:RoadOrCarriagewayOrLaneManagement": 6,
-    "ns2:GeneralNetworkManagement": 3
+    "ns2:GeneralNetworkManagement": 2
   },
   "unknown_types_in_lorraine_examples": {
     "ns2:RoadOrCarriagewayOrLaneManagement": [
@@ -136,26 +136,11 @@
           "La mesure est obligatoire",
           "situé 3064 m à l'ouest de Uckange"
         ]
-      },
-      {
-        "situation_id": "261105-002683",
-        "record_id": "261105-002683-102",
-        "department": "54",
-        "road": "",
-        "town": "",
-        "coordinates": [
-          6.181605,
-          48.650375
-        ],
-        "details": [
-          "La mesure est obligatoire",
-          "situé 192 m au sud de Heillecourt - Vandœuvre"
-        ]
       }
     ]
   },
   "unknown_types_inactive": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 42,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 40,
     "ns2:ReroutingManagement": 25,
     "ns2:SpeedManagement": 10,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 6,
@@ -163,7 +148,7 @@
     "ns2:WeatherRelatedRoadConditions": 1
   },
   "unknown_types_location_rejections": {
-    "outside_department": 246
+    "outside_department": 234
   },
   "precise_department_boundaries": true,
   "boundary_file": "lorraine_departements.geojson"
