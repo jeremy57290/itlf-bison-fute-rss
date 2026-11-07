@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-11-06T21:56:13.028033+00:00",
-  "accepted": 9,
+  "generated_at": "2026-11-07T01:33:45.888318+00:00",
+  "accepted": 6,
   "management_published_records": {
     "contraflow": 1,
     "lane": 3
   },
   "management_published_situations": 2,
   "rejected_by_reason": {
-    "unrecognized_category": 281,
+    "unrecognized_category": 275,
     "inactive_or_outside_validity": 88,
-    "outside_department": 146
+    "outside_department": 107
   },
   "unrecognized_types": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 132,
-    "ns2:ReroutingManagement": 61,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 129,
+    "ns2:ReroutingManagement": 58,
     "ns2:SpeedManagement": 35,
     "ns2:GeneralNetworkManagement": 28,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 17,
@@ -108,15 +108,15 @@
     ]
   },
   "unknown_types_inactive": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 58,
-    "ns2:ReroutingManagement": 41,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 57,
+    "ns2:ReroutingManagement": 40,
     "ns2:SpeedManagement": 10,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 6,
     "ns2:GeneralNetworkManagement": 3,
     "ns2:WeatherRelatedRoadConditions": 1
   },
   "unknown_types_location_rejections": {
-    "outside_department": 157
+    "outside_department": 153
   },
   "precise_department_boundaries": true,
   "boundary_file": "lorraine_departements.geojson"
