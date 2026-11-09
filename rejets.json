@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-11-09T09:42:25.413274+00:00",
-  "accepted": 15,
+  "generated_at": "2026-11-09T20:07:57.758859+00:00",
+  "accepted": 9,
   "management_published_records": {
     "contraflow": 1,
     "lane": 3
   },
   "management_published_situations": 2,
   "rejected_by_reason": {
-    "unrecognized_category": 312,
-    "inactive_or_outside_validity": 73,
-    "outside_department": 234
+    "unrecognized_category": 282,
+    "inactive_or_outside_validity": 66,
+    "outside_department": 175
   },
   "unrecognized_types": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 159,
-    "ns2:ReroutingManagement": 61,
-    "ns2:SpeedManagement": 35,
-    "ns2:GeneralNetworkManagement": 33,
-    "ns2:GeneralInstructionOrMessageToRoadUsers": 18,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 138,
+    "ns2:ReroutingManagement": 56,
+    "ns2:SpeedManagement": 36,
+    "ns2:GeneralNetworkManagement": 27,
+    "ns2:GeneralInstructionOrMessageToRoadUsers": 19,
     "ns2:WeatherRelatedRoadConditions": 5,
     "ns2:RoadsideServiceDisruption": 1
   },
   "inactive_statuses": {
-    "definedByValidityTimeSpec": 72,
+    "definedByValidityTimeSpec": 65,
     "suspended": 1
   },
   "unknown_types_in_lorraine": {
     "ns2:RoadOrCarriagewayOrLaneManagement": 5,
-    "ns2:GeneralNetworkManagement": 1
+    "ns2:GeneralNetworkManagement": 2
   },
   "unknown_types_in_lorraine_examples": {
     "ns2:RoadOrCarriagewayOrLaneManagement": [
@@ -108,32 +108,47 @@
     ],
     "ns2:GeneralNetworkManagement": [
       {
-        "situation_id": "261109-000903",
-        "record_id": "261109-000903-102",
-        "department": "57",
+        "situation_id": "261109-001326",
+        "record_id": "261109-001326-1",
+        "department": "54",
         "road": "",
         "town": "",
         "coordinates": [
-          5.9817734,
-          49.360847
+          5.8375645,
+          49.470318
         ],
         "details": [
           "La mesure est obligatoire",
-          "situé 241 m à l'ouest de Fontoy"
+          "situé 240 m au sud de Villers-la-Montagne"
+        ]
+      },
+      {
+        "situation_id": "261109-001326",
+        "record_id": "261109-001326-102",
+        "department": "54",
+        "road": "",
+        "town": "",
+        "coordinates": [
+          5.8338876,
+          49.473797
+        ],
+        "details": [
+          "La mesure est obligatoire",
+          "situé 248 m au nord de Villers-la-Montagne"
         ]
       }
     ]
   },
   "unknown_types_inactive": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 55,
-    "ns2:ReroutingManagement": 35,
-    "ns2:SpeedManagement": 10,
-    "ns2:GeneralInstructionOrMessageToRoadUsers": 7,
-    "ns2:GeneralNetworkManagement": 3,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 41,
+    "ns2:ReroutingManagement": 27,
+    "ns2:SpeedManagement": 9,
+    "ns2:GeneralInstructionOrMessageToRoadUsers": 6,
+    "ns2:GeneralNetworkManagement": 2,
     "ns2:WeatherRelatedRoadConditions": 1
   },
   "unknown_types_location_rejections": {
-    "outside_department": 195
+    "outside_department": 189
   },
   "precise_department_boundaries": true,
   "boundary_file": "lorraine_departements.geojson"
