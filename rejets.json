@@ -1,48 +1,62 @@
 {
-  "generated_at": "2026-11-10T10:26:21.538210+00:00",
-  "accepted": 13,
+  "generated_at": "2026-11-10T18:03:48.781700+00:00",
+  "accepted": 11,
   "management_published_records": {
-    "contraflow": 1,
     "lane": 3
   },
   "management_published_situations": 2,
   "rejected_by_reason": {
-    "unrecognized_category": 283,
-    "inactive_or_outside_validity": 50,
-    "outside_department": 208
+    "unrecognized_category": 259,
+    "inactive_or_outside_validity": 61,
+    "outside_department": 217
   },
   "unrecognized_types": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 137,
-    "ns2:ReroutingManagement": 58,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 124,
+    "ns2:ReroutingManagement": 49,
     "ns2:SpeedManagement": 35,
-    "ns2:GeneralNetworkManagement": 30,
+    "ns2:GeneralNetworkManagement": 28,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 17,
     "ns2:WeatherRelatedRoadConditions": 5,
     "ns2:RoadsideServiceDisruption": 1
   },
   "inactive_statuses": {
-    "definedByValidityTimeSpec": 48,
+    "definedByValidityTimeSpec": 59,
     "suspended": 2
   },
   "unknown_types_in_lorraine": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 5,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 4,
     "ns2:GeneralNetworkManagement": 2
   },
   "unknown_types_in_lorraine_examples": {
     "ns2:RoadOrCarriagewayOrLaneManagement": [
       {
-        "situation_id": "260902-001596",
-        "record_id": "260902-001596-104",
+        "situation_id": "261013-000532",
+        "record_id": "261013-000532-1",
         "department": "54",
-        "road": "N59",
+        "road": "A33",
         "town": "",
         "coordinates": [
-          6.772255,
-          48.437614
+          6.318854,
+          48.617054
         ],
         "details": [
           "La mesure est obligatoire",
-          "début : situé 2767 m à l'ouest de Raon-l'Étape, fin : situé 303 m à l'est de Baccarat Bertrichamps"
+          "début : situé 1679 m à l'ouest de Rosières-au-Salines, fin : situé 3286 m à l'est de Saint-Nicolas-de-Port"
+        ]
+      },
+      {
+        "situation_id": "261013-001086",
+        "record_id": "261013-001086-1",
+        "department": "54",
+        "road": "",
+        "town": "",
+        "coordinates": [
+          6.096598,
+          48.880287
+        ],
+        "details": [
+          "La mesure est obligatoire",
+          "situé 187 m au sud de Pont-à-Mousson"
         ]
       },
       {
@@ -73,36 +87,6 @@
         "details": [
           "La mesure est obligatoire",
           "début : situé 467 m à l'ouest de Raon-l'Étape, fin : situé 303 m à l'est de Baccarat Bertrichamps"
-        ]
-      },
-      {
-        "situation_id": "261013-000532",
-        "record_id": "261013-000532-1",
-        "department": "54",
-        "road": "A33",
-        "town": "",
-        "coordinates": [
-          6.318854,
-          48.617054
-        ],
-        "details": [
-          "La mesure est obligatoire",
-          "début : situé 1679 m à l'ouest de Rosières-au-Salines, fin : situé 3286 m à l'est de Saint-Nicolas-de-Port"
-        ]
-      },
-      {
-        "situation_id": "261013-001086",
-        "record_id": "261013-001086-1",
-        "department": "54",
-        "road": "",
-        "town": "",
-        "coordinates": [
-          6.096598,
-          48.880287
-        ],
-        "details": [
-          "La mesure est obligatoire",
-          "situé 187 m au sud de Pont-à-Mousson"
         ]
       }
     ],
@@ -140,15 +124,15 @@
     ]
   },
   "unknown_types_inactive": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 32,
-    "ns2:ReroutingManagement": 26,
-    "ns2:SpeedManagement": 9,
-    "ns2:GeneralInstructionOrMessageToRoadUsers": 5,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 42,
+    "ns2:ReroutingManagement": 28,
+    "ns2:SpeedManagement": 15,
+    "ns2:GeneralInstructionOrMessageToRoadUsers": 6,
     "ns2:GeneralNetworkManagement": 2,
     "ns2:WeatherRelatedRoadConditions": 1
   },
   "unknown_types_location_rejections": {
-    "outside_department": 201
+    "outside_department": 159
   },
   "precise_department_boundaries": true,
   "boundary_file": "lorraine_departements.geojson"
