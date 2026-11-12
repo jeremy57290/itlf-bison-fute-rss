@@ -1,31 +1,32 @@
 {
-  "generated_at": "2026-11-12T04:12:14.034915+00:00",
-  "accepted": 7,
+  "generated_at": "2026-11-12T12:41:54.441582+00:00",
+  "accepted": 16,
   "management_published_records": {
     "lane": 3
   },
   "management_published_situations": 2,
   "rejected_by_reason": {
-    "unrecognized_category": 248,
-    "inactive_or_outside_validity": 60,
-    "outside_department": 121
+    "unrecognized_category": 303,
+    "inactive_or_outside_validity": 87,
+    "outside_department": 240
   },
   "unrecognized_types": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 116,
-    "ns2:ReroutingManagement": 46,
-    "ns2:SpeedManagement": 36,
-    "ns2:GeneralNetworkManagement": 26,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 166,
+    "ns2:ReroutingManagement": 51,
+    "ns2:SpeedManagement": 32,
+    "ns2:GeneralNetworkManagement": 29,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 18,
     "ns2:WeatherRelatedRoadConditions": 5,
-    "ns2:RoadsideServiceDisruption": 1
+    "ns2:RoadsideServiceDisruption": 1,
+    "ns2:NonWeatherRelatedRoadConditions": 1
   },
   "inactive_statuses": {
-    "definedByValidityTimeSpec": 58,
+    "definedByValidityTimeSpec": 85,
     "suspended": 2
   },
   "unknown_types_in_lorraine": {
     "ns2:RoadOrCarriagewayOrLaneManagement": 4,
-    "ns2:GeneralNetworkManagement": 2
+    "ns2:GeneralNetworkManagement": 3
   },
   "unknown_types_in_lorraine_examples": {
     "ns2:RoadOrCarriagewayOrLaneManagement": [
@@ -120,19 +121,34 @@
           "La mesure est obligatoire",
           "situé 248 m au nord de Villers-la-Montagne"
         ]
+      },
+      {
+        "situation_id": "261112-000494",
+        "record_id": "261112-000494-1",
+        "department": "54",
+        "road": "",
+        "town": "",
+        "coordinates": [
+          6.096598,
+          48.880287
+        ],
+        "details": [
+          "Sur 1,2 km au début de la bretelle. Fermeture pour réparation dégradation de chaussée. La mesure est obligatoire",
+          "situé 187 m au sud de Pont-à-Mousson"
+        ]
       }
     ]
   },
   "unknown_types_inactive": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 43,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 51,
     "ns2:ReroutingManagement": 30,
-    "ns2:SpeedManagement": 16,
+    "ns2:SpeedManagement": 12,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 7,
     "ns2:GeneralNetworkManagement": 2,
     "ns2:WeatherRelatedRoadConditions": 1
   },
   "unknown_types_location_rejections": {
-    "outside_department": 143
+    "outside_department": 193
   },
   "precise_department_boundaries": true,
   "boundary_file": "lorraine_departements.geojson"
