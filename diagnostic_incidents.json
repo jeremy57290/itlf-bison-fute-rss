@@ -1,14 +1,13 @@
 {
-  "generated_at": "2026-11-12T12:41:54.440345+00:00",
+  "generated_at": "2026-11-12T20:27:24.556257+00:00",
   "counts": {
     "accident": {
-      "total_in_source": 11,
-      "outside_lorraine_or_unlocated": 10,
-      "active_in_lorraine": 1
+      "total_in_source": 4,
+      "outside_lorraine_or_unlocated": 4
     },
     "obstacle": {
-      "total_in_source": 54,
-      "outside_lorraine_or_unlocated": 51,
+      "total_in_source": 46,
+      "outside_lorraine_or_unlocated": 43,
       "inactive_or_outside_validity": 2,
       "active_in_lorraine": 1
     }
@@ -16,8 +15,8 @@
   "records": {
     "accident": [
       {
-        "situation_id": "261112-000710",
-        "record_id": "261112-000710-102",
+        "situation_id": "261112-002538",
+        "record_id": "261112-002538-1",
         "record_type": "ns2:Accident",
         "category": "accident",
         "active": true,
@@ -30,8 +29,8 @@
         "coordinates": null,
         "subtypes": [
           {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
+            "field": "originalNumberOfLanes",
+            "value": "2"
           },
           {
             "field": "accidentType",
@@ -39,14 +38,14 @@
           }
         ],
         "details": [
-          "sur bretelle d'entrée",
-          "onConnector",
-          "Aubiet"
+          "situé 476 m au sud de Mitry-Mory est",
+          "Mitry-Mory",
+          "A104"
         ]
       },
       {
-        "situation_id": "261112-000710",
-        "record_id": "261112-000710-1",
+        "situation_id": "261112-002557",
+        "record_id": "261112-002557-1",
         "record_type": "ns2:Accident",
         "category": "accident",
         "active": true,
@@ -72,13 +71,13 @@
           }
         ],
         "details": [
-          "Aubiet",
-          "N124"
+          "Épannes",
+          "N11"
         ]
       },
       {
-        "situation_id": "261112-001172",
-        "record_id": "261112-001172-1",
+        "situation_id": "261112-002572",
+        "record_id": "261112-002572-1",
         "record_type": "ns2:Accident",
         "category": "accident",
         "active": true,
@@ -92,7 +91,7 @@
         "subtypes": [
           {
             "field": "originalNumberOfLanes",
-            "value": "2"
+            "value": "3"
           },
           {
             "field": "accidentType",
@@ -101,78 +100,13 @@
         ],
         "details": [
           "Sur 0 m",
-          "situé 500 m à l'ouest de 22892",
-          "Osny"
+          "situé 0 m au nord de A6 / A10 / A6A / A6B",
+          "Wissous"
         ]
       },
       {
-        "situation_id": "261112-001202",
-        "record_id": "261112-001202-1",
-        "record_type": "ns2:Accident",
-        "category": "accident",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "originalNumberOfLanes",
-            "value": "2"
-          },
-          {
-            "field": "accidentType",
-            "value": "accident"
-          }
-        ],
-        "details": [
-          "Sur 0 m",
-          "situé 48 m au sud de Garonor",
-          "Aulnay-sous-Bois"
-        ]
-      },
-      {
-        "situation_id": "261112-001229",
-        "record_id": "261112-001229-1",
-        "record_type": "ns2:Accident",
-        "category": "accident",
-        "active": true,
-        "in_lorraine": true,
-        "exclusion_reason": null,
-        "validity_status": "definedByValidityTimeSpec",
-        "department": "55",
-        "road": "N135",
-        "town": "Velaines",
-        "coordinates": [
-          5.299132,
-          48.703518
-        ],
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "1"
-          },
-          {
-            "field": "accidentType",
-            "value": "accident"
-          }
-        ],
-        "details": [
-          "situé 1637 m à l'ouest de Ligny-en-Barrois",
-          "Velaines",
-          "N135"
-        ]
-      },
-      {
-        "situation_id": "261112-001339",
-        "record_id": "261112-001339-1",
+        "situation_id": "261112-002571",
+        "record_id": "261112-002571-1",
         "record_type": "ns2:Accident",
         "category": "accident",
         "active": true,
@@ -198,165 +132,9 @@
           }
         ],
         "details": [
-          "situé 2831 m au nord de Ners",
-          "Vézénobres",
-          "N106"
-        ]
-      },
-      {
-        "situation_id": "261112-001380",
-        "record_id": "261112-001380-1",
-        "record_type": "ns2:Accident",
-        "category": "accident",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "accidentType",
-            "value": "accident"
-          }
-        ],
-        "details": [
-          "Notre-Dame-de-Commiers",
-          "D529"
-        ]
-      },
-      {
-        "situation_id": "261112-001416",
-        "record_id": "261112-001416-1",
-        "record_type": "ns2:Accident",
-        "category": "accident",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "1"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "2"
-          },
-          {
-            "field": "accidentType",
-            "value": "accident"
-          }
-        ],
-        "details": [
-          "situé 2498 m au nord de Le Chambon-Feugerolles centre",
-          "La Ricamarie",
-          "N88"
-        ]
-      },
-      {
-        "situation_id": "261112-001449",
-        "record_id": "261112-001449-1",
-        "record_type": "ns2:Accident",
-        "category": "accident",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "4"
-          },
-          {
-            "field": "accidentType",
-            "value": "accident"
-          }
-        ],
-        "details": [
-          "CIGT Lille",
-          "début : situé 448 m au sud de Les-Quatre-Cantons, fin : situé 472 m au nord de Courbe-de-Babylone",
-          "Lesquin"
-        ]
-      },
-      {
-        "situation_id": "261112-001354",
-        "record_id": "261112-001354-1",
-        "record_type": "ns2:Accident",
-        "category": "accident",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "2"
-          },
-          {
-            "field": "accidentType",
-            "value": "accident"
-          }
-        ],
-        "details": [
-          "situé 680 m au nord de Porte du Dauphiné",
-          "Genas",
-          "N346"
-        ]
-      },
-      {
-        "situation_id": "261112-001498",
-        "record_id": "261112-001498-1",
-        "record_type": "ns2:Accident",
-        "category": "accident",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "originalNumberOfLanes",
-            "value": "2"
-          },
-          {
-            "field": "accidentType",
-            "value": "accident"
-          }
-        ],
-        "details": [
-          "Prudence.",
-          "situé 0 m au nord de Besançon (Echangeur des Boulev",
-          "Beure"
+          "situé 2686 m à l'ouest de Missillac - Le Chêne Vert",
+          "Missillac",
+          "N165"
         ]
       }
     ],
@@ -739,64 +517,6 @@
         ]
       },
       {
-        "situation_id": "261110-000169",
-        "record_id": "261110-000169-1",
-        "record_type": "ns2:InfrastructureDamageObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "originalNumberOfLanes",
-            "value": "2"
-          }
-        ],
-        "details": [
-          "Sur 0 m Trou et fissure dans la chaussée",
-          "situé 3406 m au nord de Le Perray-en-Yvelines Sud",
-          "DIR Île-de-France"
-        ]
-      },
-      {
-        "situation_id": "261112-000030",
-        "record_id": "261112-000030-1",
-        "record_type": "ns2:GeneralObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "mobilityType",
-            "value": "stationary"
-          },
-          {
-            "field": "obstructionType",
-            "value": "obstructionOnTheRoad"
-          }
-        ],
-        "details": [
-          "Nombreuses pierres sur la chaussée",
-          "DIR Centre-Est",
-          "Nances"
-        ]
-      },
-      {
         "situation_id": "261112-000398",
         "record_id": "261112-000398-1",
         "record_type": "ns2:VehicleObstruction",
@@ -982,470 +702,8 @@
         ]
       },
       {
-        "situation_id": "261112-000997",
-        "record_id": "261112-000997-1",
-        "record_type": "ns2:VehicleObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "originalNumberOfLanes",
-            "value": "3"
-          },
-          {
-            "field": "vehicleObstructionType",
-            "value": "brokenDownVehicle"
-          }
-        ],
-        "details": [
-          "Sur 0 m",
-          "situé 2545 m à l'ouest de A86 / A14",
-          "DIR Île-de-France"
-        ]
-      },
-      {
-        "situation_id": "261112-001117",
-        "record_id": "261112-001117-1",
-        "record_type": "ns2:VehicleObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "originalNumberOfLanes",
-            "value": "3"
-          },
-          {
-            "field": "vehicleObstructionType",
-            "value": "brokenDownVehicle"
-          }
-        ],
-        "details": [
-          "Sur 0 m",
-          "situé 1634 m à l'ouest de Choisy-le-Roi",
-          "DIR Île-de-France"
-        ]
-      },
-      {
-        "situation_id": "261112-001137",
-        "record_id": "261112-001137-1",
-        "record_type": "ns2:VehicleObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "2"
-          },
-          {
-            "field": "mobilityType",
-            "value": "stationary"
-          },
-          {
-            "field": "vehicleObstructionType",
-            "value": "brokenDownVehicle"
-          }
-        ],
-        "details": [
-          "Fourgon en panne dans le sens Albertville => Moûtiers avant l'échangeur N°31 de Conflans.",
-          "situé 390 m au nord de Conflans",
-          "DIR Centre-Est/District Chambéry-Grenoble/CEI Aigueblanche"
-        ]
-      },
-      {
-        "situation_id": "261112-001156",
-        "record_id": "261112-001156-1",
-        "record_type": "ns2:VehicleObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "originalNumberOfLanes",
-            "value": "4"
-          },
-          {
-            "field": "vehicleObstructionType",
-            "value": "brokenDownVehicle"
-          }
-        ],
-        "details": [
-          "Sur 0 m",
-          "situé 1570 m à l'ouest de Gennevilliers",
-          "DIR Île-de-France"
-        ]
-      },
-      {
-        "situation_id": "261112-001184",
-        "record_id": "261112-001184-1",
-        "record_type": "ns2:VehicleObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "2"
-          },
-          {
-            "field": "mobilityType",
-            "value": "stationary"
-          },
-          {
-            "field": "vehicleObstructionType",
-            "value": "brokenDownVehicle"
-          }
-        ],
-        "details": [
-          "situé 1133 m à l'ouest de Damigny",
-          "DIR Nord-Ouest/District Manche-Calvados/PE Caen/CEI Bayeux",
-          "Saint-Martin-des-Entrées"
-        ]
-      },
-      {
-        "situation_id": "261112-001235",
-        "record_id": "261112-001235-1",
-        "record_type": "ns2:VehicleObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "2"
-          },
-          {
-            "field": "mobilityType",
-            "value": "stationary"
-          },
-          {
-            "field": "vehicleObstructionType",
-            "value": "brokenDownVehicle"
-          }
-        ],
-        "details": [
-          "situé 1701 m au nord de Aire des Landes-de-Lanvaux",
-          "DIR Ouest/District de Vannes/CEI de Vannes",
-          "Saint-Guyomard"
-        ]
-      },
-      {
-        "situation_id": "261112-001261",
-        "record_id": "261112-001261-1",
-        "record_type": "ns2:VehicleObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "3"
-          },
-          {
-            "field": "mobilityType",
-            "value": "stationary"
-          },
-          {
-            "field": "vehicleObstructionType",
-            "value": "abandonedVehicle"
-          }
-        ],
-        "details": [
-          "situé 1265 m à l'ouest de Lanester",
-          "DIR Ouest/District de Vannes/CEI de Lorient",
-          "sur bretelle de sortie"
-        ]
-      },
-      {
-        "situation_id": "261112-001273",
-        "record_id": "261112-001273-1",
-        "record_type": "ns2:VehicleObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "2"
-          },
-          {
-            "field": "vehicleObstructionType",
-            "value": "brokenDownVehicle"
-          }
-        ],
-        "details": [
-          "situé 2484 m à l'est de Boussard",
-          "DIR Méditerranée/District Urbain/CEI Saint-Martin-de-Crau",
-          "Saint-Martin-de-Crau"
-        ]
-      },
-      {
-        "situation_id": "261112-001322",
-        "record_id": "261112-001322-1",
-        "record_type": "ns2:VehicleObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "2"
-          },
-          {
-            "field": "vehicleObstructionType",
-            "value": "brokenDownVehicle"
-          }
-        ],
-        "details": [
-          "situé 4653 m au sud de Alès",
-          "DIR Méditerranée/District Rhône Cévennes/CEI Boucoiran",
-          "Vézénobres"
-        ]
-      },
-      {
-        "situation_id": "261112-001362",
-        "record_id": "261112-001362-1",
-        "record_type": "ns2:VehicleObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "2"
-          },
-          {
-            "field": "mobilityType",
-            "value": "stationary"
-          },
-          {
-            "field": "vehicleObstructionType",
-            "value": "brokenDownVehicle"
-          }
-        ],
-        "details": [
-          "situé 5438 m au nord de Chevanceaux",
-          "DIR Atlantique/District d'Angoulême/CEI de Montlieu-la-Garde",
-          "Touvérac"
-        ]
-      },
-      {
-        "situation_id": "261112-001389",
-        "record_id": "261112-001389-1",
-        "record_type": "ns2:VehicleObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "2"
-          },
-          {
-            "field": "vehicleObstructionType",
-            "value": "brokenDownVehicle"
-          }
-        ],
-        "details": [
-          "situé 7347 m au sud de Alès",
-          "DIR Méditerranée/District Rhône Cévennes/CEI Boucoiran",
-          "Vézénobres"
-        ]
-      },
-      {
-        "situation_id": "261112-001401",
-        "record_id": "261112-001401-1",
-        "record_type": "ns2:VehicleObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "vehicleObstructionType",
-            "value": "brokenDownVehicle"
-          }
-        ],
-        "details": [
-          "CEI Guéret",
-          "situé 2544 m à l'est de Guéret est",
-          "DIR Centre-Ouest/District Guéret/CEI Guéret"
-        ]
-      },
-      {
-        "situation_id": "261112-001433",
-        "record_id": "261112-001433-1",
-        "record_type": "ns2:VehicleObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "2"
-          },
-          {
-            "field": "mobilityType",
-            "value": "stationary"
-          },
-          {
-            "field": "vehicleObstructionType",
-            "value": "brokenDownVehicle"
-          }
-        ],
-        "details": [
-          "situé 258 m à l'est de Saint-Servais",
-          "DIR Ouest/District de Brest/CEI de Saint-Thégonnec",
-          "Bodilis"
-        ]
-      },
-      {
-        "situation_id": "261112-001455",
-        "record_id": "261112-001455-1",
-        "record_type": "ns2:EnvironmentalObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "1"
-          }
-        ],
-        "details": [
-          "situé 3957 m à l'ouest de Les Scaffarels",
-          "DIR Méditerranée/District Alpes du Sud/CEI Saint-André",
-          "Annot"
-        ]
-      },
-      {
-        "situation_id": "261112-001467",
-        "record_id": "261112-001467-1",
+        "situation_id": "261112-000030",
+        "record_id": "261112-000030-1",
         "record_type": "ns2:GeneralObstruction",
         "category": "obstacle",
         "active": true,
@@ -1462,10 +720,6 @@
             "value": "0"
           },
           {
-            "field": "originalNumberOfLanes",
-            "value": "2"
-          },
-          {
             "field": "mobilityType",
             "value": "stationary"
           },
@@ -1475,285 +729,88 @@
           }
         ],
         "details": [
-          "CIGT Lille",
-          "début : situé 4466 m à l'ouest de Baisieux - Camphin-en-Pévèle, fin : situé 2928 m à l'est de Lille-Quatre-Cantons",
-          "DIR Nord/District Lille/CEI de Lille 4 Cantons"
-        ]
-      },
-      {
-        "situation_id": "261112-001470",
-        "record_id": "261112-001470-1",
-        "record_type": "ns2:VehicleObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "2"
-          },
-          {
-            "field": "vehicleObstructionType",
-            "value": "brokenDownVehicle"
-          }
-        ],
-        "details": [
-          "situé 402 m à l'ouest de Les Pennes-Mirabeau",
-          "DIR Méditerranée/District Urbain/CAM",
-          "Les Pennes-Mirabeau"
-        ]
-      },
-      {
-        "situation_id": "261112-001475",
-        "record_id": "261112-001475-1",
-        "record_type": "ns2:EnvironmentalObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "1"
-          }
-        ],
-        "details": [
-          "DIR Méditerranée/District Alpes du Sud/CEI Saint-Bonnet",
-          "Saint-Firmin",
-          "N85"
-        ]
-      },
-      {
-        "situation_id": "261112-001379",
-        "record_id": "261112-001379-1",
-        "record_type": "ns2:EnvironmentalObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "1"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "2"
-          }
-        ],
-        "details": [
-          "DIR Méditerranée/District Urbain/CAM",
-          "Septèmes-les-Vallons",
-          "A517"
-        ]
-      },
-      {
-        "situation_id": "261112-001478",
-        "record_id": "261112-001478-1",
-        "record_type": "ns2:VehicleObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "2"
-          },
-          {
-            "field": "mobilityType",
-            "value": "stationary"
-          },
-          {
-            "field": "vehicleObstructionType",
-            "value": "brokenDownVehicle"
-          }
-        ],
-        "details": [
-          "situé 338 m au nord de Bain-de-Bretagne",
-          "DIR Ouest/District de Rennes/CEI de Bain-de-Bretagne",
-          "Bain-de-Bretagne"
-        ]
-      },
-      {
-        "situation_id": "261112-001486",
-        "record_id": "261112-001486-1",
-        "record_type": "ns2:GeneralObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": true,
-        "exclusion_reason": null,
-        "validity_status": "definedByValidityTimeSpec",
-        "department": "57",
-        "road": "A31",
-        "town": "Moulins-lès-Metz",
-        "coordinates": [
-          6.105711,
-          49.08544
-        ],
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "2"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "3"
-          },
-          {
-            "field": "mobilityType",
-            "value": "stationary"
-          },
-          {
-            "field": "obstructionType",
-            "value": "obstructionOnTheRoad"
-          }
-        ],
-        "details": [
-          "situé 540 m au nord de Jouy",
-          "Moulins-lès-Metz",
-          "A31"
-        ]
-      },
-      {
-        "situation_id": "261112-001499",
-        "record_id": "261112-001499-1",
-        "record_type": "ns2:VehicleObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "2"
-          },
-          {
-            "field": "vehicleObstructionType",
-            "value": "brokenDownVehicle"
-          }
-        ],
-        "details": [
-          "situé 429 m au sud de Aéroport de Marignane",
-          "DIR Méditerranée/District Urbain/CAM",
-          "Vitrolles"
-        ]
-      },
-      {
-        "situation_id": "261112-001502",
-        "record_id": "261112-001502-1",
-        "record_type": "ns2:VehicleObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "2"
-          },
-          {
-            "field": "mobilityType",
-            "value": "stationary"
-          },
-          {
-            "field": "vehicleObstructionType",
-            "value": "brokenDownVehicle"
-          }
-        ],
-        "details": [
-          "situé 11012 m au sud de Ruffec sud",
-          "DIR Atlantique/District d'Angoulême/CEI de Mansle-Ruffec",
-          "Fontclaireau"
-        ]
-      },
-      {
-        "situation_id": "261112-001508",
-        "record_id": "261112-001508-1",
-        "record_type": "ns2:EnvironmentalObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "1"
-          },
-          {
-            "field": "mobilityType",
-            "value": "stationary"
-          }
-        ],
-        "details": [
+          "Nombreuses pierres sur la chaussée",
           "DIR Centre-Est",
-          "Vaulx-en-Velin",
-          "69A904220_1D"
+          "Nances"
         ]
       },
       {
-        "situation_id": "261112-001509",
-        "record_id": "261112-001509-1",
+        "situation_id": "261112-002164",
+        "record_id": "261112-002164-1",
+        "record_type": "ns2:VehicleObstruction",
+        "category": "obstacle",
+        "active": true,
+        "in_lorraine": false,
+        "exclusion_reason": "outside_department",
+        "validity_status": "definedByValidityTimeSpec",
+        "department": null,
+        "road": null,
+        "town": null,
+        "coordinates": null,
+        "subtypes": [
+          {
+            "field": "numberOfLanesRestricted",
+            "value": "0"
+          },
+          {
+            "field": "originalNumberOfLanes",
+            "value": "1"
+          },
+          {
+            "field": "mobilityType",
+            "value": "stationary"
+          },
+          {
+            "field": "vehicleObstructionType",
+            "value": "brokenDownVehicle"
+          }
+        ],
+        "details": [
+          "VL en panne direction Albertville.",
+          "DIR Centre-Est",
+          "Marthod"
+        ]
+      },
+      {
+        "situation_id": "261112-002252",
+        "record_id": "261112-002252-1",
+        "record_type": "ns2:GeneralObstruction",
+        "category": "obstacle",
+        "active": true,
+        "in_lorraine": false,
+        "exclusion_reason": "outside_department",
+        "validity_status": "definedByValidityTimeSpec",
+        "department": null,
+        "road": null,
+        "town": null,
+        "coordinates": null,
+        "subtypes": [
+          {
+            "field": "numberOfLanesRestricted",
+            "value": "0"
+          },
+          {
+            "field": "originalNumberOfLanes",
+            "value": "1"
+          },
+          {
+            "field": "mobilityType",
+            "value": "stationary"
+          },
+          {
+            "field": "obstructionType",
+            "value": "obstructionOnTheRoad"
+          }
+        ],
+        "details": [
+          "Arbre sur chaussée, sortie Venthon direction Beaufort.",
+          "DIR Centre-Est",
+          "Venthon"
+        ]
+      },
+      {
+        "situation_id": "261112-002242",
+        "record_id": "261112-002242-102",
         "record_type": "ns2:VehicleObstruction",
         "category": "obstacle",
         "active": true,
@@ -1783,43 +840,14 @@
           }
         ],
         "details": [
-          "situé 769 m au sud de Le Broc",
-          "DIR Massif-Central/District Nord/CEI Issoire",
-          "Le Broc"
+          "situé 8922 m à l'est de Kérandréo",
+          "DIR Ouest/District de Brest/CEI de Melgven",
+          "sur bretelle d'entrée"
         ]
       },
       {
-        "situation_id": "261112-001510",
-        "record_id": "261112-001510-1",
-        "record_type": "ns2:VehicleObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "originalNumberOfLanes",
-            "value": "2"
-          },
-          {
-            "field": "vehicleObstructionType",
-            "value": "brokenDownVehicle"
-          }
-        ],
-        "details": [
-          "Prudence.",
-          "situé 0 m au nord de Besançon (Echangeur des Boulev",
-          "Fontain"
-        ]
-      },
-      {
-        "situation_id": "261112-001511",
-        "record_id": "261112-001511-1",
+        "situation_id": "261112-002242",
+        "record_id": "261112-002242-1",
         "record_type": "ns2:VehicleObstruction",
         "category": "obstacle",
         "active": true,
@@ -1845,18 +873,47 @@
           },
           {
             "field": "vehicleObstructionType",
-            "value": "brokenDownVehicle"
+            "value": "vehicleStuck"
           }
         ],
         "details": [
-          "situé 6081 m au sud de Eslettes",
-          "DIR Nord-Ouest/District Rouen/PE Sud/CEI Rouen",
-          "Roumare"
+          "situé 696 m à l'est de Kervidanou",
+          "DIR Ouest/District de Brest/CEI de Melgven",
+          "Quimperlé"
         ]
       },
       {
-        "situation_id": "261112-001512",
-        "record_id": "261112-001512-1",
+        "situation_id": "261112-002063",
+        "record_id": "261112-002063-1",
+        "record_type": "ns2:EnvironmentalObstruction",
+        "category": "obstacle",
+        "active": true,
+        "in_lorraine": false,
+        "exclusion_reason": "outside_department",
+        "validity_status": "definedByValidityTimeSpec",
+        "department": null,
+        "road": null,
+        "town": null,
+        "coordinates": null,
+        "subtypes": [
+          {
+            "field": "numberOfLanesRestricted",
+            "value": "2"
+          },
+          {
+            "field": "originalNumberOfLanes",
+            "value": "2"
+          }
+        ],
+        "details": [
+          "début : situé 9624 m au sud de Saint-Hippolyte, fin : situé 8361 m au nord de La Fossette",
+          "DIR Méditerranée/District Urbain/CEI Saint-Martin-de-Crau",
+          "Arles"
+        ]
+      },
+      {
+        "situation_id": "261112-002345",
+        "record_id": "261112-002345-1",
         "record_type": "ns2:VehicleObstruction",
         "category": "obstacle",
         "active": true,
@@ -1874,7 +931,7 @@
           },
           {
             "field": "originalNumberOfLanes",
-            "value": "2"
+            "value": "3"
           },
           {
             "field": "mobilityType",
@@ -1886,14 +943,14 @@
           }
         ],
         "details": [
-          "situé 1253 m au nord de Jonction N138",
-          "DIR Nord-Ouest/District Rouen/PE Sud/CEI Rouen",
-          "Petit-Couronne"
+          "VL en panne secteur échangeur 15 (La Boisse) direction Aix les Bains.",
+          "situé 478 m à l'est de La Motte-Servolex",
+          "DIR Centre-Est/District Chambéry-Grenoble/CEI Chambéry"
         ]
       },
       {
-        "situation_id": "261112-001513",
-        "record_id": "261112-001513-1",
+        "situation_id": "261112-002378",
+        "record_id": "261112-002378-1",
         "record_type": "ns2:VehicleObstruction",
         "category": "obstacle",
         "active": true,
@@ -1907,7 +964,80 @@
         "subtypes": [
           {
             "field": "numberOfLanesRestricted",
+            "value": "1"
+          },
+          {
+            "field": "originalNumberOfLanes",
+            "value": "3"
+          },
+          {
+            "field": "mobilityType",
+            "value": "stationary"
+          },
+          {
+            "field": "vehicleObstructionType",
+            "value": "brokenDownVehicle"
+          }
+        ],
+        "details": [
+          "Vl en panne accidentée, sur voie de droite entre échangeurs 14 et 15 direction Grenoble.",
+          "situé 154 m à l'ouest de La Motte-Servolex",
+          "DIR Centre-Est/District Chambéry-Grenoble/CEI Chambéry"
+        ]
+      },
+      {
+        "situation_id": "261112-002352",
+        "record_id": "261112-002352-1",
+        "record_type": "ns2:EnvironmentalObstruction",
+        "category": "obstacle",
+        "active": true,
+        "in_lorraine": true,
+        "exclusion_reason": null,
+        "validity_status": "definedByValidityTimeSpec",
+        "department": "88",
+        "road": "N66",
+        "town": "DIR Est",
+        "coordinates": [
+          6.8532047,
+          47.88463
+        ],
+        "subtypes": [
+          {
+            "field": "numberOfLanesRestricted",
             "value": "0"
+          },
+          {
+            "field": "originalNumberOfLanes",
+            "value": "1"
+          },
+          {
+            "field": "mobilityType",
+            "value": "stationary"
+          }
+        ],
+        "details": [
+          "Incendie",
+          "situé 3179 m à l'ouest de Saint-Maurice-sur-Moselle",
+          "DIR Est"
+        ]
+      },
+      {
+        "situation_id": "261112-002545",
+        "record_id": "261112-002545-1",
+        "record_type": "ns2:VehicleObstruction",
+        "category": "obstacle",
+        "active": true,
+        "in_lorraine": false,
+        "exclusion_reason": "outside_department",
+        "validity_status": "definedByValidityTimeSpec",
+        "department": null,
+        "road": null,
+        "town": null,
+        "coordinates": null,
+        "subtypes": [
+          {
+            "field": "numberOfLanesRestricted",
+            "value": "1"
           },
           {
             "field": "originalNumberOfLanes",
@@ -1923,15 +1053,15 @@
           }
         ],
         "details": [
-          "situé 81 m au nord de Le Bosc",
-          "DIR Massif-Central/District Sud/CEI Clermont-L'Hérault",
-          "Le Bosc"
+          "situé 2789 m à l'ouest de Mouen",
+          "DIR Nord-Ouest/District Manche-Calvados/PE Caen/CEI Villers-Bocage",
+          "Mondrainville"
         ]
       },
       {
-        "situation_id": "261112-001514",
-        "record_id": "261112-001514-1",
-        "record_type": "ns2:VehicleObstruction",
+        "situation_id": "261112-002564",
+        "record_id": "261112-002564-1",
+        "record_type": "ns2:GeneralObstruction",
         "category": "obstacle",
         "active": true,
         "in_lorraine": false,
@@ -1955,20 +1085,53 @@
             "value": "stationary"
           },
           {
-            "field": "vehicleObstructionType",
-            "value": "brokenDownVehicle"
+            "field": "obstructionType",
+            "value": "obstructionOnTheRoad"
           }
         ],
         "details": [
-          "DIR Nord-Ouest/District Normandie-Centre/CEI Chartres",
-          "Allaines-Mervilliers",
-          "N254"
+          "Arbre en travers de la chaussée vers le carrefour de la Rd 18",
+          "DIR Centre-Est",
+          "Conjux"
         ]
       },
       {
-        "situation_id": "261112-001448",
-        "record_id": "261112-001448-1",
-        "record_type": "ns2:VehicleObstruction",
+        "situation_id": "261112-002571",
+        "record_id": "261112-002571-102",
+        "record_type": "ns2:AnimalPresenceObstruction",
+        "category": "obstacle",
+        "active": true,
+        "in_lorraine": false,
+        "exclusion_reason": "outside_department",
+        "validity_status": "definedByValidityTimeSpec",
+        "department": null,
+        "road": null,
+        "town": null,
+        "coordinates": null,
+        "subtypes": [
+          {
+            "field": "numberOfLanesRestricted",
+            "value": "1"
+          },
+          {
+            "field": "originalNumberOfLanes",
+            "value": "2"
+          },
+          {
+            "field": "mobilityType",
+            "value": "stationary"
+          }
+        ],
+        "details": [
+          "situé 2686 m à l'ouest de Missillac - Le Chêne Vert",
+          "DIR Ouest/District de Nantes/CEI de Savenay",
+          "Missillac"
+        ]
+      },
+      {
+        "situation_id": "261112-002590",
+        "record_id": "261112-002590-1",
+        "record_type": "ns2:GeneralObstruction",
         "category": "obstacle",
         "active": true,
         "in_lorraine": false,
@@ -1992,56 +1155,19 @@
             "value": "stationary"
           },
           {
-            "field": "vehicleObstructionType",
-            "value": "brokenDownVehicle"
+            "field": "obstructionType",
+            "value": "obstructionOnTheRoad"
           }
         ],
         "details": [
-          "situé 914 m à l'ouest de Connantre",
-          "Connantre",
-          "N4"
+          "Arbre sur la chaussée",
+          "DIR Centre-Est",
+          "Châteauneuf"
         ]
       },
       {
-        "situation_id": "261112-001515",
-        "record_id": "261112-001515-1",
-        "record_type": "ns2:VehicleObstruction",
-        "category": "obstacle",
-        "active": true,
-        "in_lorraine": false,
-        "exclusion_reason": "outside_department",
-        "validity_status": "definedByValidityTimeSpec",
-        "department": null,
-        "road": null,
-        "town": null,
-        "coordinates": null,
-        "subtypes": [
-          {
-            "field": "numberOfLanesRestricted",
-            "value": "0"
-          },
-          {
-            "field": "originalNumberOfLanes",
-            "value": "2"
-          },
-          {
-            "field": "mobilityType",
-            "value": "stationary"
-          },
-          {
-            "field": "vehicleObstructionType",
-            "value": "brokenDownVehicle"
-          }
-        ],
-        "details": [
-          "DIR Sud-Ouest",
-          "Baraqueville",
-          "N88"
-        ]
-      },
-      {
-        "situation_id": "261112-001521",
-        "record_id": "261112-001521-1",
+        "situation_id": "261112-002594",
+        "record_id": "261112-002594-1",
         "record_type": "ns2:VehicleObstruction",
         "category": "obstacle",
         "active": true,
@@ -2067,15 +1193,15 @@
           }
         ],
         "details": [
-          "situé 5059 m au nord de Verduron",
+          "situé 407 m à l'est de Marseille nord",
           "DIR Méditerranée/District Urbain/CAM",
-          "Les Pennes-Mirabeau"
+          "Septèmes-les-Vallons"
         ]
       },
       {
-        "situation_id": "261112-001482",
-        "record_id": "261112-001482-1",
-        "record_type": "ns2:VehicleObstruction",
+        "situation_id": "261112-002596",
+        "record_id": "261112-002596-1",
+        "record_type": "ns2:AnimalPresenceObstruction",
         "category": "obstacle",
         "active": true,
         "in_lorraine": false,
@@ -2097,6 +1223,76 @@
           {
             "field": "mobilityType",
             "value": "stationary"
+          }
+        ],
+        "details": [
+          "CIGT Lille",
+          "début : situé 6826 m au nord de Amiens Nord, fin : situé 3281 m au sud de Talmas",
+          "DIR Nord/District Amiens Valenciennes/CEI d'Amiens"
+        ]
+      },
+      {
+        "situation_id": "261112-002598",
+        "record_id": "261112-002598-1",
+        "record_type": "ns2:VehicleObstruction",
+        "category": "obstacle",
+        "active": true,
+        "in_lorraine": false,
+        "exclusion_reason": "outside_department",
+        "validity_status": "definedByValidityTimeSpec",
+        "department": null,
+        "road": null,
+        "town": null,
+        "coordinates": null,
+        "subtypes": [
+          {
+            "field": "numberOfLanesRestricted",
+            "value": "0"
+          },
+          {
+            "field": "originalNumberOfLanes",
+            "value": "2"
+          },
+          {
+            "field": "mobilityType",
+            "value": "stationary"
+          },
+          {
+            "field": "vehicleObstructionType",
+            "value": "vehicleStuck"
+          }
+        ],
+        "details": [
+          "CIGT Lille",
+          "début : situé 328 m au nord de Orchies, fin : situé 4783 m au sud de Aire de Genech",
+          "DIR Nord/District Lille/CEI de Lille 4 Cantons"
+        ]
+      },
+      {
+        "situation_id": "261112-002577",
+        "record_id": "261112-002577-1",
+        "record_type": "ns2:VehicleObstruction",
+        "category": "obstacle",
+        "active": true,
+        "in_lorraine": false,
+        "exclusion_reason": "outside_department",
+        "validity_status": "definedByValidityTimeSpec",
+        "department": null,
+        "road": null,
+        "town": null,
+        "coordinates": null,
+        "subtypes": [
+          {
+            "field": "numberOfLanesRestricted",
+            "value": "0"
+          },
+          {
+            "field": "originalNumberOfLanes",
+            "value": "2"
+          },
+          {
+            "field": "mobilityType",
+            "value": "stationary"
           },
           {
             "field": "vehicleObstructionType",
@@ -2104,14 +1300,43 @@
           }
         ],
         "details": [
-          "CIGT Lille",
-          "début : situé 3753 m à l'ouest de Montigny-en-Gohelle, fin : situé 372 m à l'est de Sallaumines",
-          "DIR Nord/District Amiens Valenciennes/CEI de Dourges"
+          "situé 2201 m au nord de Paulhan",
+          "DIR Massif-Central/District Sud/CEI Clermont-L'Hérault",
+          "Paulhan"
         ]
       },
       {
-        "situation_id": "261112-001524",
-        "record_id": "261112-001524-1",
+        "situation_id": "261112-002606",
+        "record_id": "261112-002606-1",
+        "record_type": "ns2:VehicleObstruction",
+        "category": "obstacle",
+        "active": true,
+        "in_lorraine": false,
+        "exclusion_reason": "outside_department",
+        "validity_status": "definedByValidityTimeSpec",
+        "department": null,
+        "road": null,
+        "town": null,
+        "coordinates": null,
+        "subtypes": [
+          {
+            "field": "mobilityType",
+            "value": "stationary"
+          },
+          {
+            "field": "vehicleObstructionType",
+            "value": "brokenDownVehicle"
+          }
+        ],
+        "details": [
+          "PC Saint-Paul-de-Jarrat",
+          "situé 28 m au nord de Saint-Béat",
+          "DIR Sud-Ouest/District Sud (Foix)/CEI Chaum"
+        ]
+      },
+      {
+        "situation_id": "261112-002607",
+        "record_id": "261112-002607-1",
         "record_type": "ns2:GeneralObstruction",
         "category": "obstacle",
         "active": true,
@@ -2129,7 +1354,11 @@
           },
           {
             "field": "originalNumberOfLanes",
-            "value": "1"
+            "value": "2"
+          },
+          {
+            "field": "mobilityType",
+            "value": "stationary"
           },
           {
             "field": "obstructionType",
@@ -2137,9 +1366,334 @@
           }
         ],
         "details": [
-          "situé 160 m au nord de Mas-de-Ponge",
-          "DIR Méditerranée/District Rhône Cévennes/CEI Boucoiran",
-          "Nîmes"
+          "situé 4781 m au nord de Pont-Farcy",
+          "DIR Nord-Ouest/District Manche-Calvados/PE Saint-Lô/CEI Fleury",
+          "Guilberville"
+        ]
+      },
+      {
+        "situation_id": "261112-002608",
+        "record_id": "261112-002608-1",
+        "record_type": "ns2:VehicleObstruction",
+        "category": "obstacle",
+        "active": true,
+        "in_lorraine": false,
+        "exclusion_reason": "outside_department",
+        "validity_status": "definedByValidityTimeSpec",
+        "department": null,
+        "road": null,
+        "town": null,
+        "coordinates": null,
+        "subtypes": [
+          {
+            "field": "numberOfLanesRestricted",
+            "value": "0"
+          },
+          {
+            "field": "originalNumberOfLanes",
+            "value": "2"
+          },
+          {
+            "field": "mobilityType",
+            "value": "stationary"
+          },
+          {
+            "field": "vehicleObstructionType",
+            "value": "brokenDownVehicle"
+          }
+        ],
+        "details": [
+          "situé 6100 m à l'est de Donges",
+          "DIR Ouest/District de Nantes/CEI de Savenay",
+          "Prinquiau"
+        ]
+      },
+      {
+        "situation_id": "261112-002612",
+        "record_id": "261112-002612-1",
+        "record_type": "ns2:GeneralObstruction",
+        "category": "obstacle",
+        "active": true,
+        "in_lorraine": false,
+        "exclusion_reason": "outside_department",
+        "validity_status": "definedByValidityTimeSpec",
+        "department": null,
+        "road": null,
+        "town": null,
+        "coordinates": null,
+        "subtypes": [
+          {
+            "field": "numberOfLanesRestricted",
+            "value": "0"
+          },
+          {
+            "field": "originalNumberOfLanes",
+            "value": "3"
+          },
+          {
+            "field": "mobilityType",
+            "value": "stationary"
+          },
+          {
+            "field": "obstructionType",
+            "value": "obstructionOnTheRoad"
+          }
+        ],
+        "details": [
+          "situé 63 m au sud de Les Minimes",
+          "DIR Sud-Ouest/District Centre (Toulouse)/CEI Toulouse",
+          "sur bretelle de sortie"
+        ]
+      },
+      {
+        "situation_id": "261112-002613",
+        "record_id": "261112-002613-1",
+        "record_type": "ns2:VehicleObstruction",
+        "category": "obstacle",
+        "active": true,
+        "in_lorraine": false,
+        "exclusion_reason": "outside_department",
+        "validity_status": "definedByValidityTimeSpec",
+        "department": null,
+        "road": null,
+        "town": null,
+        "coordinates": null,
+        "subtypes": [
+          {
+            "field": "numberOfLanesRestricted",
+            "value": "0"
+          },
+          {
+            "field": "originalNumberOfLanes",
+            "value": "2"
+          },
+          {
+            "field": "mobilityType",
+            "value": "stationary"
+          },
+          {
+            "field": "vehicleObstructionType",
+            "value": "brokenDownVehicle"
+          }
+        ],
+        "details": [
+          "situé 909 m au sud de Cestas",
+          "DIR Atlantique/District de Gironde/CEI de Mios",
+          "Cestas"
+        ]
+      },
+      {
+        "situation_id": "261112-002614",
+        "record_id": "261112-002614-1",
+        "record_type": "ns2:VehicleObstruction",
+        "category": "obstacle",
+        "active": true,
+        "in_lorraine": false,
+        "exclusion_reason": "outside_department",
+        "validity_status": "definedByValidityTimeSpec",
+        "department": null,
+        "road": null,
+        "town": null,
+        "coordinates": null,
+        "subtypes": [
+          {
+            "field": "numberOfLanesRestricted",
+            "value": "0"
+          },
+          {
+            "field": "originalNumberOfLanes",
+            "value": "2"
+          },
+          {
+            "field": "mobilityType",
+            "value": "stationary"
+          },
+          {
+            "field": "vehicleObstructionType",
+            "value": "brokenDownVehicle"
+          }
+        ],
+        "details": [
+          "situé 1143 m à l'est de Saint-Marcel-lès-Valence est",
+          "DIR Centre-Est/District Valence/CEI Alixan",
+          "Saint-Marcel-lès-Valence"
+        ]
+      },
+      {
+        "situation_id": "261112-002615",
+        "record_id": "261112-002615-1",
+        "record_type": "ns2:VehicleObstruction",
+        "category": "obstacle",
+        "active": true,
+        "in_lorraine": false,
+        "exclusion_reason": "outside_department",
+        "validity_status": "definedByValidityTimeSpec",
+        "department": null,
+        "road": null,
+        "town": null,
+        "coordinates": null,
+        "subtypes": [
+          {
+            "field": "numberOfLanesRestricted",
+            "value": "0"
+          },
+          {
+            "field": "originalNumberOfLanes",
+            "value": "4"
+          },
+          {
+            "field": "vehicleObstructionType",
+            "value": "brokenDownVehicle"
+          }
+        ],
+        "details": [
+          "situé 5016 m au nord de Verduron",
+          "DIR Méditerranée/District Urbain/CAM",
+          "Les Pennes-Mirabeau"
+        ]
+      },
+      {
+        "situation_id": "261112-002620",
+        "record_id": "261112-002620-1",
+        "record_type": "ns2:VehicleObstruction",
+        "category": "obstacle",
+        "active": true,
+        "in_lorraine": false,
+        "exclusion_reason": "outside_department",
+        "validity_status": "definedByValidityTimeSpec",
+        "department": null,
+        "road": null,
+        "town": null,
+        "coordinates": null,
+        "subtypes": [
+          {
+            "field": "numberOfLanesRestricted",
+            "value": "0"
+          },
+          {
+            "field": "originalNumberOfLanes",
+            "value": "4"
+          },
+          {
+            "field": "vehicleObstructionType",
+            "value": "brokenDownVehicle"
+          }
+        ],
+        "details": [
+          "situé 5016 m au nord de Verduron",
+          "DIR Méditerranée/District Urbain/CAM",
+          "Les Pennes-Mirabeau"
+        ]
+      },
+      {
+        "situation_id": "261112-002624",
+        "record_id": "261112-002624-1",
+        "record_type": "ns2:GeneralObstruction",
+        "category": "obstacle",
+        "active": true,
+        "in_lorraine": false,
+        "exclusion_reason": "outside_department",
+        "validity_status": "definedByValidityTimeSpec",
+        "department": null,
+        "road": null,
+        "town": null,
+        "coordinates": null,
+        "subtypes": [
+          {
+            "field": "numberOfLanesRestricted",
+            "value": "0"
+          },
+          {
+            "field": "originalNumberOfLanes",
+            "value": "2"
+          },
+          {
+            "field": "mobilityType",
+            "value": "stationary"
+          },
+          {
+            "field": "obstructionType",
+            "value": "obstructionOnTheRoad"
+          }
+        ],
+        "details": [
+          "situé 2295 m au sud de La Ricamarie",
+          "AURA_DIRCE/District Saint-Étienne (AURA)/CEI Varizelle (AURA)",
+          "sur bretelle de sortie"
+        ]
+      },
+      {
+        "situation_id": "261112-002630",
+        "record_id": "261112-002630-102",
+        "record_type": "ns2:GeneralObstruction",
+        "category": "obstacle",
+        "active": true,
+        "in_lorraine": false,
+        "exclusion_reason": "outside_department",
+        "validity_status": "definedByValidityTimeSpec",
+        "department": null,
+        "road": null,
+        "town": null,
+        "coordinates": null,
+        "subtypes": [
+          {
+            "field": "numberOfLanesRestricted",
+            "value": "0"
+          },
+          {
+            "field": "originalNumberOfLanes",
+            "value": "2"
+          },
+          {
+            "field": "mobilityType",
+            "value": "stationary"
+          },
+          {
+            "field": "obstructionType",
+            "value": "obstructionOnTheRoad"
+          }
+        ],
+        "details": [
+          "situé 2765 m à l'est de Porte de Retz",
+          "DIR Ouest/District de Nantes/CEI de Nantes",
+          "sur bretelle d'entrée"
+        ]
+      },
+      {
+        "situation_id": "261112-002630",
+        "record_id": "261112-002630-1",
+        "record_type": "ns2:VehicleObstruction",
+        "category": "obstacle",
+        "active": true,
+        "in_lorraine": false,
+        "exclusion_reason": "outside_department",
+        "validity_status": "definedByValidityTimeSpec",
+        "department": null,
+        "road": null,
+        "town": null,
+        "coordinates": null,
+        "subtypes": [
+          {
+            "field": "numberOfLanesRestricted",
+            "value": "0"
+          },
+          {
+            "field": "originalNumberOfLanes",
+            "value": "2"
+          },
+          {
+            "field": "mobilityType",
+            "value": "stationary"
+          },
+          {
+            "field": "vehicleObstructionType",
+            "value": "brokenDownVehicle"
+          }
+        ],
+        "details": [
+          "situé 2765 m à l'est de Porte de Retz",
+          "DIR Ouest/District de Nantes/CEI de Nantes",
+          "sur bretelle d'entrée"
         ]
       }
     ]

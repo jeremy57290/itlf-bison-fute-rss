@@ -1,31 +1,30 @@
 {
-  "generated_at": "2026-11-12T12:41:54.441582+00:00",
-  "accepted": 16,
+  "generated_at": "2026-11-12T20:27:24.557499+00:00",
+  "accepted": 13,
   "management_published_records": {
     "lane": 3
   },
   "management_published_situations": 2,
   "rejected_by_reason": {
-    "unrecognized_category": 303,
-    "inactive_or_outside_validity": 87,
-    "outside_department": 240
+    "unrecognized_category": 271,
+    "inactive_or_outside_validity": 85,
+    "outside_department": 181
   },
   "unrecognized_types": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 166,
-    "ns2:ReroutingManagement": 51,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 140,
+    "ns2:ReroutingManagement": 49,
     "ns2:SpeedManagement": 32,
-    "ns2:GeneralNetworkManagement": 29,
+    "ns2:GeneralNetworkManagement": 26,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 18,
     "ns2:WeatherRelatedRoadConditions": 5,
-    "ns2:RoadsideServiceDisruption": 1,
-    "ns2:NonWeatherRelatedRoadConditions": 1
+    "ns2:RoadsideServiceDisruption": 1
   },
   "inactive_statuses": {
-    "definedByValidityTimeSpec": 85,
-    "suspended": 2
+    "definedByValidityTimeSpec": 84,
+    "suspended": 1
   },
   "unknown_types_in_lorraine": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 4,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 5,
     "ns2:GeneralNetworkManagement": 3
   },
   "unknown_types_in_lorraine_examples": {
@@ -89,6 +88,21 @@
           "La mesure est obligatoire",
           "début : situé 467 m à l'ouest de Raon-l'Étape, fin : situé 303 m à l'est de Baccarat Bertrichamps"
         ]
+      },
+      {
+        "situation_id": "261112-002352",
+        "record_id": "261112-002352-102",
+        "department": "88",
+        "road": "N66",
+        "town": "",
+        "coordinates": [
+          6.8532047,
+          47.88463
+        ],
+        "details": [
+          "La mesure est obligatoire",
+          "situé 3179 m à l'ouest de Saint-Maurice-sur-Moselle"
+        ]
       }
     ],
     "ns2:GeneralNetworkManagement": [
@@ -123,32 +137,32 @@
         ]
       },
       {
-        "situation_id": "261112-000494",
-        "record_id": "261112-000494-1",
+        "situation_id": "261112-002519",
+        "record_id": "261112-002519-102",
         "department": "54",
         "road": "",
         "town": "",
         "coordinates": [
-          6.096598,
-          48.880287
+          5.8929567,
+          48.655914
         ],
         "details": [
-          "Sur 1,2 km au début de la bretelle. Fermeture pour réparation dégradation de chaussée. La mesure est obligatoire",
-          "situé 187 m au sud de Pont-à-Mousson"
+          "La mesure est obligatoire",
+          "situé 1413 m à l'ouest de Aire de Dommartin"
         ]
       }
     ]
   },
   "unknown_types_inactive": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 51,
-    "ns2:ReroutingManagement": 30,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 49,
+    "ns2:ReroutingManagement": 24,
     "ns2:SpeedManagement": 12,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 7,
     "ns2:GeneralNetworkManagement": 2,
     "ns2:WeatherRelatedRoadConditions": 1
   },
   "unknown_types_location_rejections": {
-    "outside_department": 193
+    "outside_department": 168
   },
   "precise_department_boundaries": true,
   "boundary_file": "lorraine_departements.geojson"
