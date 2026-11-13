@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-11-13T01:20:26.622477+00:00",
+  "generated_at": "2026-11-13T08:10:09.486013+00:00",
   "accepted": 10,
   "management_published_records": {
     "lane": 3
   },
   "management_published_situations": 2,
   "rejected_by_reason": {
-    "unrecognized_category": 271,
+    "unrecognized_category": 258,
     "inactive_or_outside_validity": 86,
-    "outside_department": 174
+    "outside_department": 187
   },
   "unrecognized_types": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 140,
-    "ns2:ReroutingManagement": 48,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 130,
+    "ns2:ReroutingManagement": 44,
     "ns2:SpeedManagement": 32,
-    "ns2:GeneralNetworkManagement": 27,
+    "ns2:GeneralNetworkManagement": 28,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 18,
     "ns2:WeatherRelatedRoadConditions": 5,
     "ns2:RoadsideServiceDisruption": 1
@@ -25,7 +25,7 @@
   },
   "unknown_types_in_lorraine": {
     "ns2:RoadOrCarriagewayOrLaneManagement": 4,
-    "ns2:GeneralNetworkManagement": 3
+    "ns2:GeneralNetworkManagement": 2
   },
   "unknown_types_in_lorraine_examples": {
     "ns2:RoadOrCarriagewayOrLaneManagement": [
@@ -120,34 +120,19 @@
           "La mesure est obligatoire",
           "situé 248 m au nord de Villers-la-Montagne"
         ]
-      },
-      {
-        "situation_id": "261112-002519",
-        "record_id": "261112-002519-102",
-        "department": "54",
-        "road": "",
-        "town": "",
-        "coordinates": [
-          5.8929567,
-          48.655914
-        ],
-        "details": [
-          "La mesure est obligatoire",
-          "situé 1413 m à l'ouest de Aire de Dommartin"
-        ]
       }
     ]
   },
   "unknown_types_inactive": {
     "ns2:RoadOrCarriagewayOrLaneManagement": 49,
-    "ns2:ReroutingManagement": 24,
+    "ns2:ReroutingManagement": 26,
     "ns2:SpeedManagement": 12,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 7,
     "ns2:GeneralNetworkManagement": 2,
     "ns2:WeatherRelatedRoadConditions": 1
   },
   "unknown_types_location_rejections": {
-    "outside_department": 169
+    "outside_department": 155
   },
   "precise_department_boundaries": true,
   "boundary_file": "lorraine_departements.geojson"
