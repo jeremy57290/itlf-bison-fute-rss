@@ -1,31 +1,32 @@
 {
-  "generated_at": "2026-11-16T18:51:33.809651+00:00",
-  "accepted": 16,
+  "generated_at": "2026-11-17T02:09:11.387526+00:00",
+  "accepted": 11,
   "management_published_records": {
     "lane": 1
   },
   "management_published_situations": 1,
   "rejected_by_reason": {
-    "unrecognized_category": 274,
-    "inactive_or_outside_validity": 99,
-    "outside_department": 198
+    "unrecognized_category": 285,
+    "inactive_or_outside_validity": 73,
+    "outside_department": 204
   },
   "unrecognized_types": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 150,
-    "ns2:ReroutingManagement": 54,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 155,
+    "ns2:ReroutingManagement": 59,
     "ns2:SpeedManagement": 28,
     "ns2:GeneralNetworkManagement": 22,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 13,
     "ns2:WeatherRelatedRoadConditions": 5,
     "ns2:RoadsideServiceDisruption": 1,
-    "ns2:OperatorAction": 1
+    "ns2:OperatorAction": 1,
+    "ns2:NonWeatherRelatedRoadConditions": 1
   },
   "inactive_statuses": {
-    "definedByValidityTimeSpec": 97,
-    "suspended": 2
+    "definedByValidityTimeSpec": 70,
+    "suspended": 3
   },
   "unknown_types_in_lorraine": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 2
+    "ns2:RoadOrCarriagewayOrLaneManagement": 3
   },
   "unknown_types_in_lorraine_examples": {
     "ns2:RoadOrCarriagewayOrLaneManagement": [
@@ -58,19 +59,34 @@
           "La mesure est obligatoire",
           "situé 187 m au sud de Pont-à-Mousson"
         ]
+      },
+      {
+        "situation_id": "261116-002680",
+        "record_id": "261116-002680-102",
+        "department": "57",
+        "road": "A31",
+        "town": "",
+        "coordinates": [
+          6.173559,
+          49.28561
+        ],
+        "details": [
+          "La mesure est obligatoire",
+          "situé 834 m au sud de A30"
+        ]
       }
     ]
   },
   "unknown_types_inactive": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 62,
-    "ns2:ReroutingManagement": 28,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 38,
+    "ns2:ReroutingManagement": 19,
     "ns2:SpeedManagement": 7,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 4,
     "ns2:GeneralNetworkManagement": 2,
     "ns2:WeatherRelatedRoadConditions": 1
   },
   "unknown_types_location_rejections": {
-    "outside_department": 168
+    "outside_department": 211
   },
   "precise_department_boundaries": true,
   "boundary_file": "lorraine_departements.geojson"
