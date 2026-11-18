@@ -1,30 +1,31 @@
 {
-  "generated_at": "2026-11-18T01:43:03.866865+00:00",
-  "accepted": 8,
+  "generated_at": "2026-11-18T09:10:38.896591+00:00",
+  "accepted": 18,
   "management_published_records": {
-    "lane": 1
+    "lane": 4
   },
-  "management_published_situations": 1,
+  "management_published_situations": 3,
   "rejected_by_reason": {
-    "unrecognized_category": 288,
-    "inactive_or_outside_validity": 75,
-    "outside_department": 242
+    "unrecognized_category": 310,
+    "inactive_or_outside_validity": 86,
+    "outside_department": 279
   },
   "unrecognized_types": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 150,
-    "ns2:ReroutingManagement": 63,
-    "ns2:GeneralNetworkManagement": 28,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 183,
+    "ns2:ReroutingManagement": 51,
+    "ns2:GeneralNetworkManagement": 29,
     "ns2:SpeedManagement": 28,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 13,
     "ns2:WeatherRelatedRoadConditions": 5,
     "ns2:RoadsideServiceDisruption": 1
   },
   "inactive_statuses": {
-    "definedByValidityTimeSpec": 71,
-    "suspended": 4
+    "definedByValidityTimeSpec": 78,
+    "suspended": 8
   },
   "unknown_types_in_lorraine": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 2
+    "ns2:RoadOrCarriagewayOrLaneManagement": 5,
+    "ns2:GeneralNetworkManagement": 1
   },
   "unknown_types_in_lorraine_examples": {
     "ns2:RoadOrCarriagewayOrLaneManagement": [
@@ -57,19 +58,81 @@
           "La mesure est obligatoire",
           "situé 187 m au sud de Pont-à-Mousson"
         ]
+      },
+      {
+        "situation_id": "261118-000255",
+        "record_id": "261118-000255-103",
+        "department": "88",
+        "road": "N57",
+        "town": "",
+        "coordinates": [
+          6.300799,
+          48.352448
+        ],
+        "details": [
+          "La mesure est obligatoire",
+          "début : situé 6633 m au sud de Gripport, fin : situé 934 m au nord de Vincey"
+        ]
+      },
+      {
+        "situation_id": "261118-000255",
+        "record_id": "261118-000255-102",
+        "department": "88",
+        "road": "N57",
+        "town": "",
+        "coordinates": [
+          6.268803,
+          48.370083
+        ],
+        "details": [
+          "La mesure est obligatoire",
+          "début : situé 938 m au nord de Vincey, fin : situé 6630 m au sud de Gripport"
+        ]
+      },
+      {
+        "situation_id": "261118-000339",
+        "record_id": "261118-000339-102",
+        "department": "88",
+        "road": "N57",
+        "town": "",
+        "coordinates": [
+          6.458173,
+          47.946503
+        ],
+        "details": [
+          "La mesure est obligatoire",
+          "début : situé 9812 m au nord de Fougerolles, fin : situé 315 m au sud de Plombières-les-Bains"
+        ]
+      }
+    ],
+    "ns2:GeneralNetworkManagement": [
+      {
+        "situation_id": "261118-000339",
+        "record_id": "261118-000339-103",
+        "department": "88",
+        "road": "",
+        "town": "",
+        "coordinates": [
+          6.4584913,
+          47.94596
+        ],
+        "details": [
+          "Sur 400 m à 0 m de la fin de la bretelle. La mesure est obligatoire",
+          "situé 1064 m au sud de Plombières-les-Bains"
+        ]
       }
     ]
   },
   "unknown_types_inactive": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 32,
-    "ns2:ReroutingManagement": 15,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 51,
+    "ns2:ReroutingManagement": 17,
     "ns2:SpeedManagement": 5,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 2,
     "ns2:GeneralNetworkManagement": 2,
     "ns2:WeatherRelatedRoadConditions": 1
   },
   "unknown_types_location_rejections": {
-    "outside_department": 229
+    "outside_department": 226
   },
   "precise_department_boundaries": true,
   "boundary_file": "lorraine_departements.geojson"
