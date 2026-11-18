@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T09:10:38.892657+00:00",
+  "generated_at": "2026-11-18T18:00:34.941551+00:00",
   "purpose": "Diagnostic of unrecognized DATEX types; some explicitly coded lane/contraflow measures are now published",
   "count": 6,
   "records": [
@@ -752,796 +752,6 @@
       ]
     },
     {
-      "situation_id": "261118-000255",
-      "record_id": "261118-000255-103",
-      "record_type": "ns2:RoadOrCarriagewayOrLaneManagement",
-      "department": "88",
-      "road": "N57",
-      "coordinates": [
-        6.300799,
-        48.352448
-      ],
-      "validity_status": "definedByValidityTimeSpec",
-      "details": [
-        "La mesure est obligatoire",
-        "début : situé 6633 m au sud de Gripport, fin : situé 934 m au nord de Vincey",
-        "Ubexy"
-      ],
-      "record_fields": [
-        {
-          "tag": "situationRecord",
-          "value": "",
-          "attributes": {
-            "type": "ns2:RoadOrCarriagewayOrLaneManagement",
-            "id": "261118-000255-103",
-            "version": "1"
-          }
-        },
-        {
-          "tag": "situationRecordCreationReference",
-          "value": "EVE_DIRE_Myrabel-S-261118-0005-EVE_DIRE_Myrabel-SR-261118-000008",
-          "attributes": {}
-        },
-        {
-          "tag": "situationRecordCreationTime",
-          "value": "2026-11-18T06:37:10.686+01:00",
-          "attributes": {}
-        },
-        {
-          "tag": "situationRecordObservationTime",
-          "value": "2026-11-18T06:37:11.659+01:00",
-          "attributes": {}
-        },
-        {
-          "tag": "situationRecordVersionTime",
-          "value": "2026-11-18T06:37:14.578+01:00",
-          "attributes": {}
-        },
-        {
-          "tag": "situationRecordFirstSupplierVersionTime",
-          "value": "2026-11-18T06:37:10.686+01:00",
-          "attributes": {}
-        },
-        {
-          "tag": "probabilityOfOccurrence",
-          "value": "certain",
-          "attributes": {}
-        },
-        {
-          "tag": "sourceIdentification",
-          "value": "Direction interdépartementale des routes/DIR Est",
-          "attributes": {}
-        },
-        {
-          "tag": "sourceType",
-          "value": "mobileTelephoneCaller",
-          "attributes": {}
-        },
-        {
-          "tag": "reliable",
-          "value": "true",
-          "attributes": {}
-        },
-        {
-          "tag": "validityStatus",
-          "value": "definedByValidityTimeSpec",
-          "attributes": {}
-        },
-        {
-          "tag": "overallStartTime",
-          "value": "2026-11-18T06:37:10.544+01:00",
-          "attributes": {}
-        },
-        {
-          "tag": "numberOfLanesRestricted",
-          "value": "1",
-          "attributes": {}
-        },
-        {
-          "tag": "originalNumberOfLanes",
-          "value": "2",
-          "attributes": {}
-        },
-        {
-          "tag": "value",
-          "value": "La mesure est obligatoire",
-          "attributes": {
-            "lang": "fr"
-          }
-        },
-        {
-          "tag": "commentType",
-          "value": "description",
-          "attributes": {}
-        },
-        {
-          "tag": "value",
-          "value": "Point particulier : début : situé 6633 m au sud de Gripport, fin : situé 934 m au nord de Vincey",
-          "attributes": {
-            "lang": "fr"
-          }
-        },
-        {
-          "tag": "commentType",
-          "value": "locationDescriptor",
-          "attributes": {}
-        },
-        {
-          "tag": "value",
-          "value": "GE_DIRE/Service régional d’exploitation Grand Est (SREX)/District Nancy/CEI Charmes",
-          "attributes": {
-            "lang": "fr"
-          }
-        },
-        {
-          "tag": "commentType",
-          "value": "locationDescriptor",
-          "attributes": {}
-        },
-        {
-          "tag": "value",
-          "value": "De Metz vers Suisse - Lausanne",
-          "attributes": {
-            "lang": "fr"
-          }
-        },
-        {
-          "tag": "commentType",
-          "value": "locationDescriptor",
-          "attributes": {}
-        },
-        {
-          "tag": "groupOfLocations",
-          "value": "",
-          "attributes": {
-            "type": "ns2:Linear"
-          }
-        },
-        {
-          "tag": "carriageway",
-          "value": "mainCarriageway",
-          "attributes": {}
-        },
-        {
-          "tag": "lane",
-          "value": "centralReservation",
-          "attributes": {}
-        },
-        {
-          "tag": "lane",
-          "value": "lane2",
-          "attributes": {}
-        },
-        {
-          "tag": "tpegDirection",
-          "value": "southBound",
-          "attributes": {}
-        },
-        {
-          "tag": "tpegLinearLocationType",
-          "value": "segment",
-          "attributes": {}
-        },
-        {
-          "tag": "to",
-          "value": "",
-          "attributes": {
-            "type": "ns2:TpegNonJunctionPoint"
-          }
-        },
-        {
-          "tag": "latitude",
-          "value": "48.352448",
-          "attributes": {}
-        },
-        {
-          "tag": "longitude",
-          "value": "6.300799",
-          "attributes": {}
-        },
-        {
-          "tag": "value",
-          "value": "Ubexy",
-          "attributes": {
-            "lang": "fr"
-          }
-        },
-        {
-          "tag": "tpegOtherPointDescriptorType",
-          "value": "townName",
-          "attributes": {}
-        },
-        {
-          "tag": "value",
-          "value": "N57",
-          "attributes": {
-            "lang": "fr"
-          }
-        },
-        {
-          "tag": "tpegOtherPointDescriptorType",
-          "value": "linkName",
-          "attributes": {}
-        },
-        {
-          "tag": "from",
-          "value": "",
-          "attributes": {
-            "type": "ns2:TpegNonJunctionPoint"
-          }
-        },
-        {
-          "tag": "latitude",
-          "value": "48.37",
-          "attributes": {}
-        },
-        {
-          "tag": "longitude",
-          "value": "6.2687054",
-          "attributes": {}
-        },
-        {
-          "tag": "value",
-          "value": "Florémont",
-          "attributes": {
-            "lang": "fr"
-          }
-        },
-        {
-          "tag": "tpegOtherPointDescriptorType",
-          "value": "townName",
-          "attributes": {}
-        },
-        {
-          "tag": "value",
-          "value": "N57",
-          "attributes": {
-            "lang": "fr"
-          }
-        },
-        {
-          "tag": "tpegOtherPointDescriptorType",
-          "value": "linkName",
-          "attributes": {}
-        },
-        {
-          "tag": "alertCLinear",
-          "value": "",
-          "attributes": {
-            "type": "ns2:AlertCMethod4Linear"
-          }
-        },
-        {
-          "tag": "alertCLocationCountryCode",
-          "value": "F",
-          "attributes": {}
-        },
-        {
-          "tag": "alertCLocationTableNumber",
-          "value": "32",
-          "attributes": {}
-        },
-        {
-          "tag": "alertCLocationTableVersion",
-          "value": "11.0",
-          "attributes": {}
-        },
-        {
-          "tag": "alertCDirectionCoded",
-          "value": "positive",
-          "attributes": {}
-        },
-        {
-          "tag": "value",
-          "value": "Vincey",
-          "attributes": {
-            "lang": "fr"
-          }
-        },
-        {
-          "tag": "specificLocation",
-          "value": "43252",
-          "attributes": {}
-        },
-        {
-          "tag": "offsetDistance",
-          "value": "934",
-          "attributes": {}
-        },
-        {
-          "tag": "value",
-          "value": "Gripport",
-          "attributes": {
-            "lang": "fr"
-          }
-        },
-        {
-          "tag": "specificLocation",
-          "value": "44546",
-          "attributes": {}
-        },
-        {
-          "tag": "offsetDistance",
-          "value": "6633",
-          "attributes": {}
-        },
-        {
-          "tag": "directionRelativeOnLinearSection",
-          "value": "aligned",
-          "attributes": {}
-        },
-        {
-          "tag": "roadNumber",
-          "value": "N0057",
-          "attributes": {}
-        },
-        {
-          "tag": "fromPoint",
-          "value": "",
-          "attributes": {
-            "type": "ns2:DistanceFromLinearElementReferent"
-          }
-        },
-        {
-          "tag": "distanceAlong",
-          "value": "800.0",
-          "attributes": {}
-        },
-        {
-          "tag": "referentIdentifier",
-          "value": "88PR7D",
-          "attributes": {}
-        },
-        {
-          "tag": "referentType",
-          "value": "referenceMarker",
-          "attributes": {}
-        },
-        {
-          "tag": "toPoint",
-          "value": "",
-          "attributes": {
-            "type": "ns2:DistanceFromLinearElementReferent"
-          }
-        },
-        {
-          "tag": "distanceAlong",
-          "value": "500.0",
-          "attributes": {}
-        },
-        {
-          "tag": "referentIdentifier",
-          "value": "88PR4D",
-          "attributes": {}
-        },
-        {
-          "tag": "referentType",
-          "value": "referenceMarker",
-          "attributes": {}
-        },
-        {
-          "tag": "safetyRelatedMessage",
-          "value": "false",
-          "attributes": {}
-        },
-        {
-          "tag": "complianceOption",
-          "value": "mandatory",
-          "attributes": {}
-        },
-        {
-          "tag": "roadOrCarriagewayOrLaneManagementType",
-          "value": "laneClosures",
-          "attributes": {}
-        }
-      ],
-      "situation_fields": [
-        {
-          "tag": "overallSeverity",
-          "value": "medium"
-        },
-        {
-          "tag": "situationVersionTime",
-          "value": "2026-11-18T06:37:14.578+01:00"
-        }
-      ]
-    },
-    {
-      "situation_id": "261118-000255",
-      "record_id": "261118-000255-102",
-      "record_type": "ns2:RoadOrCarriagewayOrLaneManagement",
-      "department": "88",
-      "road": "N57",
-      "coordinates": [
-        6.268803,
-        48.370083
-      ],
-      "validity_status": "definedByValidityTimeSpec",
-      "details": [
-        "La mesure est obligatoire",
-        "début : situé 938 m au nord de Vincey, fin : situé 6630 m au sud de Gripport",
-        "Florémont"
-      ],
-      "record_fields": [
-        {
-          "tag": "situationRecord",
-          "value": "",
-          "attributes": {
-            "type": "ns2:RoadOrCarriagewayOrLaneManagement",
-            "id": "261118-000255-102",
-            "version": "2"
-          }
-        },
-        {
-          "tag": "situationRecordCreationReference",
-          "value": "EVE_DIRE_Myrabel-S-261118-0005-EVE_DIRE_Myrabel-SR-261118-000007",
-          "attributes": {}
-        },
-        {
-          "tag": "situationRecordCreationTime",
-          "value": "2026-11-18T06:36:38.443+01:00",
-          "attributes": {}
-        },
-        {
-          "tag": "situationRecordObservationTime",
-          "value": "2026-11-18T06:37:11.880+01:00",
-          "attributes": {}
-        },
-        {
-          "tag": "situationRecordVersionTime",
-          "value": "2026-11-18T06:37:14.578+01:00",
-          "attributes": {}
-        },
-        {
-          "tag": "situationRecordFirstSupplierVersionTime",
-          "value": "2026-11-18T06:36:38.443+01:00",
-          "attributes": {}
-        },
-        {
-          "tag": "probabilityOfOccurrence",
-          "value": "certain",
-          "attributes": {}
-        },
-        {
-          "tag": "sourceIdentification",
-          "value": "Direction interdépartementale des routes/DIR Est",
-          "attributes": {}
-        },
-        {
-          "tag": "sourceType",
-          "value": "mobileTelephoneCaller",
-          "attributes": {}
-        },
-        {
-          "tag": "reliable",
-          "value": "true",
-          "attributes": {}
-        },
-        {
-          "tag": "validityStatus",
-          "value": "definedByValidityTimeSpec",
-          "attributes": {}
-        },
-        {
-          "tag": "overallStartTime",
-          "value": "2026-11-18T06:36:38.264+01:00",
-          "attributes": {}
-        },
-        {
-          "tag": "numberOfLanesRestricted",
-          "value": "1",
-          "attributes": {}
-        },
-        {
-          "tag": "originalNumberOfLanes",
-          "value": "2",
-          "attributes": {}
-        },
-        {
-          "tag": "value",
-          "value": "La mesure est obligatoire",
-          "attributes": {
-            "lang": "fr"
-          }
-        },
-        {
-          "tag": "commentType",
-          "value": "description",
-          "attributes": {}
-        },
-        {
-          "tag": "value",
-          "value": "Point particulier : début : situé 938 m au nord de Vincey, fin : situé 6630 m au sud de Gripport",
-          "attributes": {
-            "lang": "fr"
-          }
-        },
-        {
-          "tag": "commentType",
-          "value": "locationDescriptor",
-          "attributes": {}
-        },
-        {
-          "tag": "value",
-          "value": "GE_DIRE/Service régional d’exploitation Grand Est (SREX)/District Nancy/CEI Charmes",
-          "attributes": {
-            "lang": "fr"
-          }
-        },
-        {
-          "tag": "commentType",
-          "value": "locationDescriptor",
-          "attributes": {}
-        },
-        {
-          "tag": "value",
-          "value": "De Suisse - Lausanne vers Metz",
-          "attributes": {
-            "lang": "fr"
-          }
-        },
-        {
-          "tag": "commentType",
-          "value": "locationDescriptor",
-          "attributes": {}
-        },
-        {
-          "tag": "groupOfLocations",
-          "value": "",
-          "attributes": {
-            "type": "ns2:Linear"
-          }
-        },
-        {
-          "tag": "carriageway",
-          "value": "mainCarriageway",
-          "attributes": {}
-        },
-        {
-          "tag": "lane",
-          "value": "centralReservation",
-          "attributes": {}
-        },
-        {
-          "tag": "lane",
-          "value": "lane2",
-          "attributes": {}
-        },
-        {
-          "tag": "tpegDirection",
-          "value": "northBound",
-          "attributes": {}
-        },
-        {
-          "tag": "tpegLinearLocationType",
-          "value": "segment",
-          "attributes": {}
-        },
-        {
-          "tag": "to",
-          "value": "",
-          "attributes": {
-            "type": "ns2:TpegNonJunctionPoint"
-          }
-        },
-        {
-          "tag": "latitude",
-          "value": "48.370083",
-          "attributes": {}
-        },
-        {
-          "tag": "longitude",
-          "value": "6.268803",
-          "attributes": {}
-        },
-        {
-          "tag": "value",
-          "value": "Florémont",
-          "attributes": {
-            "lang": "fr"
-          }
-        },
-        {
-          "tag": "tpegOtherPointDescriptorType",
-          "value": "townName",
-          "attributes": {}
-        },
-        {
-          "tag": "value",
-          "value": "N57",
-          "attributes": {
-            "lang": "fr"
-          }
-        },
-        {
-          "tag": "tpegOtherPointDescriptorType",
-          "value": "linkName",
-          "attributes": {}
-        },
-        {
-          "tag": "from",
-          "value": "",
-          "attributes": {
-            "type": "ns2:TpegNonJunctionPoint"
-          }
-        },
-        {
-          "tag": "latitude",
-          "value": "48.35247",
-          "attributes": {}
-        },
-        {
-          "tag": "longitude",
-          "value": "6.3009343",
-          "attributes": {}
-        },
-        {
-          "tag": "value",
-          "value": "Ubexy",
-          "attributes": {
-            "lang": "fr"
-          }
-        },
-        {
-          "tag": "tpegOtherPointDescriptorType",
-          "value": "townName",
-          "attributes": {}
-        },
-        {
-          "tag": "value",
-          "value": "N57",
-          "attributes": {
-            "lang": "fr"
-          }
-        },
-        {
-          "tag": "tpegOtherPointDescriptorType",
-          "value": "linkName",
-          "attributes": {}
-        },
-        {
-          "tag": "alertCLinear",
-          "value": "",
-          "attributes": {
-            "type": "ns2:AlertCMethod4Linear"
-          }
-        },
-        {
-          "tag": "alertCLocationCountryCode",
-          "value": "F",
-          "attributes": {}
-        },
-        {
-          "tag": "alertCLocationTableNumber",
-          "value": "32",
-          "attributes": {}
-        },
-        {
-          "tag": "alertCLocationTableVersion",
-          "value": "11.0",
-          "attributes": {}
-        },
-        {
-          "tag": "alertCDirectionCoded",
-          "value": "negative",
-          "attributes": {}
-        },
-        {
-          "tag": "value",
-          "value": "Gripport",
-          "attributes": {
-            "lang": "fr"
-          }
-        },
-        {
-          "tag": "specificLocation",
-          "value": "44546",
-          "attributes": {}
-        },
-        {
-          "tag": "offsetDistance",
-          "value": "6630",
-          "attributes": {}
-        },
-        {
-          "tag": "value",
-          "value": "Vincey",
-          "attributes": {
-            "lang": "fr"
-          }
-        },
-        {
-          "tag": "specificLocation",
-          "value": "43252",
-          "attributes": {}
-        },
-        {
-          "tag": "offsetDistance",
-          "value": "938",
-          "attributes": {}
-        },
-        {
-          "tag": "directionRelativeOnLinearSection",
-          "value": "opposite",
-          "attributes": {}
-        },
-        {
-          "tag": "roadNumber",
-          "value": "N0057",
-          "attributes": {}
-        },
-        {
-          "tag": "fromPoint",
-          "value": "",
-          "attributes": {
-            "type": "ns2:DistanceFromLinearElementReferent"
-          }
-        },
-        {
-          "tag": "distanceAlong",
-          "value": "500.0",
-          "attributes": {}
-        },
-        {
-          "tag": "referentIdentifier",
-          "value": "88PR4G",
-          "attributes": {}
-        },
-        {
-          "tag": "referentType",
-          "value": "referenceMarker",
-          "attributes": {}
-        },
-        {
-          "tag": "toPoint",
-          "value": "",
-          "attributes": {
-            "type": "ns2:DistanceFromLinearElementReferent"
-          }
-        },
-        {
-          "tag": "distanceAlong",
-          "value": "800.0",
-          "attributes": {}
-        },
-        {
-          "tag": "referentIdentifier",
-          "value": "88PR7G",
-          "attributes": {}
-        },
-        {
-          "tag": "referentType",
-          "value": "referenceMarker",
-          "attributes": {}
-        },
-        {
-          "tag": "safetyRelatedMessage",
-          "value": "false",
-          "attributes": {}
-        },
-        {
-          "tag": "complianceOption",
-          "value": "mandatory",
-          "attributes": {}
-        },
-        {
-          "tag": "roadOrCarriagewayOrLaneManagementType",
-          "value": "laneClosures",
-          "attributes": {}
-        }
-      ],
-      "situation_fields": [
-        {
-          "tag": "overallSeverity",
-          "value": "medium"
-        },
-        {
-          "tag": "situationVersionTime",
-          "value": "2026-11-18T06:37:14.578+01:00"
-        }
-      ]
-    },
-    {
       "situation_id": "261118-000339",
       "record_id": "261118-000339-102",
       "record_type": "ns2:RoadOrCarriagewayOrLaneManagement",
@@ -2286,6 +1496,796 @@
         {
           "tag": "situationVersionTime",
           "value": "2026-11-18T07:29:02.015+01:00"
+        }
+      ]
+    },
+    {
+      "situation_id": "261118-000866",
+      "record_id": "261118-000866-103",
+      "record_type": "ns2:RoadOrCarriagewayOrLaneManagement",
+      "department": "57",
+      "road": "N4",
+      "coordinates": [
+        6.961059,
+        48.698463
+      ],
+      "validity_status": "definedByValidityTimeSpec",
+      "details": [
+        "La mesure est obligatoire",
+        "début : situé 4783 m à l'ouest de Sarrebourg, fin : situé 160 m à l'est de Héming",
+        "Héming"
+      ],
+      "record_fields": [
+        {
+          "tag": "situationRecord",
+          "value": "",
+          "attributes": {
+            "type": "ns2:RoadOrCarriagewayOrLaneManagement",
+            "id": "261118-000866-103",
+            "version": "1"
+          }
+        },
+        {
+          "tag": "situationRecordCreationReference",
+          "value": "EVE_DIRE_Myrabel-S-261118-0019-EVE_DIRE_Myrabel-SR-261118-000027",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordCreationTime",
+          "value": "2026-11-18T09:26:32.769+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordObservationTime",
+          "value": "2026-11-18T09:26:33.854+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordVersionTime",
+          "value": "2026-11-18T09:26:36.120+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordFirstSupplierVersionTime",
+          "value": "2026-11-18T09:26:32.769+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "probabilityOfOccurrence",
+          "value": "certain",
+          "attributes": {}
+        },
+        {
+          "tag": "sourceIdentification",
+          "value": "Direction interdépartementale des routes/DIR Est",
+          "attributes": {}
+        },
+        {
+          "tag": "sourceType",
+          "value": "mobileTelephoneCaller",
+          "attributes": {}
+        },
+        {
+          "tag": "reliable",
+          "value": "true",
+          "attributes": {}
+        },
+        {
+          "tag": "validityStatus",
+          "value": "definedByValidityTimeSpec",
+          "attributes": {}
+        },
+        {
+          "tag": "overallStartTime",
+          "value": "2026-11-18T09:26:32.655+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "numberOfLanesRestricted",
+          "value": "1",
+          "attributes": {}
+        },
+        {
+          "tag": "originalNumberOfLanes",
+          "value": "2",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "La mesure est obligatoire",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "description",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Point particulier : début : situé 4783 m à l'ouest de Sarrebourg, fin : situé 160 m à l'est de Héming",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "GE_DIRE/Service régional d’exploitation Grand Est (SREX)/District Nancy/CEI Lunéville",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "De Allemagne - Freiburg-im-Breisgau vers Paris",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "groupOfLocations",
+          "value": "",
+          "attributes": {
+            "type": "ns2:Linear"
+          }
+        },
+        {
+          "tag": "carriageway",
+          "value": "mainCarriageway",
+          "attributes": {}
+        },
+        {
+          "tag": "lane",
+          "value": "centralReservation",
+          "attributes": {}
+        },
+        {
+          "tag": "lane",
+          "value": "lane2",
+          "attributes": {}
+        },
+        {
+          "tag": "tpegDirection",
+          "value": "westBound",
+          "attributes": {}
+        },
+        {
+          "tag": "tpegLinearLocationType",
+          "value": "segment",
+          "attributes": {}
+        },
+        {
+          "tag": "to",
+          "value": "",
+          "attributes": {
+            "type": "ns2:TpegNonJunctionPoint"
+          }
+        },
+        {
+          "tag": "latitude",
+          "value": "48.698463",
+          "attributes": {}
+        },
+        {
+          "tag": "longitude",
+          "value": "6.961059",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Héming",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "townName",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "N4",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "linkName",
+          "attributes": {}
+        },
+        {
+          "tag": "from",
+          "value": "",
+          "attributes": {
+            "type": "ns2:TpegNonJunctionPoint"
+          }
+        },
+        {
+          "tag": "latitude",
+          "value": "48.704903",
+          "attributes": {}
+        },
+        {
+          "tag": "longitude",
+          "value": "6.9937286",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Bébing",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "townName",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "N4",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "linkName",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLinear",
+          "value": "",
+          "attributes": {
+            "type": "ns2:AlertCMethod4Linear"
+          }
+        },
+        {
+          "tag": "alertCLocationCountryCode",
+          "value": "F",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLocationTableNumber",
+          "value": "32",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLocationTableVersion",
+          "value": "11.0",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCDirectionCoded",
+          "value": "negative",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Héming",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "specificLocation",
+          "value": "42950",
+          "attributes": {}
+        },
+        {
+          "tag": "offsetDistance",
+          "value": "160",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Sarrebourg",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "specificLocation",
+          "value": "42952",
+          "attributes": {}
+        },
+        {
+          "tag": "offsetDistance",
+          "value": "4783",
+          "attributes": {}
+        },
+        {
+          "tag": "directionRelativeOnLinearSection",
+          "value": "opposite",
+          "attributes": {}
+        },
+        {
+          "tag": "roadNumber",
+          "value": "N0004",
+          "attributes": {}
+        },
+        {
+          "tag": "fromPoint",
+          "value": "",
+          "attributes": {
+            "type": "ns2:DistanceFromLinearElementReferent"
+          }
+        },
+        {
+          "tag": "distanceAlong",
+          "value": "200.0",
+          "attributes": {}
+        },
+        {
+          "tag": "referentIdentifier",
+          "value": "57PR10G",
+          "attributes": {}
+        },
+        {
+          "tag": "referentType",
+          "value": "referenceMarker",
+          "attributes": {}
+        },
+        {
+          "tag": "toPoint",
+          "value": "",
+          "attributes": {
+            "type": "ns2:DistanceFromLinearElementReferent"
+          }
+        },
+        {
+          "tag": "distanceAlong",
+          "value": "100.0",
+          "attributes": {}
+        },
+        {
+          "tag": "referentIdentifier",
+          "value": "57PR13G",
+          "attributes": {}
+        },
+        {
+          "tag": "referentType",
+          "value": "referenceMarker",
+          "attributes": {}
+        },
+        {
+          "tag": "safetyRelatedMessage",
+          "value": "false",
+          "attributes": {}
+        },
+        {
+          "tag": "complianceOption",
+          "value": "mandatory",
+          "attributes": {}
+        },
+        {
+          "tag": "roadOrCarriagewayOrLaneManagementType",
+          "value": "laneClosures",
+          "attributes": {}
+        }
+      ],
+      "situation_fields": [
+        {
+          "tag": "overallSeverity",
+          "value": "medium"
+        },
+        {
+          "tag": "situationVersionTime",
+          "value": "2026-11-18T09:26:36.120+01:00"
+        }
+      ]
+    },
+    {
+      "situation_id": "261118-000866",
+      "record_id": "261118-000866-102",
+      "record_type": "ns2:RoadOrCarriagewayOrLaneManagement",
+      "department": "57",
+      "road": "N4",
+      "coordinates": [
+        6.9589505,
+        48.697365
+      ],
+      "validity_status": "definedByValidityTimeSpec",
+      "details": [
+        "La mesure est obligatoire",
+        "début : situé 10609 m à l'est de Gogney, fin : situé 41 m à l'ouest de Héming",
+        "Héming"
+      ],
+      "record_fields": [
+        {
+          "tag": "situationRecord",
+          "value": "",
+          "attributes": {
+            "type": "ns2:RoadOrCarriagewayOrLaneManagement",
+            "id": "261118-000866-102",
+            "version": "2"
+          }
+        },
+        {
+          "tag": "situationRecordCreationReference",
+          "value": "EVE_DIRE_Myrabel-S-261118-0019-EVE_DIRE_Myrabel-SR-261118-000026",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordCreationTime",
+          "value": "2026-11-18T09:25:19.148+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordObservationTime",
+          "value": "2026-11-18T09:26:34.068+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordVersionTime",
+          "value": "2026-11-18T09:26:36.120+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordFirstSupplierVersionTime",
+          "value": "2026-11-18T09:25:19.148+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "probabilityOfOccurrence",
+          "value": "certain",
+          "attributes": {}
+        },
+        {
+          "tag": "sourceIdentification",
+          "value": "Direction interdépartementale des routes/DIR Est",
+          "attributes": {}
+        },
+        {
+          "tag": "sourceType",
+          "value": "mobileTelephoneCaller",
+          "attributes": {}
+        },
+        {
+          "tag": "reliable",
+          "value": "true",
+          "attributes": {}
+        },
+        {
+          "tag": "validityStatus",
+          "value": "definedByValidityTimeSpec",
+          "attributes": {}
+        },
+        {
+          "tag": "overallStartTime",
+          "value": "2026-11-18T09:25:19.022+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "numberOfLanesRestricted",
+          "value": "1",
+          "attributes": {}
+        },
+        {
+          "tag": "originalNumberOfLanes",
+          "value": "2",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "La mesure est obligatoire",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "description",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Point particulier : début : situé 10609 m à l'est de Gogney, fin : situé 41 m à l'ouest de Héming",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "GE_DIRE/Service régional d’exploitation Grand Est (SREX)/District Nancy/CEI Lunéville",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "De Paris vers Allemagne - Freiburg-im-Breisgau",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "groupOfLocations",
+          "value": "",
+          "attributes": {
+            "type": "ns2:Linear"
+          }
+        },
+        {
+          "tag": "carriageway",
+          "value": "mainCarriageway",
+          "attributes": {}
+        },
+        {
+          "tag": "lane",
+          "value": "centralReservation",
+          "attributes": {}
+        },
+        {
+          "tag": "lane",
+          "value": "lane2",
+          "attributes": {}
+        },
+        {
+          "tag": "tpegDirection",
+          "value": "eastBound",
+          "attributes": {}
+        },
+        {
+          "tag": "tpegLinearLocationType",
+          "value": "segment",
+          "attributes": {}
+        },
+        {
+          "tag": "to",
+          "value": "",
+          "attributes": {
+            "type": "ns2:TpegNonJunctionPoint"
+          }
+        },
+        {
+          "tag": "latitude",
+          "value": "48.697365",
+          "attributes": {}
+        },
+        {
+          "tag": "longitude",
+          "value": "6.9589505",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Héming",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "townName",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "N4",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "linkName",
+          "attributes": {}
+        },
+        {
+          "tag": "from",
+          "value": "",
+          "attributes": {
+            "type": "ns2:TpegNonJunctionPoint"
+          }
+        },
+        {
+          "tag": "latitude",
+          "value": "48.678185",
+          "attributes": {}
+        },
+        {
+          "tag": "longitude",
+          "value": "6.950596",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Gondrexange",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "townName",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "N4",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "linkName",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLinear",
+          "value": "",
+          "attributes": {
+            "type": "ns2:AlertCMethod4Linear"
+          }
+        },
+        {
+          "tag": "alertCLocationCountryCode",
+          "value": "F",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLocationTableNumber",
+          "value": "32",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLocationTableVersion",
+          "value": "11.0",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCDirectionCoded",
+          "value": "positive",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Héming",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "specificLocation",
+          "value": "42950",
+          "attributes": {}
+        },
+        {
+          "tag": "offsetDistance",
+          "value": "41",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Gogney",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "specificLocation",
+          "value": "44665",
+          "attributes": {}
+        },
+        {
+          "tag": "offsetDistance",
+          "value": "10609",
+          "attributes": {}
+        },
+        {
+          "tag": "directionRelativeOnLinearSection",
+          "value": "aligned",
+          "attributes": {}
+        },
+        {
+          "tag": "roadNumber",
+          "value": "N0004",
+          "attributes": {}
+        },
+        {
+          "tag": "fromPoint",
+          "value": "",
+          "attributes": {
+            "type": "ns2:DistanceFromLinearElementReferent"
+          }
+        },
+        {
+          "tag": "distanceAlong",
+          "value": "0.0",
+          "attributes": {}
+        },
+        {
+          "tag": "referentIdentifier",
+          "value": "57PR10D",
+          "attributes": {}
+        },
+        {
+          "tag": "referentType",
+          "value": "referenceMarker",
+          "attributes": {}
+        },
+        {
+          "tag": "toPoint",
+          "value": "",
+          "attributes": {
+            "type": "ns2:DistanceFromLinearElementReferent"
+          }
+        },
+        {
+          "tag": "distanceAlong",
+          "value": "0.0",
+          "attributes": {}
+        },
+        {
+          "tag": "referentIdentifier",
+          "value": "57PR8D",
+          "attributes": {}
+        },
+        {
+          "tag": "referentType",
+          "value": "referenceMarker",
+          "attributes": {}
+        },
+        {
+          "tag": "safetyRelatedMessage",
+          "value": "false",
+          "attributes": {}
+        },
+        {
+          "tag": "complianceOption",
+          "value": "mandatory",
+          "attributes": {}
+        },
+        {
+          "tag": "roadOrCarriagewayOrLaneManagementType",
+          "value": "laneClosures",
+          "attributes": {}
+        }
+      ],
+      "situation_fields": [
+        {
+          "tag": "overallSeverity",
+          "value": "medium"
+        },
+        {
+          "tag": "situationVersionTime",
+          "value": "2026-11-18T09:26:36.120+01:00"
         }
       ]
     }
