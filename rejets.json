@@ -1,30 +1,31 @@
 {
-  "generated_at": "2026-11-19T16:39:17.267600+00:00",
-  "accepted": 20,
+  "generated_at": "2026-11-19T23:12:59.338792+00:00",
+  "accepted": 7,
   "management_published_records": {
-    "lane": 4
+    "lane": 2
   },
-  "management_published_situations": 3,
+  "management_published_situations": 2,
   "rejected_by_reason": {
-    "unrecognized_category": 267,
-    "inactive_or_outside_validity": 107,
-    "outside_department": 218
+    "unrecognized_category": 279,
+    "inactive_or_outside_validity": 86,
+    "outside_department": 195
   },
   "unrecognized_types": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 152,
-    "ns2:ReroutingManagement": 46,
-    "ns2:GeneralNetworkManagement": 25,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 147,
+    "ns2:ReroutingManagement": 64,
     "ns2:SpeedManagement": 24,
+    "ns2:GeneralNetworkManagement": 23,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 12,
     "ns2:WeatherRelatedRoadConditions": 7,
-    "ns2:RoadsideServiceDisruption": 1
+    "ns2:RoadsideServiceDisruption": 1,
+    "ns2:NonWeatherRelatedRoadConditions": 1
   },
   "inactive_statuses": {
-    "definedByValidityTimeSpec": 99,
-    "suspended": 8
+    "definedByValidityTimeSpec": 83,
+    "suspended": 3
   },
   "unknown_types_in_lorraine": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 5
+    "ns2:RoadOrCarriagewayOrLaneManagement": 3
   },
   "unknown_types_in_lorraine_examples": {
     "ns2:RoadOrCarriagewayOrLaneManagement": [
@@ -59,36 +60,6 @@
         ]
       },
       {
-        "situation_id": "261119-000778",
-        "record_id": "261119-000778-102",
-        "department": "54",
-        "road": "N59",
-        "town": "",
-        "coordinates": [
-          6.558558,
-          48.549385
-        ],
-        "details": [
-          "La mesure est obligatoire",
-          "début : situé 1530 m à l'est de Lunéville, fin : situé 16900 m à l'ouest de Baccarat"
-        ]
-      },
-      {
-        "situation_id": "261119-000778",
-        "record_id": "261119-000778-103",
-        "department": "54",
-        "road": "N59",
-        "town": "",
-        "coordinates": [
-          6.558363,
-          48.549778
-        ],
-        "details": [
-          "La mesure est obligatoire",
-          "début : situé 15649 m à l'ouest de Baccarat, fin : situé 2731 m à l'est de Lunéville"
-        ]
-      },
-      {
         "situation_id": "261118-000866",
         "record_id": "261118-000866-102",
         "department": "57",
@@ -106,15 +77,15 @@
     ]
   },
   "unknown_types_inactive": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 61,
-    "ns2:ReroutingManagement": 23,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 36,
+    "ns2:ReroutingManagement": 17,
     "ns2:SpeedManagement": 7,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 4,
-    "ns2:GeneralNetworkManagement": 2,
-    "ns2:WeatherRelatedRoadConditions": 1
+    "ns2:WeatherRelatedRoadConditions": 1,
+    "ns2:GeneralNetworkManagement": 1
   },
   "unknown_types_location_rejections": {
-    "outside_department": 164
+    "outside_department": 210
   },
   "precise_department_boundaries": true,
   "boundary_file": "lorraine_departements.geojson"
