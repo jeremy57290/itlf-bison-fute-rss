@@ -1,31 +1,33 @@
 {
-  "generated_at": "2026-11-18T18:00:34.946246+00:00",
-  "accepted": 16,
+  "generated_at": "2026-11-19T00:10:50.208722+00:00",
+  "accepted": 17,
   "management_published_records": {
     "lane": 4
   },
   "management_published_situations": 3,
   "rejected_by_reason": {
-    "unrecognized_category": 272,
-    "inactive_or_outside_validity": 88,
-    "outside_department": 245
+    "unrecognized_category": 301,
+    "inactive_or_outside_validity": 69,
+    "outside_department": 224
   },
   "unrecognized_types": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 155,
-    "ns2:ReroutingManagement": 47,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 167,
+    "ns2:ReroutingManagement": 63,
     "ns2:GeneralNetworkManagement": 27,
     "ns2:SpeedManagement": 24,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 11,
     "ns2:WeatherRelatedRoadConditions": 7,
-    "ns2:RoadsideServiceDisruption": 1
+    "ns2:RoadsideServiceDisruption": 1,
+    "ns2:NonWeatherRelatedRoadConditions": 1
   },
   "inactive_statuses": {
-    "definedByValidityTimeSpec": 80,
-    "suspended": 8
+    "definedByValidityTimeSpec": 65,
+    "suspended": 4
   },
   "unknown_types_in_lorraine": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 5,
-    "ns2:GeneralNetworkManagement": 1
+    "ns2:RoadOrCarriagewayOrLaneManagement": 6,
+    "ns2:GeneralNetworkManagement": 1,
+    "ns2:NonWeatherRelatedRoadConditions": 1
   },
   "unknown_types_in_lorraine_examples": {
     "ns2:RoadOrCarriagewayOrLaneManagement": [
@@ -121,18 +123,35 @@
           "situé 1064 m au sud de Plombières-les-Bains"
         ]
       }
+    ],
+    "ns2:NonWeatherRelatedRoadConditions": [
+      {
+        "situation_id": "261119-000014",
+        "record_id": "261119-000014-1",
+        "department": "54",
+        "road": "A31",
+        "town": "",
+        "coordinates": [
+          5.985412,
+          48.68913
+        ],
+        "details": [
+          "début : situé 999 m à l'est de Aire de Chaudeney, fin : situé 4063 m à l'ouest de Aire de la Forêt-de-Haye",
+          "Gondreville"
+        ]
+      }
     ]
   },
   "unknown_types_inactive": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 55,
-    "ns2:ReroutingManagement": 20,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 25,
+    "ns2:ReroutingManagement": 19,
     "ns2:SpeedManagement": 5,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 2,
     "ns2:GeneralNetworkManagement": 2,
     "ns2:WeatherRelatedRoadConditions": 1
   },
   "unknown_types_location_rejections": {
-    "outside_department": 181
+    "outside_department": 239
   },
   "precise_department_boundaries": true,
   "boundary_file": "lorraine_departements.geojson"
