@@ -1,31 +1,30 @@
 {
-  "generated_at": "2026-11-19T07:20:11.133914+00:00",
-  "accepted": 17,
+  "generated_at": "2026-11-19T16:39:17.267600+00:00",
+  "accepted": 20,
   "management_published_records": {
     "lane": 4
   },
   "management_published_situations": 3,
   "rejected_by_reason": {
-    "unrecognized_category": 273,
-    "inactive_or_outside_validity": 89,
-    "outside_department": 196
+    "unrecognized_category": 267,
+    "inactive_or_outside_validity": 107,
+    "outside_department": 218
   },
   "unrecognized_types": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 149,
-    "ns2:ReroutingManagement": 48,
-    "ns2:GeneralNetworkManagement": 33,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 152,
+    "ns2:ReroutingManagement": 46,
+    "ns2:GeneralNetworkManagement": 25,
     "ns2:SpeedManagement": 24,
-    "ns2:GeneralInstructionOrMessageToRoadUsers": 11,
+    "ns2:GeneralInstructionOrMessageToRoadUsers": 12,
     "ns2:WeatherRelatedRoadConditions": 7,
     "ns2:RoadsideServiceDisruption": 1
   },
   "inactive_statuses": {
-    "definedByValidityTimeSpec": 81,
+    "definedByValidityTimeSpec": 99,
     "suspended": 8
   },
   "unknown_types_in_lorraine": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 5,
-    "ns2:GeneralNetworkManagement": 1
+    "ns2:RoadOrCarriagewayOrLaneManagement": 5
   },
   "unknown_types_in_lorraine_examples": {
     "ns2:RoadOrCarriagewayOrLaneManagement": [
@@ -60,33 +59,33 @@
         ]
       },
       {
-        "situation_id": "261118-000339",
-        "record_id": "261118-000339-102",
-        "department": "88",
-        "road": "N57",
+        "situation_id": "261119-000778",
+        "record_id": "261119-000778-102",
+        "department": "54",
+        "road": "N59",
         "town": "",
         "coordinates": [
-          6.458173,
-          47.946503
+          6.558558,
+          48.549385
         ],
         "details": [
           "La mesure est obligatoire",
-          "début : situé 9812 m au nord de Fougerolles, fin : situé 315 m au sud de Plombières-les-Bains"
+          "début : situé 1530 m à l'est de Lunéville, fin : situé 16900 m à l'ouest de Baccarat"
         ]
       },
       {
-        "situation_id": "261118-000866",
-        "record_id": "261118-000866-103",
-        "department": "57",
-        "road": "N4",
+        "situation_id": "261119-000778",
+        "record_id": "261119-000778-103",
+        "department": "54",
+        "road": "N59",
         "town": "",
         "coordinates": [
-          6.961059,
-          48.698463
+          6.558363,
+          48.549778
         ],
         "details": [
           "La mesure est obligatoire",
-          "début : situé 4783 m à l'ouest de Sarrebourg, fin : situé 160 m à l'est de Héming"
+          "début : situé 15649 m à l'ouest de Baccarat, fin : situé 2731 m à l'est de Lunéville"
         ]
       },
       {
@@ -104,35 +103,18 @@
           "début : situé 10609 m à l'est de Gogney, fin : situé 41 m à l'ouest de Héming"
         ]
       }
-    ],
-    "ns2:GeneralNetworkManagement": [
-      {
-        "situation_id": "261118-000339",
-        "record_id": "261118-000339-103",
-        "department": "88",
-        "road": "",
-        "town": "",
-        "coordinates": [
-          6.4584913,
-          47.94596
-        ],
-        "details": [
-          "Sur 400 m à 0 m de la fin de la bretelle. La mesure est obligatoire",
-          "situé 1064 m au sud de Plombières-les-Bains"
-        ]
-      }
     ]
   },
   "unknown_types_inactive": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 54,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 61,
     "ns2:ReroutingManagement": 23,
-    "ns2:SpeedManagement": 5,
-    "ns2:GeneralInstructionOrMessageToRoadUsers": 2,
+    "ns2:SpeedManagement": 7,
+    "ns2:GeneralInstructionOrMessageToRoadUsers": 4,
     "ns2:GeneralNetworkManagement": 2,
     "ns2:WeatherRelatedRoadConditions": 1
   },
   "unknown_types_location_rejections": {
-    "outside_department": 180
+    "outside_department": 164
   },
   "precise_department_boundaries": true,
   "boundary_file": "lorraine_departements.geojson"
