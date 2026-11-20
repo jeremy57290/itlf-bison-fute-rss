@@ -1,31 +1,31 @@
 {
-  "generated_at": "2026-11-20T03:58:35.219326+00:00",
-  "accepted": 7,
+  "generated_at": "2026-11-20T12:34:36.326132+00:00",
+  "accepted": 19,
   "management_published_records": {
-    "lane": 2
+    "lane": 3
   },
-  "management_published_situations": 2,
+  "management_published_situations": 3,
   "rejected_by_reason": {
-    "unrecognized_category": 253,
-    "inactive_or_outside_validity": 85,
-    "outside_department": 169
+    "unrecognized_category": 225,
+    "inactive_or_outside_validity": 77,
+    "outside_department": 195
   },
   "unrecognized_types": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 129,
-    "ns2:ReroutingManagement": 56,
-    "ns2:SpeedManagement": 24,
-    "ns2:GeneralNetworkManagement": 23,
-    "ns2:GeneralInstructionOrMessageToRoadUsers": 12,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 114,
+    "ns2:ReroutingManagement": 41,
+    "ns2:SpeedManagement": 25,
+    "ns2:GeneralNetworkManagement": 22,
+    "ns2:GeneralInstructionOrMessageToRoadUsers": 13,
     "ns2:WeatherRelatedRoadConditions": 7,
-    "ns2:RoadsideServiceDisruption": 1,
-    "ns2:NonWeatherRelatedRoadConditions": 1
+    "ns2:NonWeatherRelatedRoadConditions": 2,
+    "ns2:RoadsideServiceDisruption": 1
   },
   "inactive_statuses": {
-    "definedByValidityTimeSpec": 83,
-    "suspended": 2
+    "definedByValidityTimeSpec": 76,
+    "suspended": 1
   },
   "unknown_types_in_lorraine": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 3
+    "ns2:RoadOrCarriagewayOrLaneManagement": 4
   },
   "unknown_types_in_lorraine_examples": {
     "ns2:RoadOrCarriagewayOrLaneManagement": [
@@ -73,19 +73,34 @@
           "La mesure est obligatoire",
           "début : situé 10609 m à l'est de Gogney, fin : situé 41 m à l'ouest de Héming"
         ]
+      },
+      {
+        "situation_id": "261120-001158",
+        "record_id": "261120-001158-102",
+        "department": "54",
+        "road": "N4",
+        "town": "",
+        "coordinates": [
+          6.472646,
+          48.57726
+        ],
+        "details": [
+          "Dû a chantier de réparation de glissières en TPC. La mesure est obligatoire",
+          "début : situé 3559 m à l'ouest de Lunéville ZI, fin : situé 3843 m à l'est de Aire de repos de Vitrimont"
+        ]
       }
     ]
   },
   "unknown_types_inactive": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 30,
-    "ns2:ReroutingManagement": 17,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 32,
+    "ns2:ReroutingManagement": 21,
     "ns2:SpeedManagement": 7,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 4,
     "ns2:WeatherRelatedRoadConditions": 1,
     "ns2:GeneralNetworkManagement": 1
   },
   "unknown_types_location_rejections": {
-    "outside_department": 190
+    "outside_department": 155
   },
   "precise_department_boundaries": true,
   "boundary_file": "lorraine_departements.geojson"
