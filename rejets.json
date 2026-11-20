@@ -1,31 +1,32 @@
 {
-  "generated_at": "2026-11-20T12:34:36.326132+00:00",
-  "accepted": 19,
+  "generated_at": "2026-11-20T20:41:09.029685+00:00",
+  "accepted": 7,
   "management_published_records": {
-    "lane": 3
+    "lane": 1
   },
-  "management_published_situations": 3,
+  "management_published_situations": 1,
   "rejected_by_reason": {
-    "unrecognized_category": 225,
-    "inactive_or_outside_validity": 77,
-    "outside_department": 195
+    "unrecognized_category": 204,
+    "inactive_or_outside_validity": 90,
+    "outside_department": 143
   },
   "unrecognized_types": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 114,
-    "ns2:ReroutingManagement": 41,
-    "ns2:SpeedManagement": 25,
-    "ns2:GeneralNetworkManagement": 22,
-    "ns2:GeneralInstructionOrMessageToRoadUsers": 13,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 93,
+    "ns2:ReroutingManagement": 43,
+    "ns2:SpeedManagement": 24,
+    "ns2:GeneralNetworkManagement": 23,
+    "ns2:GeneralInstructionOrMessageToRoadUsers": 12,
     "ns2:WeatherRelatedRoadConditions": 7,
-    "ns2:NonWeatherRelatedRoadConditions": 2,
-    "ns2:RoadsideServiceDisruption": 1
+    "ns2:RoadsideServiceDisruption": 1,
+    "ns2:NonWeatherRelatedRoadConditions": 1
   },
   "inactive_statuses": {
-    "definedByValidityTimeSpec": 76,
+    "definedByValidityTimeSpec": 89,
     "suspended": 1
   },
   "unknown_types_in_lorraine": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 4
+    "ns2:RoadOrCarriagewayOrLaneManagement": 3,
+    "ns2:GeneralNetworkManagement": 2
   },
   "unknown_types_in_lorraine_examples": {
     "ns2:RoadOrCarriagewayOrLaneManagement": [
@@ -60,47 +61,64 @@
         ]
       },
       {
-        "situation_id": "261118-000866",
-        "record_id": "261118-000866-102",
+        "situation_id": "261120-002428",
+        "record_id": "261120-002428-103",
         "department": "57",
-        "road": "N4",
+        "road": "A30",
         "town": "",
         "coordinates": [
-          6.9589505,
-          48.697365
+          5.963398,
+          49.389236
         ],
         "details": [
           "La mesure est obligatoire",
-          "début : situé 10609 m à l'est de Gogney, fin : situé 41 m à l'ouest de Héming"
+          "situé 9 m à l'ouest de Boulange"
+        ]
+      }
+    ],
+    "ns2:GeneralNetworkManagement": [
+      {
+        "situation_id": "261120-002428",
+        "record_id": "261120-002428-105",
+        "department": "57",
+        "road": "",
+        "town": "",
+        "coordinates": [
+          5.984505,
+          49.39147
+        ],
+        "details": [
+          "La mesure est obligatoire",
+          "situé 3184 m à l'ouest de Fontoy"
         ]
       },
       {
-        "situation_id": "261120-001158",
-        "record_id": "261120-001158-102",
-        "department": "54",
-        "road": "N4",
+        "situation_id": "261120-002428",
+        "record_id": "261120-002428-104",
+        "department": "57",
+        "road": "",
         "town": "",
         "coordinates": [
-          6.472646,
-          48.57726
+          5.9794583,
+          49.35768
         ],
         "details": [
-          "Dû a chantier de réparation de glissières en TPC. La mesure est obligatoire",
-          "début : situé 3559 m à l'ouest de Lunéville ZI, fin : situé 3843 m à l'est de Aire de repos de Vitrimont"
+          "La mesure est obligatoire",
+          "situé 2930 m à l'ouest de Aire du Bois des Tillots"
         ]
       }
     ]
   },
   "unknown_types_inactive": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 32,
-    "ns2:ReroutingManagement": 21,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 31,
+    "ns2:ReroutingManagement": 26,
     "ns2:SpeedManagement": 7,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 4,
     "ns2:WeatherRelatedRoadConditions": 1,
     "ns2:GeneralNetworkManagement": 1
   },
   "unknown_types_location_rejections": {
-    "outside_department": 155
+    "outside_department": 129
   },
   "precise_department_boundaries": true,
   "boundary_file": "lorraine_departements.geojson"
