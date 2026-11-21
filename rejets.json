@@ -1,31 +1,31 @@
 {
-  "generated_at": "2026-11-21T16:25:43.042504+00:00",
-  "accepted": 5,
+  "generated_at": "2026-11-21T21:45:58.874809+00:00",
+  "accepted": 7,
   "management_published_records": {
     "lane": 1
   },
   "management_published_situations": 1,
   "rejected_by_reason": {
-    "unrecognized_category": 196,
-    "inactive_or_outside_validity": 94,
-    "outside_department": 116
+    "unrecognized_category": 200,
+    "inactive_or_outside_validity": 91,
+    "outside_department": 114
   },
   "unrecognized_types": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 87,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 89,
     "ns2:ReroutingManagement": 44,
     "ns2:SpeedManagement": 24,
     "ns2:GeneralNetworkManagement": 21,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 12,
     "ns2:WeatherRelatedRoadConditions": 7,
+    "ns2:PublicEvent": 2,
     "ns2:RoadsideServiceDisruption": 1
   },
   "inactive_statuses": {
-    "definedByValidityTimeSpec": 93,
+    "definedByValidityTimeSpec": 90,
     "suspended": 1
   },
   "unknown_types_in_lorraine": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 2,
-    "ns2:GeneralNetworkManagement": 1
+    "ns2:RoadOrCarriagewayOrLaneManagement": 2
   },
   "unknown_types_in_lorraine_examples": {
     "ns2:RoadOrCarriagewayOrLaneManagement": [
@@ -59,27 +59,10 @@
           "situé 187 m au sud de Pont-à-Mousson"
         ]
       }
-    ],
-    "ns2:GeneralNetworkManagement": [
-      {
-        "situation_id": "261121-001005",
-        "record_id": "261121-001005-102",
-        "department": "54",
-        "road": "",
-        "town": "",
-        "coordinates": [
-          5.7662325,
-          49.53533
-        ],
-        "details": [
-          "Lié a accident au PR 19+800 direction Metz. La mesure est obligatoire",
-          "situé 1798 m au nord de Longwy"
-        ]
-      }
     ]
   },
   "unknown_types_inactive": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 29,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 27,
     "ns2:ReroutingManagement": 27,
     "ns2:SpeedManagement": 7,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 4,
@@ -87,7 +70,7 @@
     "ns2:GeneralNetworkManagement": 1
   },
   "unknown_types_location_rejections": {
-    "outside_department": 124
+    "outside_department": 131
   },
   "precise_department_boundaries": true,
   "boundary_file": "lorraine_departements.geojson"
