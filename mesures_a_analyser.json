@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-21T01:44:28.872927+00:00",
+  "generated_at": "2026-11-21T08:47:56.089044+00:00",
   "purpose": "Diagnostic of unrecognized DATEX types; some explicitly coded lane/contraflow measures are now published",
-  "count": 4,
+  "count": 8,
   "records": [
     {
       "situation_id": "261013-000532",
@@ -1538,6 +1538,1418 @@
         {
           "tag": "situationVersionTime",
           "value": "2026-11-20T23:04:49.092+01:00"
+        }
+      ]
+    },
+    {
+      "situation_id": "261121-000245",
+      "record_id": "261121-000245-1",
+      "record_type": "ns2:WeatherRelatedRoadConditions",
+      "department": "54",
+      "road": "N52",
+      "coordinates": [
+        5.8059053,
+        49.549255
+      ],
+      "validity_status": "definedByValidityTimeSpec",
+      "details": [
+        "Traitement en cours",
+        "début : situé 3703 m au nord de Mexy, fin : situé 97 m au sud de Mont-Saint-Martin - Belgique",
+        "Mont-Saint-Martin"
+      ],
+      "record_fields": [
+        {
+          "tag": "situationRecord",
+          "value": "",
+          "attributes": {
+            "type": "ns2:WeatherRelatedRoadConditions",
+            "id": "261121-000245-1",
+            "version": "1"
+          }
+        },
+        {
+          "tag": "situationRecordCreationTime",
+          "value": "2026-11-21T07:00:04.636+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordObservationTime",
+          "value": "2026-11-21T07:00:02.685+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordVersionTime",
+          "value": "2026-11-21T07:00:05.249+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordFirstSupplierVersionTime",
+          "value": "2026-11-21T07:00:04.636+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "probabilityOfOccurrence",
+          "value": "certain",
+          "attributes": {}
+        },
+        {
+          "tag": "sourceIdentification",
+          "value": "Direction interdépartementale des routes/DIR Est",
+          "attributes": {}
+        },
+        {
+          "tag": "sourceType",
+          "value": "roadOperatorPatrol",
+          "attributes": {}
+        },
+        {
+          "tag": "reliable",
+          "value": "true",
+          "attributes": {}
+        },
+        {
+          "tag": "validityStatus",
+          "value": "definedByValidityTimeSpec",
+          "attributes": {}
+        },
+        {
+          "tag": "overallStartTime",
+          "value": "2026-11-21T07:00:02.685+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Traitement en cours",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "internalNote",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Point particulier : début : situé 3703 m au nord de Mexy, fin : situé 97 m au sud de Mont-Saint-Martin - Belgique",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "GE_DIRE/Service régional d’exploitation Grand Est (SREX)/District Metz/CEI Villers-la-Montagne",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "groupOfLocations",
+          "value": "",
+          "attributes": {
+            "type": "ns2:Linear"
+          }
+        },
+        {
+          "tag": "tpegDirection",
+          "value": "bothWays",
+          "attributes": {}
+        },
+        {
+          "tag": "tpegLinearLocationType",
+          "value": "segment",
+          "attributes": {}
+        },
+        {
+          "tag": "to",
+          "value": "",
+          "attributes": {
+            "type": "ns2:TpegNonJunctionPoint"
+          }
+        },
+        {
+          "tag": "latitude",
+          "value": "49.549255",
+          "attributes": {}
+        },
+        {
+          "tag": "longitude",
+          "value": "5.8059053",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Mont-Saint-Martin",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "townName",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "N52",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "linkName",
+          "attributes": {}
+        },
+        {
+          "tag": "from",
+          "value": "",
+          "attributes": {
+            "type": "ns2:TpegNonJunctionPoint"
+          }
+        },
+        {
+          "tag": "latitude",
+          "value": "49.515198",
+          "attributes": {}
+        },
+        {
+          "tag": "longitude",
+          "value": "5.749249",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Réhon",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "townName",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "N52",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "linkName",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLinear",
+          "value": "",
+          "attributes": {
+            "type": "ns2:AlertCMethod4Linear"
+          }
+        },
+        {
+          "tag": "alertCLocationCountryCode",
+          "value": "F",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLocationTableNumber",
+          "value": "32",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLocationTableVersion",
+          "value": "11.0",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCDirectionCoded",
+          "value": "both",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Mont-Saint-Martin - Belgique",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "specificLocation",
+          "value": "43104",
+          "attributes": {}
+        },
+        {
+          "tag": "offsetDistance",
+          "value": "97",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Mexy",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "specificLocation",
+          "value": "44545",
+          "attributes": {}
+        },
+        {
+          "tag": "offsetDistance",
+          "value": "3703",
+          "attributes": {}
+        },
+        {
+          "tag": "directionRelativeOnLinearSection",
+          "value": "both",
+          "attributes": {}
+        },
+        {
+          "tag": "roadNumber",
+          "value": "N0052",
+          "attributes": {}
+        },
+        {
+          "tag": "fromPoint",
+          "value": "",
+          "attributes": {
+            "type": "ns2:DistanceFromLinearElementReferent"
+          }
+        },
+        {
+          "tag": "distanceAlong",
+          "value": "962.0",
+          "attributes": {}
+        },
+        {
+          "tag": "referentIdentifier",
+          "value": "54PR24D",
+          "attributes": {}
+        },
+        {
+          "tag": "referentType",
+          "value": "referenceMarker",
+          "attributes": {}
+        },
+        {
+          "tag": "toPoint",
+          "value": "",
+          "attributes": {
+            "type": "ns2:DistanceFromLinearElementReferent"
+          }
+        },
+        {
+          "tag": "distanceAlong",
+          "value": "0.0",
+          "attributes": {}
+        },
+        {
+          "tag": "referentIdentifier",
+          "value": "54PR18U",
+          "attributes": {}
+        },
+        {
+          "tag": "referentType",
+          "value": "referenceMarker",
+          "attributes": {}
+        },
+        {
+          "tag": "safetyRelatedMessage",
+          "value": "true",
+          "attributes": {}
+        },
+        {
+          "tag": "drivingConditionType",
+          "value": "passableWithCare",
+          "attributes": {}
+        },
+        {
+          "tag": "weatherRelatedRoadConditionType",
+          "value": "blackIce",
+          "attributes": {}
+        }
+      ],
+      "situation_fields": [
+        {
+          "tag": "overallSeverity",
+          "value": "medium"
+        },
+        {
+          "tag": "situationVersionTime",
+          "value": "2026-11-21T07:00:05.249+01:00"
+        }
+      ]
+    },
+    {
+      "situation_id": "261121-000246",
+      "record_id": "261121-000246-1",
+      "record_type": "ns2:WeatherRelatedRoadConditions",
+      "department": "54",
+      "road": "N52",
+      "coordinates": [
+        5.749249,
+        49.515198
+      ],
+      "validity_status": "definedByValidityTimeSpec",
+      "details": [
+        "Traitement en cours",
+        "début : situé 1129 m au nord de Marange-Silvange, fin : situé 314 m au sud de Longwy",
+        "Réhon"
+      ],
+      "record_fields": [
+        {
+          "tag": "situationRecord",
+          "value": "",
+          "attributes": {
+            "type": "ns2:WeatherRelatedRoadConditions",
+            "id": "261121-000246-1",
+            "version": "1"
+          }
+        },
+        {
+          "tag": "situationRecordCreationTime",
+          "value": "2026-11-21T07:00:06.807+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordObservationTime",
+          "value": "2026-11-21T07:00:02.685+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordVersionTime",
+          "value": "2026-11-21T07:00:09.322+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordFirstSupplierVersionTime",
+          "value": "2026-11-21T07:00:06.807+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "probabilityOfOccurrence",
+          "value": "certain",
+          "attributes": {}
+        },
+        {
+          "tag": "sourceIdentification",
+          "value": "Direction interdépartementale des routes/DIR Est",
+          "attributes": {}
+        },
+        {
+          "tag": "sourceType",
+          "value": "roadOperatorPatrol",
+          "attributes": {}
+        },
+        {
+          "tag": "reliable",
+          "value": "true",
+          "attributes": {}
+        },
+        {
+          "tag": "validityStatus",
+          "value": "definedByValidityTimeSpec",
+          "attributes": {}
+        },
+        {
+          "tag": "overallStartTime",
+          "value": "2026-11-21T07:00:02.685+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Traitement en cours",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "internalNote",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Point particulier : début : situé 1129 m au nord de Marange-Silvange, fin : situé 314 m au sud de Longwy",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "GE_DIRE/Service régional d’exploitation Grand Est (SREX)/District Metz/CEI Villers-la-Montagne",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "groupOfLocations",
+          "value": "",
+          "attributes": {
+            "type": "ns2:Linear"
+          }
+        },
+        {
+          "tag": "tpegDirection",
+          "value": "bothWays",
+          "attributes": {}
+        },
+        {
+          "tag": "tpegLinearLocationType",
+          "value": "segment",
+          "attributes": {}
+        },
+        {
+          "tag": "to",
+          "value": "",
+          "attributes": {
+            "type": "ns2:TpegNonJunctionPoint"
+          }
+        },
+        {
+          "tag": "latitude",
+          "value": "49.515198",
+          "attributes": {}
+        },
+        {
+          "tag": "longitude",
+          "value": "5.749249",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Réhon",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "townName",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "N52",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "linkName",
+          "attributes": {}
+        },
+        {
+          "tag": "from",
+          "value": "",
+          "attributes": {
+            "type": "ns2:TpegNonJunctionPoint"
+          }
+        },
+        {
+          "tag": "latitude",
+          "value": "49.4599",
+          "attributes": {}
+        },
+        {
+          "tag": "longitude",
+          "value": "5.858729",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Villers-la-Montagne",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "townName",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "N52",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "linkName",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLinear",
+          "value": "",
+          "attributes": {
+            "type": "ns2:AlertCMethod4Linear"
+          }
+        },
+        {
+          "tag": "alertCLocationCountryCode",
+          "value": "F",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLocationTableNumber",
+          "value": "32",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLocationTableVersion",
+          "value": "11.0",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCDirectionCoded",
+          "value": "both",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Longwy",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "specificLocation",
+          "value": "43102",
+          "attributes": {}
+        },
+        {
+          "tag": "offsetDistance",
+          "value": "314",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Marange-Silvange",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "specificLocation",
+          "value": "43094",
+          "attributes": {}
+        },
+        {
+          "tag": "offsetDistance",
+          "value": "1129",
+          "attributes": {}
+        },
+        {
+          "tag": "directionRelativeOnLinearSection",
+          "value": "both",
+          "attributes": {}
+        },
+        {
+          "tag": "roadNumber",
+          "value": "N0052",
+          "attributes": {}
+        },
+        {
+          "tag": "fromPoint",
+          "value": "",
+          "attributes": {
+            "type": "ns2:DistanceFromLinearElementReferent"
+          }
+        },
+        {
+          "tag": "distanceAlong",
+          "value": "0.0",
+          "attributes": {}
+        },
+        {
+          "tag": "referentIdentifier",
+          "value": "54PR18U",
+          "attributes": {}
+        },
+        {
+          "tag": "referentType",
+          "value": "referenceMarker",
+          "attributes": {}
+        },
+        {
+          "tag": "toPoint",
+          "value": "",
+          "attributes": {
+            "type": "ns2:DistanceFromLinearElementReferent"
+          }
+        },
+        {
+          "tag": "distanceAlong",
+          "value": "100.0",
+          "attributes": {}
+        },
+        {
+          "tag": "referentIdentifier",
+          "value": "54PR7D",
+          "attributes": {}
+        },
+        {
+          "tag": "referentType",
+          "value": "referenceMarker",
+          "attributes": {}
+        },
+        {
+          "tag": "safetyRelatedMessage",
+          "value": "true",
+          "attributes": {}
+        },
+        {
+          "tag": "drivingConditionType",
+          "value": "passableWithCare",
+          "attributes": {}
+        },
+        {
+          "tag": "weatherRelatedRoadConditionType",
+          "value": "blackIce",
+          "attributes": {}
+        }
+      ],
+      "situation_fields": [
+        {
+          "tag": "overallSeverity",
+          "value": "medium"
+        },
+        {
+          "tag": "situationVersionTime",
+          "value": "2026-11-21T07:00:09.322+01:00"
+        }
+      ]
+    },
+    {
+      "situation_id": "261121-000311",
+      "record_id": "261121-000311-1",
+      "record_type": "ns2:WeatherRelatedRoadConditions",
+      "department": "57",
+      "road": "A30",
+      "coordinates": [
+        5.9181557,
+        49.41554
+      ],
+      "validity_status": "definedByValidityTimeSpec",
+      "details": [
+        "Traitement en cours",
+        "début : situé 2258 m à l'ouest de Aire du Bois des Tillots, fin : situé 0 m à l'est de Aumetz",
+        "Aumetz"
+      ],
+      "record_fields": [
+        {
+          "tag": "situationRecord",
+          "value": "",
+          "attributes": {
+            "type": "ns2:WeatherRelatedRoadConditions",
+            "id": "261121-000311-1",
+            "version": "1"
+          }
+        },
+        {
+          "tag": "situationRecordCreationTime",
+          "value": "2026-11-21T08:00:07.761+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordObservationTime",
+          "value": "2026-11-21T08:00:02.592+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordVersionTime",
+          "value": "2026-11-21T08:00:08.276+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordFirstSupplierVersionTime",
+          "value": "2026-11-21T08:00:07.761+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "probabilityOfOccurrence",
+          "value": "certain",
+          "attributes": {}
+        },
+        {
+          "tag": "sourceIdentification",
+          "value": "Direction interdépartementale des routes/DIR Est",
+          "attributes": {}
+        },
+        {
+          "tag": "sourceType",
+          "value": "roadOperatorPatrol",
+          "attributes": {}
+        },
+        {
+          "tag": "reliable",
+          "value": "true",
+          "attributes": {}
+        },
+        {
+          "tag": "validityStatus",
+          "value": "definedByValidityTimeSpec",
+          "attributes": {}
+        },
+        {
+          "tag": "overallStartTime",
+          "value": "2026-11-21T08:00:02.592+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Traitement en cours",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "internalNote",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Point particulier : début : situé 2258 m à l'ouest de Aire du Bois des Tillots, fin : situé 0 m à l'est de Aumetz",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "GE_DIRE/Service régional d’exploitation Grand Est (SREX)/District Metz/CEI Fameck",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "groupOfLocations",
+          "value": "",
+          "attributes": {
+            "type": "ns2:Linear"
+          }
+        },
+        {
+          "tag": "tpegDirection",
+          "value": "bothWays",
+          "attributes": {}
+        },
+        {
+          "tag": "tpegLinearLocationType",
+          "value": "segment",
+          "attributes": {}
+        },
+        {
+          "tag": "to",
+          "value": "",
+          "attributes": {
+            "type": "ns2:TpegNonJunctionPoint"
+          }
+        },
+        {
+          "tag": "latitude",
+          "value": "49.41554",
+          "attributes": {}
+        },
+        {
+          "tag": "longitude",
+          "value": "5.9181557",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Aumetz",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "townName",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "A30",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "linkName",
+          "attributes": {}
+        },
+        {
+          "tag": "from",
+          "value": "",
+          "attributes": {
+            "type": "ns2:TpegNonJunctionPoint"
+          }
+        },
+        {
+          "tag": "latitude",
+          "value": "49.352104",
+          "attributes": {}
+        },
+        {
+          "tag": "longitude",
+          "value": "5.983767",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Fontoy",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "townName",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "A30",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "linkName",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLinear",
+          "value": "",
+          "attributes": {
+            "type": "ns2:AlertCMethod4Linear"
+          }
+        },
+        {
+          "tag": "alertCLocationCountryCode",
+          "value": "F",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLocationTableNumber",
+          "value": "32",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLocationTableVersion",
+          "value": "11.0",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCDirectionCoded",
+          "value": "both",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Aumetz",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "specificLocation",
+          "value": "21966",
+          "attributes": {}
+        },
+        {
+          "tag": "offsetDistance",
+          "value": "0",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Aire du Bois des Tillots",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "specificLocation",
+          "value": "43143",
+          "attributes": {}
+        },
+        {
+          "tag": "offsetDistance",
+          "value": "2258",
+          "attributes": {}
+        },
+        {
+          "tag": "directionRelativeOnLinearSection",
+          "value": "both",
+          "attributes": {}
+        },
+        {
+          "tag": "roadNumber",
+          "value": "A0030",
+          "attributes": {}
+        },
+        {
+          "tag": "fromPoint",
+          "value": "",
+          "attributes": {
+            "type": "ns2:DistanceFromLinearElementReferent"
+          }
+        },
+        {
+          "tag": "distanceAlong",
+          "value": "428.0",
+          "attributes": {}
+        },
+        {
+          "tag": "referentIdentifier",
+          "value": "57PR26D",
+          "attributes": {}
+        },
+        {
+          "tag": "referentType",
+          "value": "referenceMarker",
+          "attributes": {}
+        },
+        {
+          "tag": "toPoint",
+          "value": "",
+          "attributes": {
+            "type": "ns2:DistanceFromLinearElementReferent"
+          }
+        },
+        {
+          "tag": "distanceAlong",
+          "value": "0.0",
+          "attributes": {}
+        },
+        {
+          "tag": "referentIdentifier",
+          "value": "57PR17D",
+          "attributes": {}
+        },
+        {
+          "tag": "referentType",
+          "value": "referenceMarker",
+          "attributes": {}
+        },
+        {
+          "tag": "safetyRelatedMessage",
+          "value": "true",
+          "attributes": {}
+        },
+        {
+          "tag": "drivingConditionType",
+          "value": "passableWithCare",
+          "attributes": {}
+        },
+        {
+          "tag": "weatherRelatedRoadConditionType",
+          "value": "blackIce",
+          "attributes": {}
+        }
+      ],
+      "situation_fields": [
+        {
+          "tag": "overallSeverity",
+          "value": "medium"
+        },
+        {
+          "tag": "situationVersionTime",
+          "value": "2026-11-21T08:00:08.276+01:00"
+        }
+      ]
+    },
+    {
+      "situation_id": "261121-000312",
+      "record_id": "261121-000312-1",
+      "record_type": "ns2:WeatherRelatedRoadConditions",
+      "department": "57",
+      "road": "A30",
+      "coordinates": [
+        5.983767,
+        49.352104
+      ],
+      "validity_status": "definedByValidityTimeSpec",
+      "details": [
+        "Traitement en cours",
+        "début : situé 2453 m à l'ouest de Hayange est, fin : situé 815 m à l'est de Fontoy",
+        "Fontoy"
+      ],
+      "record_fields": [
+        {
+          "tag": "situationRecord",
+          "value": "",
+          "attributes": {
+            "type": "ns2:WeatherRelatedRoadConditions",
+            "id": "261121-000312-1",
+            "version": "1"
+          }
+        },
+        {
+          "tag": "situationRecordCreationTime",
+          "value": "2026-11-21T08:00:09.076+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordObservationTime",
+          "value": "2026-11-21T08:00:02.592+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordVersionTime",
+          "value": "2026-11-21T08:00:09.357+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordFirstSupplierVersionTime",
+          "value": "2026-11-21T08:00:09.076+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "probabilityOfOccurrence",
+          "value": "certain",
+          "attributes": {}
+        },
+        {
+          "tag": "sourceIdentification",
+          "value": "Direction interdépartementale des routes/DIR Est",
+          "attributes": {}
+        },
+        {
+          "tag": "sourceType",
+          "value": "roadOperatorPatrol",
+          "attributes": {}
+        },
+        {
+          "tag": "reliable",
+          "value": "true",
+          "attributes": {}
+        },
+        {
+          "tag": "validityStatus",
+          "value": "definedByValidityTimeSpec",
+          "attributes": {}
+        },
+        {
+          "tag": "overallStartTime",
+          "value": "2026-11-21T08:00:02.592+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Traitement en cours",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "internalNote",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Point particulier : début : situé 2453 m à l'ouest de Hayange est, fin : situé 815 m à l'est de Fontoy",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "GE_DIRE/Service régional d’exploitation Grand Est (SREX)/District Metz/CEI Fameck",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "groupOfLocations",
+          "value": "",
+          "attributes": {
+            "type": "ns2:Linear"
+          }
+        },
+        {
+          "tag": "tpegDirection",
+          "value": "bothWays",
+          "attributes": {}
+        },
+        {
+          "tag": "tpegLinearLocationType",
+          "value": "segment",
+          "attributes": {}
+        },
+        {
+          "tag": "to",
+          "value": "",
+          "attributes": {
+            "type": "ns2:TpegNonJunctionPoint"
+          }
+        },
+        {
+          "tag": "latitude",
+          "value": "49.352104",
+          "attributes": {}
+        },
+        {
+          "tag": "longitude",
+          "value": "5.983767",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Fontoy",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "townName",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "A30",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "linkName",
+          "attributes": {}
+        },
+        {
+          "tag": "from",
+          "value": "",
+          "attributes": {
+            "type": "ns2:TpegNonJunctionPoint"
+          }
+        },
+        {
+          "tag": "latitude",
+          "value": "49.331425",
+          "attributes": {}
+        },
+        {
+          "tag": "longitude",
+          "value": "6.0520134",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Hayange",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "townName",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "A30",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "linkName",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLinear",
+          "value": "",
+          "attributes": {
+            "type": "ns2:AlertCMethod4Linear"
+          }
+        },
+        {
+          "tag": "alertCLocationCountryCode",
+          "value": "F",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLocationTableNumber",
+          "value": "32",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLocationTableVersion",
+          "value": "11.0",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCDirectionCoded",
+          "value": "both",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Fontoy",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "specificLocation",
+          "value": "43144",
+          "attributes": {}
+        },
+        {
+          "tag": "offsetDistance",
+          "value": "815",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Hayange est",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "specificLocation",
+          "value": "43139",
+          "attributes": {}
+        },
+        {
+          "tag": "offsetDistance",
+          "value": "2453",
+          "attributes": {}
+        },
+        {
+          "tag": "directionRelativeOnLinearSection",
+          "value": "both",
+          "attributes": {}
+        },
+        {
+          "tag": "roadNumber",
+          "value": "A0030",
+          "attributes": {}
+        },
+        {
+          "tag": "fromPoint",
+          "value": "",
+          "attributes": {
+            "type": "ns2:DistanceFromLinearElementReferent"
+          }
+        },
+        {
+          "tag": "distanceAlong",
+          "value": "0.0",
+          "attributes": {}
+        },
+        {
+          "tag": "referentIdentifier",
+          "value": "57PR17D",
+          "attributes": {}
+        },
+        {
+          "tag": "referentType",
+          "value": "referenceMarker",
+          "attributes": {}
+        },
+        {
+          "tag": "toPoint",
+          "value": "",
+          "attributes": {
+            "type": "ns2:DistanceFromLinearElementReferent"
+          }
+        },
+        {
+          "tag": "distanceAlong",
+          "value": "578.0",
+          "attributes": {}
+        },
+        {
+          "tag": "referentIdentifier",
+          "value": "57PR10D",
+          "attributes": {}
+        },
+        {
+          "tag": "referentType",
+          "value": "referenceMarker",
+          "attributes": {}
+        },
+        {
+          "tag": "safetyRelatedMessage",
+          "value": "true",
+          "attributes": {}
+        },
+        {
+          "tag": "drivingConditionType",
+          "value": "passableWithCare",
+          "attributes": {}
+        },
+        {
+          "tag": "weatherRelatedRoadConditionType",
+          "value": "blackIce",
+          "attributes": {}
+        }
+      ],
+      "situation_fields": [
+        {
+          "tag": "overallSeverity",
+          "value": "medium"
+        },
+        {
+          "tag": "situationVersionTime",
+          "value": "2026-11-21T08:00:09.357+01:00"
         }
       ]
     }

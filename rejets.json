@@ -1,30 +1,31 @@
 {
-  "generated_at": "2026-11-21T01:44:28.875979+00:00",
-  "accepted": 7,
+  "generated_at": "2026-11-21T08:47:56.094164+00:00",
+  "accepted": 10,
   "management_published_records": {
     "lane": 3
   },
   "management_published_situations": 2,
   "rejected_by_reason": {
-    "unrecognized_category": 202,
-    "inactive_or_outside_validity": 94,
-    "outside_department": 106
+    "unrecognized_category": 205,
+    "inactive_or_outside_validity": 93,
+    "outside_department": 130
   },
   "unrecognized_types": {
     "ns2:RoadOrCarriagewayOrLaneManagement": 92,
-    "ns2:ReroutingManagement": 44,
+    "ns2:ReroutingManagement": 42,
     "ns2:SpeedManagement": 24,
     "ns2:GeneralNetworkManagement": 22,
+    "ns2:WeatherRelatedRoadConditions": 12,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 12,
-    "ns2:WeatherRelatedRoadConditions": 7,
     "ns2:RoadsideServiceDisruption": 1
   },
   "inactive_statuses": {
-    "definedByValidityTimeSpec": 93,
+    "definedByValidityTimeSpec": 92,
     "suspended": 1
   },
   "unknown_types_in_lorraine": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 4
+    "ns2:RoadOrCarriagewayOrLaneManagement": 4,
+    "ns2:WeatherRelatedRoadConditions": 4
   },
   "unknown_types_in_lorraine_examples": {
     "ns2:RoadOrCarriagewayOrLaneManagement": [
@@ -88,6 +89,68 @@
           "début : situé 440 m à l'ouest de Tunnel du Bois de Chêne, fin : situé 445 m à l'est de Aire des Castines"
         ]
       }
+    ],
+    "ns2:WeatherRelatedRoadConditions": [
+      {
+        "situation_id": "261121-000245",
+        "record_id": "261121-000245-1",
+        "department": "54",
+        "road": "N52",
+        "town": "",
+        "coordinates": [
+          5.8059053,
+          49.549255
+        ],
+        "details": [
+          "Traitement en cours",
+          "début : situé 3703 m au nord de Mexy, fin : situé 97 m au sud de Mont-Saint-Martin - Belgique"
+        ]
+      },
+      {
+        "situation_id": "261121-000246",
+        "record_id": "261121-000246-1",
+        "department": "54",
+        "road": "N52",
+        "town": "",
+        "coordinates": [
+          5.749249,
+          49.515198
+        ],
+        "details": [
+          "Traitement en cours",
+          "début : situé 1129 m au nord de Marange-Silvange, fin : situé 314 m au sud de Longwy"
+        ]
+      },
+      {
+        "situation_id": "261121-000311",
+        "record_id": "261121-000311-1",
+        "department": "57",
+        "road": "A30",
+        "town": "",
+        "coordinates": [
+          5.9181557,
+          49.41554
+        ],
+        "details": [
+          "Traitement en cours",
+          "début : situé 2258 m à l'ouest de Aire du Bois des Tillots, fin : situé 0 m à l'est de Aumetz"
+        ]
+      },
+      {
+        "situation_id": "261121-000312",
+        "record_id": "261121-000312-1",
+        "department": "57",
+        "road": "A30",
+        "town": "",
+        "coordinates": [
+          5.983767,
+          49.352104
+        ],
+        "details": [
+          "Traitement en cours",
+          "début : situé 2453 m à l'ouest de Hayange est, fin : situé 815 m à l'est de Fontoy"
+        ]
+      }
     ]
   },
   "unknown_types_inactive": {
@@ -95,11 +158,11 @@
     "ns2:ReroutingManagement": 27,
     "ns2:SpeedManagement": 7,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 4,
-    "ns2:GeneralNetworkManagement": 2,
+    "ns2:GeneralNetworkManagement": 3,
     "ns2:WeatherRelatedRoadConditions": 1
   },
   "unknown_types_location_rejections": {
-    "outside_department": 126
+    "outside_department": 124
   },
   "precise_department_boundaries": true,
   "boundary_file": "lorraine_departements.geojson"
