@@ -1,32 +1,30 @@
 {
-  "generated_at": "2026-11-20T20:41:09.029685+00:00",
+  "generated_at": "2026-11-21T01:44:28.875979+00:00",
   "accepted": 7,
   "management_published_records": {
-    "lane": 1
+    "lane": 3
   },
-  "management_published_situations": 1,
+  "management_published_situations": 2,
   "rejected_by_reason": {
-    "unrecognized_category": 204,
-    "inactive_or_outside_validity": 90,
-    "outside_department": 143
+    "unrecognized_category": 202,
+    "inactive_or_outside_validity": 94,
+    "outside_department": 106
   },
   "unrecognized_types": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 93,
-    "ns2:ReroutingManagement": 43,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 92,
+    "ns2:ReroutingManagement": 44,
     "ns2:SpeedManagement": 24,
-    "ns2:GeneralNetworkManagement": 23,
+    "ns2:GeneralNetworkManagement": 22,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 12,
     "ns2:WeatherRelatedRoadConditions": 7,
-    "ns2:RoadsideServiceDisruption": 1,
-    "ns2:NonWeatherRelatedRoadConditions": 1
+    "ns2:RoadsideServiceDisruption": 1
   },
   "inactive_statuses": {
-    "definedByValidityTimeSpec": 89,
+    "definedByValidityTimeSpec": 93,
     "suspended": 1
   },
   "unknown_types_in_lorraine": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 3,
-    "ns2:GeneralNetworkManagement": 2
+    "ns2:RoadOrCarriagewayOrLaneManagement": 4
   },
   "unknown_types_in_lorraine_examples": {
     "ns2:RoadOrCarriagewayOrLaneManagement": [
@@ -62,63 +60,46 @@
       },
       {
         "situation_id": "261120-002428",
-        "record_id": "261120-002428-103",
+        "record_id": "261120-002428-106",
         "department": "57",
         "road": "A30",
         "town": "",
         "coordinates": [
-          5.963398,
-          49.389236
+          6.0246024,
+          49.32969
         ],
         "details": [
           "La mesure est obligatoire",
-          "situé 9 m à l'ouest de Boulange"
-        ]
-      }
-    ],
-    "ns2:GeneralNetworkManagement": [
-      {
-        "situation_id": "261120-002428",
-        "record_id": "261120-002428-105",
-        "department": "57",
-        "road": "",
-        "town": "",
-        "coordinates": [
-          5.984505,
-          49.39147
-        ],
-        "details": [
-          "La mesure est obligatoire",
-          "situé 3184 m à l'ouest de Fontoy"
+          "début : situé 3212 m à l'est de Boulange, fin : situé 1440 m à l'ouest de Tunnel du Bois de Chêne"
         ]
       },
       {
         "situation_id": "261120-002428",
-        "record_id": "261120-002428-104",
+        "record_id": "261120-002428-107",
         "department": "57",
-        "road": "",
+        "road": "A30",
         "town": "",
         "coordinates": [
-          5.9794583,
-          49.35768
+          6.0219035,
+          49.32955
         ],
         "details": [
           "La mesure est obligatoire",
-          "situé 2930 m à l'ouest de Aire du Bois des Tillots"
+          "début : situé 440 m à l'ouest de Tunnel du Bois de Chêne, fin : situé 445 m à l'est de Aire des Castines"
         ]
       }
     ]
   },
   "unknown_types_inactive": {
     "ns2:RoadOrCarriagewayOrLaneManagement": 31,
-    "ns2:ReroutingManagement": 26,
+    "ns2:ReroutingManagement": 27,
     "ns2:SpeedManagement": 7,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 4,
-    "ns2:WeatherRelatedRoadConditions": 1,
-    "ns2:GeneralNetworkManagement": 1
+    "ns2:GeneralNetworkManagement": 2,
+    "ns2:WeatherRelatedRoadConditions": 1
   },
   "unknown_types_location_rejections": {
-    "outside_department": 129
+    "outside_department": 126
   },
   "precise_department_boundaries": true,
   "boundary_file": "lorraine_departements.geojson"

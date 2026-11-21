@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-20T20:41:09.025653+00:00",
+  "generated_at": "2026-11-21T01:44:28.872927+00:00",
   "purpose": "Diagnostic of unrecognized DATEX types; some explicitly coded lane/contraflow measures are now published",
-  "count": 5,
+  "count": 4,
   "records": [
     {
       "situation_id": "261013-000532",
@@ -753,19 +753,19 @@
     },
     {
       "situation_id": "261120-002428",
-      "record_id": "261120-002428-103",
+      "record_id": "261120-002428-106",
       "record_type": "ns2:RoadOrCarriagewayOrLaneManagement",
       "department": "57",
       "road": "A30",
       "coordinates": [
-        5.963398,
-        49.389236
+        6.0246024,
+        49.32969
       ],
       "validity_status": "definedByValidityTimeSpec",
       "details": [
         "La mesure est obligatoire",
-        "situé 9 m à l'ouest de Boulange",
-        "Boulange"
+        "début : situé 3212 m à l'est de Boulange, fin : situé 1440 m à l'ouest de Tunnel du Bois de Chêne",
+        "Neufchef"
       ],
       "record_fields": [
         {
@@ -773,33 +773,33 @@
           "value": "",
           "attributes": {
             "type": "ns2:RoadOrCarriagewayOrLaneManagement",
-            "id": "261120-002428-103",
-            "version": "3"
+            "id": "261120-002428-106",
+            "version": "5"
           }
         },
         {
           "tag": "situationRecordCreationReference",
-          "value": "EVE_DIRE_Myrabel-S-261120-0047-EVE_DIRE_Myrabel-SR-261120-000060",
+          "value": "EVE_DIRE_Myrabel-S-261120-0047-EVE_DIRE_Myrabel-SR-261120-000066",
           "attributes": {}
         },
         {
           "tag": "situationRecordCreationTime",
-          "value": "2026-11-20T19:38:39.090+01:00",
+          "value": "2026-11-20T22:36:59.748+01:00",
           "attributes": {}
         },
         {
           "tag": "situationRecordObservationTime",
-          "value": "2026-11-20T19:41:34.847+01:00",
+          "value": "2026-11-20T23:04:46.123+01:00",
           "attributes": {}
         },
         {
           "tag": "situationRecordVersionTime",
-          "value": "2026-11-20T19:41:36.800+01:00",
+          "value": "2026-11-20T23:04:49.092+01:00",
           "attributes": {}
         },
         {
           "tag": "situationRecordFirstSupplierVersionTime",
-          "value": "2026-11-20T19:38:39.090+01:00",
+          "value": "2026-11-20T22:36:59.748+01:00",
           "attributes": {}
         },
         {
@@ -829,12 +829,12 @@
         },
         {
           "tag": "overallStartTime",
-          "value": "2026-11-20T19:38:38.980+01:00",
+          "value": "2026-11-20T22:36:59.564+01:00",
           "attributes": {}
         },
         {
           "tag": "numberOfLanesRestricted",
-          "value": "2",
+          "value": "1",
           "attributes": {}
         },
         {
@@ -856,19 +856,7 @@
         },
         {
           "tag": "value",
-          "value": "situé 9 m à l'ouest de Boulange",
-          "attributes": {
-            "lang": "fr"
-          }
-        },
-        {
-          "tag": "commentType",
-          "value": "locationDescriptor",
-          "attributes": {}
-        },
-        {
-          "tag": "value",
-          "value": "Hors voie de circulation",
+          "value": "Point particulier : début : situé 3212 m à l'est de Boulange, fin : situé 1440 m à l'ouest de Tunnel du Bois de Chêne",
           "attributes": {
             "lang": "fr"
           }
@@ -906,7 +894,7 @@
           "tag": "groupOfLocations",
           "value": "",
           "attributes": {
-            "type": "ns2:Point"
+            "type": "ns2:Linear"
           }
         },
         {
@@ -916,25 +904,13 @@
         },
         {
           "tag": "lane",
-          "value": "allLanesCompleteCarriageway",
-          "attributes": {}
-        },
-        {
-          "tag": "lane",
           "value": "centralReservation",
           "attributes": {}
         },
         {
           "tag": "lane",
-          "value": "hardShoulder",
+          "value": "lane2",
           "attributes": {}
-        },
-        {
-          "tag": "tpegPointLocation",
-          "value": "",
-          "attributes": {
-            "type": "ns2:TpegSimplePoint"
-          }
         },
         {
           "tag": "tpegDirection",
@@ -942,12 +918,12 @@
           "attributes": {}
         },
         {
-          "tag": "tpegSimplePointLocationType",
-          "value": "nonLinkedPoint",
+          "tag": "tpegLinearLocationType",
+          "value": "segment",
           "attributes": {}
         },
         {
-          "tag": "point",
+          "tag": "to",
           "value": "",
           "attributes": {
             "type": "ns2:TpegNonJunctionPoint"
@@ -955,17 +931,17 @@
         },
         {
           "tag": "latitude",
-          "value": "49.389236",
+          "value": "49.32969",
           "attributes": {}
         },
         {
           "tag": "longitude",
-          "value": "5.963398",
+          "value": "6.0246024",
           "attributes": {}
         },
         {
           "tag": "value",
-          "value": "Boulange",
+          "value": "Neufchef",
           "attributes": {
             "lang": "fr"
           }
@@ -988,10 +964,51 @@
           "attributes": {}
         },
         {
-          "tag": "alertCPoint",
+          "tag": "from",
           "value": "",
           "attributes": {
-            "type": "ns2:AlertCMethod4Point"
+            "type": "ns2:TpegNonJunctionPoint"
+          }
+        },
+        {
+          "tag": "latitude",
+          "value": "49.365265",
+          "attributes": {}
+        },
+        {
+          "tag": "longitude",
+          "value": "5.982273",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Fontoy",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "townName",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "A30",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "linkName",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLinear",
+          "value": "",
+          "attributes": {
+            "type": "ns2:AlertCMethod4Linear"
           }
         },
         {
@@ -1016,6 +1033,23 @@
         },
         {
           "tag": "value",
+          "value": "Tunnel du Bois de Chêne",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "specificLocation",
+          "value": "43141",
+          "attributes": {}
+        },
+        {
+          "tag": "offsetDistance",
+          "value": "1440",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
           "value": "Boulange",
           "attributes": {
             "lang": "fr"
@@ -1028,11 +1062,11 @@
         },
         {
           "tag": "offsetDistance",
-          "value": "9",
+          "value": "3212",
           "attributes": {}
         },
         {
-          "tag": "directionRelativeAtPoint",
+          "tag": "directionRelativeOnLinearSection",
           "value": "opposite",
           "attributes": {}
         },
@@ -1042,7 +1076,7 @@
           "attributes": {}
         },
         {
-          "tag": "distanceAlongLinearElement",
+          "tag": "fromPoint",
           "value": "",
           "attributes": {
             "type": "ns2:DistanceFromLinearElementReferent"
@@ -1050,12 +1084,34 @@
         },
         {
           "tag": "distanceAlong",
-          "value": "700.0",
+          "value": "800.0",
           "attributes": {}
         },
         {
           "tag": "referentIdentifier",
-          "value": "57PR21G",
+          "value": "57PR12G",
+          "attributes": {}
+        },
+        {
+          "tag": "referentType",
+          "value": "referenceMarker",
+          "attributes": {}
+        },
+        {
+          "tag": "toPoint",
+          "value": "",
+          "attributes": {
+            "type": "ns2:DistanceFromLinearElementReferent"
+          }
+        },
+        {
+          "tag": "distanceAlong",
+          "value": "500.0",
+          "attributes": {}
+        },
+        {
+          "tag": "referentIdentifier",
+          "value": "57PR18G",
           "attributes": {}
         },
         {
@@ -1075,7 +1131,7 @@
         },
         {
           "tag": "roadOrCarriagewayOrLaneManagementType",
-          "value": "roadClosed",
+          "value": "laneClosures",
           "attributes": {}
         }
       ],
@@ -1086,59 +1142,59 @@
         },
         {
           "tag": "situationVersionTime",
-          "value": "2026-11-20T19:41:36.800+01:00"
+          "value": "2026-11-20T23:04:49.092+01:00"
         }
       ]
     },
     {
       "situation_id": "261120-002428",
-      "record_id": "261120-002428-105",
-      "record_type": "ns2:GeneralNetworkManagement",
+      "record_id": "261120-002428-107",
+      "record_type": "ns2:RoadOrCarriagewayOrLaneManagement",
       "department": "57",
-      "road": "",
+      "road": "A30",
       "coordinates": [
-        5.984505,
-        49.39147
+        6.0219035,
+        49.32955
       ],
       "validity_status": "definedByValidityTimeSpec",
       "details": [
         "La mesure est obligatoire",
-        "situé 3184 m à l'ouest de Fontoy",
-        "sur bretelle d'entrée"
+        "début : situé 440 m à l'ouest de Tunnel du Bois de Chêne, fin : situé 445 m à l'est de Aire des Castines",
+        "Neufchef"
       ],
       "record_fields": [
         {
           "tag": "situationRecord",
           "value": "",
           "attributes": {
-            "type": "ns2:GeneralNetworkManagement",
-            "id": "261120-002428-105",
-            "version": "1"
+            "type": "ns2:RoadOrCarriagewayOrLaneManagement",
+            "id": "261120-002428-107",
+            "version": "4"
           }
         },
         {
           "tag": "situationRecordCreationReference",
-          "value": "EVE_DIRE_Myrabel-S-261120-0047-EVE_DIRE_Myrabel-SR-261120-000062",
+          "value": "EVE_DIRE_Myrabel-S-261120-0047-EVE_DIRE_Myrabel-SR-261120-000067",
           "attributes": {}
         },
         {
           "tag": "situationRecordCreationTime",
-          "value": "2026-11-20T19:41:33.243+01:00",
+          "value": "2026-11-20T22:38:26.418+01:00",
           "attributes": {}
         },
         {
           "tag": "situationRecordObservationTime",
-          "value": "2026-11-20T19:41:35.062+01:00",
+          "value": "2026-11-20T23:04:46.540+01:00",
           "attributes": {}
         },
         {
           "tag": "situationRecordVersionTime",
-          "value": "2026-11-20T19:41:36.800+01:00",
+          "value": "2026-11-20T23:04:49.092+01:00",
           "attributes": {}
         },
         {
           "tag": "situationRecordFirstSupplierVersionTime",
-          "value": "2026-11-20T19:41:33.243+01:00",
+          "value": "2026-11-20T22:38:26.418+01:00",
           "attributes": {}
         },
         {
@@ -1168,12 +1224,12 @@
         },
         {
           "tag": "overallStartTime",
-          "value": "2026-11-20T19:41:33.133+01:00",
+          "value": "2026-11-20T22:38:26.263+01:00",
           "attributes": {}
         },
         {
           "tag": "numberOfLanesRestricted",
-          "value": "0",
+          "value": "1",
           "attributes": {}
         },
         {
@@ -1195,7 +1251,7 @@
         },
         {
           "tag": "value",
-          "value": "situé 3184 m à l'ouest de Fontoy",
+          "value": "Point particulier : début : situé 440 m à l'ouest de Tunnel du Bois de Chêne, fin : situé 445 m à l'est de Aire des Castines",
           "attributes": {
             "lang": "fr"
           }
@@ -1207,7 +1263,7 @@
         },
         {
           "tag": "value",
-          "value": "Hors voie de circulation",
+          "value": "GE_DIRE/Service régional d’exploitation Grand Est (SREX)/District Metz/CEI Fameck",
           "attributes": {
             "lang": "fr"
           }
@@ -1219,31 +1275,7 @@
         },
         {
           "tag": "value",
-          "value": "GE_DIRE/Service régional d’exploitation Grand Est (SREX)/District Nancy/CEI Fléville",
-          "attributes": {
-            "lang": "fr"
-          }
-        },
-        {
-          "tag": "commentType",
-          "value": "locationDescriptor",
-          "attributes": {}
-        },
-        {
-          "tag": "value",
-          "value": "sur bretelle d'entrée",
-          "attributes": {
-            "lang": "fr"
-          }
-        },
-        {
-          "tag": "commentType",
-          "value": "locationDescriptor",
-          "attributes": {}
-        },
-        {
-          "tag": "value",
-          "value": "De Longwy vers Metz",
+          "value": "De Metz vers Longwy",
           "attributes": {
             "lang": "fr"
           }
@@ -1257,48 +1289,36 @@
           "tag": "groupOfLocations",
           "value": "",
           "attributes": {
-            "type": "ns2:Point"
+            "type": "ns2:Linear"
           }
-        },
-        {
-          "tag": "externalLocationCode",
-          "value": "57A903035_4D--0",
-          "attributes": {}
-        },
-        {
-          "tag": "externalReferencingSystem",
-          "value": "TipiBretelle",
-          "attributes": {}
         },
         {
           "tag": "carriageway",
-          "value": "entrySlipRoad",
+          "value": "mainCarriageway",
           "attributes": {}
         },
         {
-          "tag": "lengthAffected",
-          "value": "0.0",
+          "tag": "lane",
+          "value": "centralReservation",
           "attributes": {}
         },
         {
-          "tag": "tpegPointLocation",
-          "value": "",
-          "attributes": {
-            "type": "ns2:TpegSimplePoint"
-          }
+          "tag": "lane",
+          "value": "lane2",
+          "attributes": {}
         },
         {
           "tag": "tpegDirection",
-          "value": "eastBound",
+          "value": "westBound",
           "attributes": {}
         },
         {
-          "tag": "tpegSimplePointLocationType",
-          "value": "nonLinkedPoint",
+          "tag": "tpegLinearLocationType",
+          "value": "segment",
           "attributes": {}
         },
         {
-          "tag": "point",
+          "tag": "to",
           "value": "",
           "attributes": {
             "type": "ns2:TpegNonJunctionPoint"
@@ -1306,17 +1326,17 @@
         },
         {
           "tag": "latitude",
-          "value": "49.39147",
+          "value": "49.32955",
           "attributes": {}
         },
         {
           "tag": "longitude",
-          "value": "5.984505",
+          "value": "6.0219035",
           "attributes": {}
         },
         {
           "tag": "value",
-          "value": "Boulange",
+          "value": "Neufchef",
           "attributes": {
             "lang": "fr"
           }
@@ -1339,319 +1359,7 @@
           "attributes": {}
         },
         {
-          "tag": "alertCPoint",
-          "value": "",
-          "attributes": {
-            "type": "ns2:AlertCMethod4Point"
-          }
-        },
-        {
-          "tag": "alertCLocationCountryCode",
-          "value": "F",
-          "attributes": {}
-        },
-        {
-          "tag": "alertCLocationTableNumber",
-          "value": "32",
-          "attributes": {}
-        },
-        {
-          "tag": "alertCLocationTableVersion",
-          "value": "11.0",
-          "attributes": {}
-        },
-        {
-          "tag": "alertCDirectionCoded",
-          "value": "negative",
-          "attributes": {}
-        },
-        {
-          "tag": "value",
-          "value": "Fontoy",
-          "attributes": {
-            "lang": "fr"
-          }
-        },
-        {
-          "tag": "specificLocation",
-          "value": "43144",
-          "attributes": {}
-        },
-        {
-          "tag": "offsetDistance",
-          "value": "3184",
-          "attributes": {}
-        },
-        {
-          "tag": "directionRelativeAtPoint",
-          "value": "opposite",
-          "attributes": {}
-        },
-        {
-          "tag": "value",
-          "value": "A30",
-          "attributes": {
-            "lang": "fr"
-          }
-        },
-        {
-          "tag": "distanceAlongLinearElement",
-          "value": "",
-          "attributes": {
-            "type": "ns2:DistanceFromLinearElementReferent"
-          }
-        },
-        {
-          "tag": "distanceAlong",
-          "value": "999.0",
-          "attributes": {}
-        },
-        {
-          "tag": "referentIdentifier",
-          "value": "57PR20G",
-          "attributes": {}
-        },
-        {
-          "tag": "referentType",
-          "value": "referenceMarker",
-          "attributes": {}
-        },
-        {
-          "tag": "safetyRelatedMessage",
-          "value": "false",
-          "attributes": {}
-        },
-        {
-          "tag": "complianceOption",
-          "value": "mandatory",
-          "attributes": {}
-        },
-        {
-          "tag": "generalNetworkManagementType",
-          "value": "other",
-          "attributes": {}
-        }
-      ],
-      "situation_fields": [
-        {
-          "tag": "overallSeverity",
-          "value": "high"
-        },
-        {
-          "tag": "situationVersionTime",
-          "value": "2026-11-20T19:41:36.800+01:00"
-        }
-      ]
-    },
-    {
-      "situation_id": "261120-002428",
-      "record_id": "261120-002428-104",
-      "record_type": "ns2:GeneralNetworkManagement",
-      "department": "57",
-      "road": "",
-      "coordinates": [
-        5.9794583,
-        49.35768
-      ],
-      "validity_status": "definedByValidityTimeSpec",
-      "details": [
-        "La mesure est obligatoire",
-        "situé 2930 m à l'ouest de Aire du Bois des Tillots",
-        "sur bretelle d'entrée"
-      ],
-      "record_fields": [
-        {
-          "tag": "situationRecord",
-          "value": "",
-          "attributes": {
-            "type": "ns2:GeneralNetworkManagement",
-            "id": "261120-002428-104",
-            "version": "2"
-          }
-        },
-        {
-          "tag": "situationRecordCreationReference",
-          "value": "EVE_DIRE_Myrabel-S-261120-0047-EVE_DIRE_Myrabel-SR-261120-000061",
-          "attributes": {}
-        },
-        {
-          "tag": "situationRecordCreationTime",
-          "value": "2026-11-20T19:40:17.117+01:00",
-          "attributes": {}
-        },
-        {
-          "tag": "situationRecordObservationTime",
-          "value": "2026-11-20T19:41:35.262+01:00",
-          "attributes": {}
-        },
-        {
-          "tag": "situationRecordVersionTime",
-          "value": "2026-11-20T19:41:36.800+01:00",
-          "attributes": {}
-        },
-        {
-          "tag": "situationRecordFirstSupplierVersionTime",
-          "value": "2026-11-20T19:40:17.117+01:00",
-          "attributes": {}
-        },
-        {
-          "tag": "probabilityOfOccurrence",
-          "value": "certain",
-          "attributes": {}
-        },
-        {
-          "tag": "sourceIdentification",
-          "value": "Direction interdépartementale des routes/DIR Est",
-          "attributes": {}
-        },
-        {
-          "tag": "sourceType",
-          "value": "mobileTelephoneCaller",
-          "attributes": {}
-        },
-        {
-          "tag": "reliable",
-          "value": "true",
-          "attributes": {}
-        },
-        {
-          "tag": "validityStatus",
-          "value": "definedByValidityTimeSpec",
-          "attributes": {}
-        },
-        {
-          "tag": "overallStartTime",
-          "value": "2026-11-20T19:40:17.002+01:00",
-          "attributes": {}
-        },
-        {
-          "tag": "numberOfLanesRestricted",
-          "value": "0",
-          "attributes": {}
-        },
-        {
-          "tag": "originalNumberOfLanes",
-          "value": "2",
-          "attributes": {}
-        },
-        {
-          "tag": "value",
-          "value": "La mesure est obligatoire",
-          "attributes": {
-            "lang": "fr"
-          }
-        },
-        {
-          "tag": "commentType",
-          "value": "description",
-          "attributes": {}
-        },
-        {
-          "tag": "value",
-          "value": "situé 2930 m à l'ouest de Aire du Bois des Tillots",
-          "attributes": {
-            "lang": "fr"
-          }
-        },
-        {
-          "tag": "commentType",
-          "value": "locationDescriptor",
-          "attributes": {}
-        },
-        {
-          "tag": "value",
-          "value": "Hors voie de circulation",
-          "attributes": {
-            "lang": "fr"
-          }
-        },
-        {
-          "tag": "commentType",
-          "value": "locationDescriptor",
-          "attributes": {}
-        },
-        {
-          "tag": "value",
-          "value": "GE_DIRE/Service régional d’exploitation Grand Est (SREX)/District Nancy/CEI Fléville",
-          "attributes": {
-            "lang": "fr"
-          }
-        },
-        {
-          "tag": "commentType",
-          "value": "locationDescriptor",
-          "attributes": {}
-        },
-        {
-          "tag": "value",
-          "value": "sur bretelle d'entrée",
-          "attributes": {
-            "lang": "fr"
-          }
-        },
-        {
-          "tag": "commentType",
-          "value": "locationDescriptor",
-          "attributes": {}
-        },
-        {
-          "tag": "value",
-          "value": "De Longwy vers Metz",
-          "attributes": {
-            "lang": "fr"
-          }
-        },
-        {
-          "tag": "commentType",
-          "value": "locationDescriptor",
-          "attributes": {}
-        },
-        {
-          "tag": "groupOfLocations",
-          "value": "",
-          "attributes": {
-            "type": "ns2:Point"
-          }
-        },
-        {
-          "tag": "externalLocationCode",
-          "value": "57A903030_3D--0",
-          "attributes": {}
-        },
-        {
-          "tag": "externalReferencingSystem",
-          "value": "TipiBretelle",
-          "attributes": {}
-        },
-        {
-          "tag": "carriageway",
-          "value": "entrySlipRoad",
-          "attributes": {}
-        },
-        {
-          "tag": "lengthAffected",
-          "value": "0.0",
-          "attributes": {}
-        },
-        {
-          "tag": "tpegPointLocation",
-          "value": "",
-          "attributes": {
-            "type": "ns2:TpegSimplePoint"
-          }
-        },
-        {
-          "tag": "tpegDirection",
-          "value": "eastBound",
-          "attributes": {}
-        },
-        {
-          "tag": "tpegSimplePointLocationType",
-          "value": "nonLinkedPoint",
-          "attributes": {}
-        },
-        {
-          "tag": "point",
+          "tag": "from",
           "value": "",
           "attributes": {
             "type": "ns2:TpegNonJunctionPoint"
@@ -1659,17 +1367,17 @@
         },
         {
           "tag": "latitude",
-          "value": "49.35768",
+          "value": "49.326904",
           "attributes": {}
         },
         {
           "tag": "longitude",
-          "value": "5.9794583",
+          "value": "6.037174",
           "attributes": {}
         },
         {
           "tag": "value",
-          "value": "Fontoy",
+          "value": "Hayange",
           "attributes": {
             "lang": "fr"
           }
@@ -1692,10 +1400,10 @@
           "attributes": {}
         },
         {
-          "tag": "alertCPoint",
+          "tag": "alertCLinear",
           "value": "",
           "attributes": {
-            "type": "ns2:AlertCMethod4Point"
+            "type": "ns2:AlertCMethod4Linear"
           }
         },
         {
@@ -1715,40 +1423,55 @@
         },
         {
           "tag": "alertCDirectionCoded",
-          "value": "negative",
+          "value": "positive",
           "attributes": {}
         },
         {
           "tag": "value",
-          "value": "Aire du Bois des Tillots",
+          "value": "Aire des Castines",
           "attributes": {
             "lang": "fr"
           }
         },
         {
           "tag": "specificLocation",
-          "value": "43143",
+          "value": "43142",
           "attributes": {}
         },
         {
           "tag": "offsetDistance",
-          "value": "2930",
-          "attributes": {}
-        },
-        {
-          "tag": "directionRelativeAtPoint",
-          "value": "opposite",
+          "value": "445",
           "attributes": {}
         },
         {
           "tag": "value",
-          "value": "A30",
+          "value": "Tunnel du Bois de Chêne",
           "attributes": {
             "lang": "fr"
           }
         },
         {
-          "tag": "distanceAlongLinearElement",
+          "tag": "specificLocation",
+          "value": "43141",
+          "attributes": {}
+        },
+        {
+          "tag": "offsetDistance",
+          "value": "440",
+          "attributes": {}
+        },
+        {
+          "tag": "directionRelativeOnLinearSection",
+          "value": "aligned",
+          "attributes": {}
+        },
+        {
+          "tag": "roadNumber",
+          "value": "A0030",
+          "attributes": {}
+        },
+        {
+          "tag": "fromPoint",
           "value": "",
           "attributes": {
             "type": "ns2:DistanceFromLinearElementReferent"
@@ -1756,12 +1479,34 @@
         },
         {
           "tag": "distanceAlong",
-          "value": "672.0",
+          "value": "0.0",
           "attributes": {}
         },
         {
           "tag": "referentIdentifier",
-          "value": "57PR17G",
+          "value": "57PR13D",
+          "attributes": {}
+        },
+        {
+          "tag": "referentType",
+          "value": "referenceMarker",
+          "attributes": {}
+        },
+        {
+          "tag": "toPoint",
+          "value": "",
+          "attributes": {
+            "type": "ns2:DistanceFromLinearElementReferent"
+          }
+        },
+        {
+          "tag": "distanceAlong",
+          "value": "800.0",
+          "attributes": {}
+        },
+        {
+          "tag": "referentIdentifier",
+          "value": "57PR11D",
           "attributes": {}
         },
         {
@@ -1780,8 +1525,8 @@
           "attributes": {}
         },
         {
-          "tag": "generalNetworkManagementType",
-          "value": "other",
+          "tag": "roadOrCarriagewayOrLaneManagementType",
+          "value": "laneClosures",
           "attributes": {}
         }
       ],
@@ -1792,7 +1537,7 @@
         },
         {
           "tag": "situationVersionTime",
-          "value": "2026-11-20T19:41:36.800+01:00"
+          "value": "2026-11-20T23:04:49.092+01:00"
         }
       ]
     }
