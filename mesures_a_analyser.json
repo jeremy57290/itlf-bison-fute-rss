@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-23T11:08:47.035606+00:00",
+  "generated_at": "2026-11-23T22:35:52.878716+00:00",
   "purpose": "Diagnostic of unrecognized DATEX types; some explicitly coded lane/contraflow measures are now published",
-  "count": 2,
+  "count": 7,
   "records": [
     {
       "situation_id": "261013-000532",
@@ -748,6 +748,1763 @@
         {
           "tag": "situationVersionTime",
           "value": "2026-10-13T10:32:58.912+02:00"
+        }
+      ]
+    },
+    {
+      "situation_id": "261123-002596",
+      "record_id": "261123-002596-2",
+      "record_type": "ns2:RoadOrCarriagewayOrLaneManagement",
+      "department": "54",
+      "road": "A33",
+      "coordinates": [
+        6.186612,
+        48.62396
+      ],
+      "validity_status": "definedByValidityTimeSpec",
+      "details": [
+        "Coupure avec sortie obligatoire sur l'échangeur A33/A330 direction Nancy-centre Remplacement d'un panneau a messages variables au PR 9+670. La mesure est obligatoire",
+        "situé 272 m à l'est de Ludres",
+        "Ludres"
+      ],
+      "record_fields": [
+        {
+          "tag": "situationRecord",
+          "value": "",
+          "attributes": {
+            "type": "ns2:RoadOrCarriagewayOrLaneManagement",
+            "id": "261123-002596-2",
+            "version": "7"
+          }
+        },
+        {
+          "tag": "situationRecordCreationReference",
+          "value": "EVE_DIRE_Myrabel-S-261122-0009-EVE_DIRE_Myrabel-SR-261123-000060",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordCreationTime",
+          "value": "2026-11-23T20:55:55.883+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordObservationTime",
+          "value": "2026-11-23T21:19:29.656+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordVersionTime",
+          "value": "2026-11-23T21:19:33.331+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordFirstSupplierVersionTime",
+          "value": "2026-11-23T20:55:55.883+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "probabilityOfOccurrence",
+          "value": "certain",
+          "attributes": {}
+        },
+        {
+          "tag": "sourceIdentification",
+          "value": "Direction interdépartementale des routes/DIR Est",
+          "attributes": {}
+        },
+        {
+          "tag": "reliable",
+          "value": "true",
+          "attributes": {}
+        },
+        {
+          "tag": "validityStatus",
+          "value": "definedByValidityTimeSpec",
+          "attributes": {}
+        },
+        {
+          "tag": "overallStartTime",
+          "value": "2026-11-23T20:56:09.126+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "overallEndTime",
+          "value": "2026-11-24T06:00:00.000+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "numberOfLanesRestricted",
+          "value": "2",
+          "attributes": {}
+        },
+        {
+          "tag": "originalNumberOfLanes",
+          "value": "2",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Coupure avec sortie obligatoire sur l'échangeur A33/A330 direction Nancy-centre Remplacement d'un panneau a messages variables au PR 9+670. La mesure est obligatoire",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "description",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "situé 272 m à l'est de Ludres",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Hors voie de circulation",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "GE_DIRE/Service régional d’exploitation Grand Est (SREX)/District Nancy/CEI Fléville",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "De Lunéville vers Nancy",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "groupOfLocations",
+          "value": "",
+          "attributes": {
+            "type": "ns2:Point"
+          }
+        },
+        {
+          "tag": "carriageway",
+          "value": "mainCarriageway",
+          "attributes": {}
+        },
+        {
+          "tag": "lane",
+          "value": "allLanesCompleteCarriageway",
+          "attributes": {}
+        },
+        {
+          "tag": "lane",
+          "value": "centralReservation",
+          "attributes": {}
+        },
+        {
+          "tag": "lane",
+          "value": "hardShoulder",
+          "attributes": {}
+        },
+        {
+          "tag": "tpegPointLocation",
+          "value": "",
+          "attributes": {
+            "type": "ns2:TpegSimplePoint"
+          }
+        },
+        {
+          "tag": "tpegDirection",
+          "value": "westBound",
+          "attributes": {}
+        },
+        {
+          "tag": "tpegSimplePointLocationType",
+          "value": "nonLinkedPoint",
+          "attributes": {}
+        },
+        {
+          "tag": "point",
+          "value": "",
+          "attributes": {
+            "type": "ns2:TpegNonJunctionPoint"
+          }
+        },
+        {
+          "tag": "latitude",
+          "value": "48.62396",
+          "attributes": {}
+        },
+        {
+          "tag": "longitude",
+          "value": "6.186612",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Ludres",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "townName",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "A33",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "linkName",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCPoint",
+          "value": "",
+          "attributes": {
+            "type": "ns2:AlertCMethod4Point"
+          }
+        },
+        {
+          "tag": "alertCLocationCountryCode",
+          "value": "F",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLocationTableNumber",
+          "value": "32",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLocationTableVersion",
+          "value": "11.0",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCDirectionCoded",
+          "value": "negative",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Ludres",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "specificLocation",
+          "value": "12334",
+          "attributes": {}
+        },
+        {
+          "tag": "offsetDistance",
+          "value": "272",
+          "attributes": {}
+        },
+        {
+          "tag": "directionRelativeAtPoint",
+          "value": "opposite",
+          "attributes": {}
+        },
+        {
+          "tag": "roadNumber",
+          "value": "A0033",
+          "attributes": {}
+        },
+        {
+          "tag": "distanceAlongLinearElement",
+          "value": "",
+          "attributes": {
+            "type": "ns2:DistanceFromLinearElementReferent"
+          }
+        },
+        {
+          "tag": "distanceAlong",
+          "value": "620.0",
+          "attributes": {}
+        },
+        {
+          "tag": "referentIdentifier",
+          "value": "54PR10G",
+          "attributes": {}
+        },
+        {
+          "tag": "referentType",
+          "value": "referenceMarker",
+          "attributes": {}
+        },
+        {
+          "tag": "safetyRelatedMessage",
+          "value": "false",
+          "attributes": {}
+        },
+        {
+          "tag": "complianceOption",
+          "value": "mandatory",
+          "attributes": {}
+        },
+        {
+          "tag": "roadOrCarriagewayOrLaneManagementType",
+          "value": "roadClosed",
+          "attributes": {}
+        }
+      ],
+      "situation_fields": [
+        {
+          "tag": "overallSeverity",
+          "value": "medium"
+        },
+        {
+          "tag": "situationVersionTime",
+          "value": "2026-11-23T21:19:33.331+01:00"
+        }
+      ]
+    },
+    {
+      "situation_id": "261123-002596",
+      "record_id": "261123-002596-4",
+      "record_type": "ns2:RoadOrCarriagewayOrLaneManagement",
+      "department": "54",
+      "road": "A33",
+      "coordinates": [
+        6.186612,
+        48.62396
+      ],
+      "validity_status": "definedByValidityTimeSpec",
+      "details": [
+        "La mesure est obligatoire",
+        "début : situé 340 m à l'ouest de Fléville Z.I., fin : situé 272 m à l'est de Ludres",
+        "Ludres"
+      ],
+      "record_fields": [
+        {
+          "tag": "situationRecord",
+          "value": "",
+          "attributes": {
+            "type": "ns2:RoadOrCarriagewayOrLaneManagement",
+            "id": "261123-002596-4",
+            "version": "7"
+          }
+        },
+        {
+          "tag": "situationRecordCreationReference",
+          "value": "EVE_DIRE_Myrabel-S-261122-0009-EVE_DIRE_Myrabel-SR-261123-000062",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordCreationTime",
+          "value": "2026-11-23T20:55:55.883+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordObservationTime",
+          "value": "2026-11-23T21:19:29.883+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordVersionTime",
+          "value": "2026-11-23T21:19:33.331+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordFirstSupplierVersionTime",
+          "value": "2026-11-23T20:55:55.883+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "probabilityOfOccurrence",
+          "value": "certain",
+          "attributes": {}
+        },
+        {
+          "tag": "sourceIdentification",
+          "value": "Direction interdépartementale des routes/DIR Est",
+          "attributes": {}
+        },
+        {
+          "tag": "reliable",
+          "value": "true",
+          "attributes": {}
+        },
+        {
+          "tag": "validityStatus",
+          "value": "definedByValidityTimeSpec",
+          "attributes": {}
+        },
+        {
+          "tag": "overallStartTime",
+          "value": "2026-11-23T21:15:08.000+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "overallEndTime",
+          "value": "2026-11-24T06:00:00.000+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "numberOfLanesRestricted",
+          "value": "1",
+          "attributes": {}
+        },
+        {
+          "tag": "originalNumberOfLanes",
+          "value": "2",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "La mesure est obligatoire",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "description",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Point particulier : début : situé 340 m à l'ouest de Fléville Z.I., fin : situé 272 m à l'est de Ludres",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "GE_DIRE/Service régional d’exploitation Grand Est (SREX)/District Nancy/CEI Fléville",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "De Lunéville vers Nancy",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "groupOfLocations",
+          "value": "",
+          "attributes": {
+            "type": "ns2:Linear"
+          }
+        },
+        {
+          "tag": "carriageway",
+          "value": "mainCarriageway",
+          "attributes": {}
+        },
+        {
+          "tag": "lane",
+          "value": "centralReservation",
+          "attributes": {}
+        },
+        {
+          "tag": "lane",
+          "value": "lane2",
+          "attributes": {}
+        },
+        {
+          "tag": "tpegDirection",
+          "value": "westBound",
+          "attributes": {}
+        },
+        {
+          "tag": "tpegLinearLocationType",
+          "value": "segment",
+          "attributes": {}
+        },
+        {
+          "tag": "to",
+          "value": "",
+          "attributes": {
+            "type": "ns2:TpegNonJunctionPoint"
+          }
+        },
+        {
+          "tag": "latitude",
+          "value": "48.62396",
+          "attributes": {}
+        },
+        {
+          "tag": "longitude",
+          "value": "6.186612",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Ludres",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "townName",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "A33",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "linkName",
+          "attributes": {}
+        },
+        {
+          "tag": "from",
+          "value": "",
+          "attributes": {
+            "type": "ns2:TpegNonJunctionPoint"
+          }
+        },
+        {
+          "tag": "latitude",
+          "value": "48.618248",
+          "attributes": {}
+        },
+        {
+          "tag": "longitude",
+          "value": "6.2061653",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Fléville-devant-Nancy",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "townName",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "A33",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "linkName",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLinear",
+          "value": "",
+          "attributes": {
+            "type": "ns2:AlertCMethod4Linear"
+          }
+        },
+        {
+          "tag": "alertCLocationCountryCode",
+          "value": "F",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLocationTableNumber",
+          "value": "32",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLocationTableVersion",
+          "value": "11.0",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCDirectionCoded",
+          "value": "negative",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Ludres",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "specificLocation",
+          "value": "12334",
+          "attributes": {}
+        },
+        {
+          "tag": "offsetDistance",
+          "value": "272",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Fléville Z.I.",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "specificLocation",
+          "value": "12335",
+          "attributes": {}
+        },
+        {
+          "tag": "offsetDistance",
+          "value": "340",
+          "attributes": {}
+        },
+        {
+          "tag": "directionRelativeOnLinearSection",
+          "value": "opposite",
+          "attributes": {}
+        },
+        {
+          "tag": "roadNumber",
+          "value": "A0033",
+          "attributes": {}
+        },
+        {
+          "tag": "fromPoint",
+          "value": "",
+          "attributes": {
+            "type": "ns2:DistanceFromLinearElementReferent"
+          }
+        },
+        {
+          "tag": "distanceAlong",
+          "value": "620.0",
+          "attributes": {}
+        },
+        {
+          "tag": "referentIdentifier",
+          "value": "54PR10G",
+          "attributes": {}
+        },
+        {
+          "tag": "referentType",
+          "value": "referenceMarker",
+          "attributes": {}
+        },
+        {
+          "tag": "toPoint",
+          "value": "",
+          "attributes": {
+            "type": "ns2:DistanceFromLinearElementReferent"
+          }
+        },
+        {
+          "tag": "distanceAlong",
+          "value": "300.0",
+          "attributes": {}
+        },
+        {
+          "tag": "referentIdentifier",
+          "value": "54PR12G",
+          "attributes": {}
+        },
+        {
+          "tag": "referentType",
+          "value": "referenceMarker",
+          "attributes": {}
+        },
+        {
+          "tag": "safetyRelatedMessage",
+          "value": "false",
+          "attributes": {}
+        },
+        {
+          "tag": "complianceOption",
+          "value": "mandatory",
+          "attributes": {}
+        },
+        {
+          "tag": "roadOrCarriagewayOrLaneManagementType",
+          "value": "laneClosures",
+          "attributes": {}
+        }
+      ],
+      "situation_fields": [
+        {
+          "tag": "overallSeverity",
+          "value": "medium"
+        },
+        {
+          "tag": "situationVersionTime",
+          "value": "2026-11-23T21:19:33.331+01:00"
+        }
+      ]
+    },
+    {
+      "situation_id": "261123-002596",
+      "record_id": "261123-002596-3",
+      "record_type": "ns2:GeneralNetworkManagement",
+      "department": "54",
+      "road": "",
+      "coordinates": [
+        6.1834984,
+        48.627064
+      ],
+      "validity_status": "definedByValidityTimeSpec",
+      "details": [
+        "Sur 400 m à 0 m de la fin de la bretelle. Remplacement d'un panneau a messages variables au PR 9+670. La mesure est obligatoire",
+        "situé 4071 m à l'est de Neuves-Maisons - Nancy-Brabois",
+        "sur bretelle de sortie"
+      ],
+      "record_fields": [
+        {
+          "tag": "situationRecord",
+          "value": "",
+          "attributes": {
+            "type": "ns2:GeneralNetworkManagement",
+            "id": "261123-002596-3",
+            "version": "7"
+          }
+        },
+        {
+          "tag": "situationRecordCreationReference",
+          "value": "EVE_DIRE_Myrabel-S-261122-0009-EVE_DIRE_Myrabel-SR-261123-000061",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordCreationTime",
+          "value": "2026-11-23T20:55:55.883+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordObservationTime",
+          "value": "2026-11-23T21:19:30.181+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordVersionTime",
+          "value": "2026-11-23T21:19:33.331+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordFirstSupplierVersionTime",
+          "value": "2026-11-23T20:55:55.883+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "probabilityOfOccurrence",
+          "value": "certain",
+          "attributes": {}
+        },
+        {
+          "tag": "sourceIdentification",
+          "value": "Direction interdépartementale des routes/DIR Est",
+          "attributes": {}
+        },
+        {
+          "tag": "reliable",
+          "value": "true",
+          "attributes": {}
+        },
+        {
+          "tag": "validityStatus",
+          "value": "definedByValidityTimeSpec",
+          "attributes": {}
+        },
+        {
+          "tag": "overallStartTime",
+          "value": "2026-11-23T21:17:39.665+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "overallEndTime",
+          "value": "2026-11-24T06:00:00.000+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "numberOfLanesRestricted",
+          "value": "0",
+          "attributes": {}
+        },
+        {
+          "tag": "originalNumberOfLanes",
+          "value": "2",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Sur 400 m à 0 m de la fin de la bretelle. Remplacement d'un panneau a messages variables au PR 9+670. La mesure est obligatoire",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "description",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "situé 4071 m à l'est de Neuves-Maisons - Nancy-Brabois",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "GE_DIRE/Service régional d’exploitation Grand Est (SREX)/District Vitry-Le-François/CEI Frignicourt",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "sur bretelle de sortie",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "De Lunéville vers Nancy",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "groupOfLocations",
+          "value": "",
+          "attributes": {
+            "type": "ns2:Point"
+          }
+        },
+        {
+          "tag": "externalLocationCode",
+          "value": "54A933025_5D--0",
+          "attributes": {}
+        },
+        {
+          "tag": "externalReferencingSystem",
+          "value": "TipiBretelle",
+          "attributes": {}
+        },
+        {
+          "tag": "carriageway",
+          "value": "exitSlipRoad",
+          "attributes": {}
+        },
+        {
+          "tag": "lengthAffected",
+          "value": "0.0",
+          "attributes": {}
+        },
+        {
+          "tag": "tpegPointLocation",
+          "value": "",
+          "attributes": {
+            "type": "ns2:TpegSimplePoint"
+          }
+        },
+        {
+          "tag": "tpegDirection",
+          "value": "westBound",
+          "attributes": {}
+        },
+        {
+          "tag": "tpegSimplePointLocationType",
+          "value": "nonLinkedPoint",
+          "attributes": {}
+        },
+        {
+          "tag": "point",
+          "value": "",
+          "attributes": {
+            "type": "ns2:TpegNonJunctionPoint"
+          }
+        },
+        {
+          "tag": "latitude",
+          "value": "48.627064",
+          "attributes": {}
+        },
+        {
+          "tag": "longitude",
+          "value": "6.1834984",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Ludres",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "townName",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "A33",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "linkName",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCPoint",
+          "value": "",
+          "attributes": {
+            "type": "ns2:AlertCMethod4Point"
+          }
+        },
+        {
+          "tag": "alertCLocationCountryCode",
+          "value": "F",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLocationTableNumber",
+          "value": "32",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLocationTableVersion",
+          "value": "11.0",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCDirectionCoded",
+          "value": "negative",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Neuves-Maisons - Nancy-Brabois",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "specificLocation",
+          "value": "12333",
+          "attributes": {}
+        },
+        {
+          "tag": "offsetDistance",
+          "value": "4071",
+          "attributes": {}
+        },
+        {
+          "tag": "directionRelativeAtPoint",
+          "value": "opposite",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "A33",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "distanceAlongLinearElement",
+          "value": "",
+          "attributes": {
+            "type": "ns2:DistanceFromLinearElementReferent"
+          }
+        },
+        {
+          "tag": "distanceAlong",
+          "value": "199.0",
+          "attributes": {}
+        },
+        {
+          "tag": "referentIdentifier",
+          "value": "54PR10G",
+          "attributes": {}
+        },
+        {
+          "tag": "referentType",
+          "value": "referenceMarker",
+          "attributes": {}
+        },
+        {
+          "tag": "safetyRelatedMessage",
+          "value": "false",
+          "attributes": {}
+        },
+        {
+          "tag": "complianceOption",
+          "value": "mandatory",
+          "attributes": {}
+        },
+        {
+          "tag": "generalNetworkManagementType",
+          "value": "other",
+          "attributes": {}
+        }
+      ],
+      "situation_fields": [
+        {
+          "tag": "overallSeverity",
+          "value": "medium"
+        },
+        {
+          "tag": "situationVersionTime",
+          "value": "2026-11-23T21:19:33.331+01:00"
+        }
+      ]
+    },
+    {
+      "situation_id": "261123-002596",
+      "record_id": "261123-002596-105",
+      "record_type": "ns2:GeneralNetworkManagement",
+      "department": "54",
+      "road": "",
+      "coordinates": [
+        6.184176,
+        48.62601
+      ],
+      "validity_status": "definedByValidityTimeSpec",
+      "details": [
+        "Sur 500 m à 0 m de la fin de la bretelle. Suite remplacement PMV sur A33 au PR 9+700 direction Paris. La mesure est obligatoire",
+        "situé 999 m au sud de Fléville",
+        "sur bretelle de sortie"
+      ],
+      "record_fields": [
+        {
+          "tag": "situationRecord",
+          "value": "",
+          "attributes": {
+            "type": "ns2:GeneralNetworkManagement",
+            "id": "261123-002596-105",
+            "version": "4"
+          }
+        },
+        {
+          "tag": "situationRecordCreationReference",
+          "value": "EVE_DIRE_Myrabel-S-261122-0009-EVE_DIRE_Myrabel-SR-261123-000066",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordCreationTime",
+          "value": "2026-11-23T21:17:11.887+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordObservationTime",
+          "value": "2026-11-23T21:19:30.386+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordVersionTime",
+          "value": "2026-11-23T21:19:33.331+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordFirstSupplierVersionTime",
+          "value": "2026-11-23T21:17:11.887+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "probabilityOfOccurrence",
+          "value": "certain",
+          "attributes": {}
+        },
+        {
+          "tag": "sourceIdentification",
+          "value": "Direction interdépartementale des routes/DIR Est",
+          "attributes": {}
+        },
+        {
+          "tag": "sourceType",
+          "value": "mobileTelephoneCaller",
+          "attributes": {}
+        },
+        {
+          "tag": "reliable",
+          "value": "true",
+          "attributes": {}
+        },
+        {
+          "tag": "validityStatus",
+          "value": "definedByValidityTimeSpec",
+          "attributes": {}
+        },
+        {
+          "tag": "overallStartTime",
+          "value": "2026-11-23T21:17:11.711+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "numberOfLanesRestricted",
+          "value": "0",
+          "attributes": {}
+        },
+        {
+          "tag": "originalNumberOfLanes",
+          "value": "3",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Sur 500 m à 0 m de la fin de la bretelle. Suite remplacement PMV sur A33 au PR 9+700 direction Paris. La mesure est obligatoire",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "description",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "situé 999 m au sud de Fléville",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "GE_DIRE/Service régional d’exploitation Grand Est (SREX)/District Vitry-Le-François/CEI Frignicourt",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "sur bretelle de sortie",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "De Flavigny vers Nancy",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "groupOfLocations",
+          "value": "",
+          "attributes": {
+            "type": "ns2:Point"
+          }
+        },
+        {
+          "tag": "externalLocationCode",
+          "value": "54A933025_8D--0",
+          "attributes": {}
+        },
+        {
+          "tag": "externalReferencingSystem",
+          "value": "TipiBretelle",
+          "attributes": {}
+        },
+        {
+          "tag": "carriageway",
+          "value": "exitSlipRoad",
+          "attributes": {}
+        },
+        {
+          "tag": "lengthAffected",
+          "value": "0.0",
+          "attributes": {}
+        },
+        {
+          "tag": "tpegPointLocation",
+          "value": "",
+          "attributes": {
+            "type": "ns2:TpegSimplePoint"
+          }
+        },
+        {
+          "tag": "tpegDirection",
+          "value": "northBound",
+          "attributes": {}
+        },
+        {
+          "tag": "tpegSimplePointLocationType",
+          "value": "nonLinkedPoint",
+          "attributes": {}
+        },
+        {
+          "tag": "point",
+          "value": "",
+          "attributes": {
+            "type": "ns2:TpegNonJunctionPoint"
+          }
+        },
+        {
+          "tag": "latitude",
+          "value": "48.62601",
+          "attributes": {}
+        },
+        {
+          "tag": "longitude",
+          "value": "6.184176",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Ludres",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "townName",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "A330",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "linkName",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCPoint",
+          "value": "",
+          "attributes": {
+            "type": "ns2:AlertCMethod4Point"
+          }
+        },
+        {
+          "tag": "alertCLocationCountryCode",
+          "value": "F",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLocationTableNumber",
+          "value": "32",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLocationTableVersion",
+          "value": "11.0",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCDirectionCoded",
+          "value": "negative",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Fléville",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "specificLocation",
+          "value": "13299",
+          "attributes": {}
+        },
+        {
+          "tag": "offsetDistance",
+          "value": "999",
+          "attributes": {}
+        },
+        {
+          "tag": "directionRelativeAtPoint",
+          "value": "opposite",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "A330",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "distanceAlongLinearElement",
+          "value": "",
+          "attributes": {
+            "type": "ns2:DistanceFromLinearElementReferent"
+          }
+        },
+        {
+          "tag": "distanceAlong",
+          "value": "138.0",
+          "attributes": {}
+        },
+        {
+          "tag": "referentIdentifier",
+          "value": "54PR4G",
+          "attributes": {}
+        },
+        {
+          "tag": "referentType",
+          "value": "referenceMarker",
+          "attributes": {}
+        },
+        {
+          "tag": "safetyRelatedMessage",
+          "value": "false",
+          "attributes": {}
+        },
+        {
+          "tag": "complianceOption",
+          "value": "mandatory",
+          "attributes": {}
+        },
+        {
+          "tag": "generalNetworkManagementType",
+          "value": "other",
+          "attributes": {}
+        }
+      ],
+      "situation_fields": [
+        {
+          "tag": "overallSeverity",
+          "value": "medium"
+        },
+        {
+          "tag": "situationVersionTime",
+          "value": "2026-11-23T21:19:33.331+01:00"
+        }
+      ]
+    },
+    {
+      "situation_id": "261123-002596",
+      "record_id": "261123-002596-106",
+      "record_type": "ns2:GeneralNetworkManagement",
+      "department": "54",
+      "road": "",
+      "coordinates": [
+        6.1822467,
+        48.63203
+      ],
+      "validity_status": "definedByValidityTimeSpec",
+      "details": [
+        "Suite remplacement PMV sur A33 au PR 9+700 direction Paris. La mesure est obligatoire",
+        "situé 611 m au nord de Ludres",
+        "sur bretelle de sortie"
+      ],
+      "record_fields": [
+        {
+          "tag": "situationRecord",
+          "value": "",
+          "attributes": {
+            "type": "ns2:GeneralNetworkManagement",
+            "id": "261123-002596-106",
+            "version": "2"
+          }
+        },
+        {
+          "tag": "situationRecordCreationReference",
+          "value": "EVE_DIRE_Myrabel-S-261122-0009-EVE_DIRE_Myrabel-SR-261123-000067",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordCreationTime",
+          "value": "2026-11-23T21:19:14.303+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordObservationTime",
+          "value": "2026-11-23T21:19:30.678+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordVersionTime",
+          "value": "2026-11-23T21:19:33.331+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordFirstSupplierVersionTime",
+          "value": "2026-11-23T21:19:14.303+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "probabilityOfOccurrence",
+          "value": "certain",
+          "attributes": {}
+        },
+        {
+          "tag": "sourceIdentification",
+          "value": "Direction interdépartementale des routes/DIR Est",
+          "attributes": {}
+        },
+        {
+          "tag": "sourceType",
+          "value": "mobileTelephoneCaller",
+          "attributes": {}
+        },
+        {
+          "tag": "reliable",
+          "value": "true",
+          "attributes": {}
+        },
+        {
+          "tag": "validityStatus",
+          "value": "definedByValidityTimeSpec",
+          "attributes": {}
+        },
+        {
+          "tag": "overallStartTime",
+          "value": "2026-11-23T21:19:14.168+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "numberOfLanesRestricted",
+          "value": "0",
+          "attributes": {}
+        },
+        {
+          "tag": "originalNumberOfLanes",
+          "value": "2",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Suite remplacement PMV sur A33 au PR 9+700 direction Paris. La mesure est obligatoire",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "description",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "situé 611 m au nord de Ludres",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "GE_DIRE/Service régional d’exploitation Grand Est (SREX)/District Vitry-Le-François/CEI Frignicourt",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "sur bretelle de sortie",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "De Nancy vers Flavigny",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "groupOfLocations",
+          "value": "",
+          "attributes": {
+            "type": "ns2:Point"
+          }
+        },
+        {
+          "tag": "externalLocationCode",
+          "value": "54A933025_1D--0",
+          "attributes": {}
+        },
+        {
+          "tag": "externalReferencingSystem",
+          "value": "TipiBretelle",
+          "attributes": {}
+        },
+        {
+          "tag": "carriageway",
+          "value": "exitSlipRoad",
+          "attributes": {}
+        },
+        {
+          "tag": "lengthAffected",
+          "value": "0.0",
+          "attributes": {}
+        },
+        {
+          "tag": "tpegPointLocation",
+          "value": "",
+          "attributes": {
+            "type": "ns2:TpegSimplePoint"
+          }
+        },
+        {
+          "tag": "tpegDirection",
+          "value": "southBound",
+          "attributes": {}
+        },
+        {
+          "tag": "tpegSimplePointLocationType",
+          "value": "nonLinkedPoint",
+          "attributes": {}
+        },
+        {
+          "tag": "point",
+          "value": "",
+          "attributes": {
+            "type": "ns2:TpegNonJunctionPoint"
+          }
+        },
+        {
+          "tag": "latitude",
+          "value": "48.63203",
+          "attributes": {}
+        },
+        {
+          "tag": "longitude",
+          "value": "6.1822467",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Fléville-devant-Nancy",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "townName",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "A330",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "linkName",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCPoint",
+          "value": "",
+          "attributes": {
+            "type": "ns2:AlertCMethod4Point"
+          }
+        },
+        {
+          "tag": "alertCLocationCountryCode",
+          "value": "F",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLocationTableNumber",
+          "value": "32",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLocationTableVersion",
+          "value": "11.0",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCDirectionCoded",
+          "value": "positive",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Ludres",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "specificLocation",
+          "value": "13300",
+          "attributes": {}
+        },
+        {
+          "tag": "offsetDistance",
+          "value": "611",
+          "attributes": {}
+        },
+        {
+          "tag": "directionRelativeAtPoint",
+          "value": "aligned",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "A330",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "distanceAlongLinearElement",
+          "value": "",
+          "attributes": {
+            "type": "ns2:DistanceFromLinearElementReferent"
+          }
+        },
+        {
+          "tag": "distanceAlong",
+          "value": "544.0",
+          "attributes": {}
+        },
+        {
+          "tag": "referentIdentifier",
+          "value": "54PR3D",
+          "attributes": {}
+        },
+        {
+          "tag": "referentType",
+          "value": "referenceMarker",
+          "attributes": {}
+        },
+        {
+          "tag": "safetyRelatedMessage",
+          "value": "false",
+          "attributes": {}
+        },
+        {
+          "tag": "complianceOption",
+          "value": "mandatory",
+          "attributes": {}
+        },
+        {
+          "tag": "generalNetworkManagementType",
+          "value": "other",
+          "attributes": {}
+        }
+      ],
+      "situation_fields": [
+        {
+          "tag": "overallSeverity",
+          "value": "medium"
+        },
+        {
+          "tag": "situationVersionTime",
+          "value": "2026-11-23T21:19:33.331+01:00"
         }
       ]
     }
