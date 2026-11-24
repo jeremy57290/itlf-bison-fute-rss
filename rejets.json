@@ -1,31 +1,31 @@
 {
-  "generated_at": "2026-11-23T22:35:52.882444+00:00",
-  "accepted": 10,
+  "generated_at": "2026-11-24T06:21:11.898287+00:00",
+  "accepted": 6,
   "management_published_records": {
-    "lane": 2
+    "lane": 1
   },
-  "management_published_situations": 2,
+  "management_published_situations": 1,
   "rejected_by_reason": {
-    "unrecognized_category": 263,
-    "inactive_or_outside_validity": 60,
-    "outside_department": 201
+    "unrecognized_category": 230,
+    "inactive_or_outside_validity": 67,
+    "outside_department": 150
   },
   "unrecognized_types": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 121,
-    "ns2:ReroutingManagement": 55,
-    "ns2:GeneralNetworkManagement": 40,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 104,
+    "ns2:ReroutingManagement": 42,
+    "ns2:GeneralNetworkManagement": 35,
     "ns2:SpeedManagement": 25,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 13,
-    "ns2:WeatherRelatedRoadConditions": 7,
+    "ns2:WeatherRelatedRoadConditions": 9,
     "ns2:RoadsideServiceDisruption": 2
   },
   "inactive_statuses": {
-    "definedByValidityTimeSpec": 59,
-    "suspended": 1
+    "definedByValidityTimeSpec": 62,
+    "suspended": 5
   },
   "unknown_types_in_lorraine": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 4,
-    "ns2:GeneralNetworkManagement": 3
+    "ns2:RoadOrCarriagewayOrLaneManagement": 2,
+    "ns2:WeatherRelatedRoadConditions": 1
   },
   "unknown_types_in_lorraine_examples": {
     "ns2:RoadOrCarriagewayOrLaneManagement": [
@@ -58,96 +58,36 @@
           "La mesure est obligatoire",
           "situé 187 m au sud de Pont-à-Mousson"
         ]
-      },
-      {
-        "situation_id": "261123-002596",
-        "record_id": "261123-002596-2",
-        "department": "54",
-        "road": "A33",
-        "town": "",
-        "coordinates": [
-          6.186612,
-          48.62396
-        ],
-        "details": [
-          "Coupure avec sortie obligatoire sur l'échangeur A33/A330 direction Nancy-centre Remplacement d'un panneau a messages variables au PR 9+670. La mesure est obligatoire",
-          "situé 272 m à l'est de Ludres"
-        ]
-      },
-      {
-        "situation_id": "261123-002596",
-        "record_id": "261123-002596-4",
-        "department": "54",
-        "road": "A33",
-        "town": "",
-        "coordinates": [
-          6.186612,
-          48.62396
-        ],
-        "details": [
-          "La mesure est obligatoire",
-          "début : situé 340 m à l'ouest de Fléville Z.I., fin : situé 272 m à l'est de Ludres"
-        ]
       }
     ],
-    "ns2:GeneralNetworkManagement": [
+    "ns2:WeatherRelatedRoadConditions": [
       {
-        "situation_id": "261123-002596",
-        "record_id": "261123-002596-3",
-        "department": "54",
-        "road": "",
+        "situation_id": "261124-000151",
+        "record_id": "261124-000151-1",
+        "department": "57",
+        "road": "A30",
         "town": "",
         "coordinates": [
-          6.1834984,
-          48.627064
+          6.0520134,
+          49.331425
         ],
         "details": [
-          "Sur 400 m à 0 m de la fin de la bretelle. Remplacement d'un panneau a messages variables au PR 9+670. La mesure est obligatoire",
-          "situé 4071 m à l'est de Neuves-Maisons - Nancy-Brabois"
-        ]
-      },
-      {
-        "situation_id": "261123-002596",
-        "record_id": "261123-002596-105",
-        "department": "54",
-        "road": "",
-        "town": "",
-        "coordinates": [
-          6.184176,
-          48.62601
-        ],
-        "details": [
-          "Sur 500 m à 0 m de la fin de la bretelle. Suite remplacement PMV sur A33 au PR 9+700 direction Paris. La mesure est obligatoire",
-          "situé 999 m au sud de Fléville"
-        ]
-      },
-      {
-        "situation_id": "261123-002596",
-        "record_id": "261123-002596-106",
-        "department": "54",
-        "road": "",
-        "town": "",
-        "coordinates": [
-          6.1822467,
-          48.63203
-        ],
-        "details": [
-          "Suite remplacement PMV sur A33 au PR 9+700 direction Paris. La mesure est obligatoire",
-          "situé 611 m au nord de Ludres"
+          "Traitement en cours",
+          "début : situé 0 m à l'ouest de A30 / A31, fin : situé 218 m à l'est de Knutange"
         ]
       }
     ]
   },
   "unknown_types_inactive": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 22,
-    "ns2:ReroutingManagement": 12,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 28,
+    "ns2:ReroutingManagement": 18,
+    "ns2:GeneralNetworkManagement": 7,
     "ns2:SpeedManagement": 6,
-    "ns2:GeneralNetworkManagement": 4,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 3,
     "ns2:WeatherRelatedRoadConditions": 1
   },
   "unknown_types_location_rejections": {
-    "outside_department": 208
+    "outside_department": 164
   },
   "precise_department_boundaries": true,
   "boundary_file": "lorraine_departements.geojson"
