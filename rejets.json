@@ -1,31 +1,30 @@
 {
-  "generated_at": "2026-11-24T06:21:11.898287+00:00",
-  "accepted": 6,
+  "generated_at": "2026-11-24T17:57:47.785342+00:00",
+  "accepted": 9,
   "management_published_records": {
     "lane": 1
   },
   "management_published_situations": 1,
   "rejected_by_reason": {
-    "unrecognized_category": 230,
-    "inactive_or_outside_validity": 67,
-    "outside_department": 150
+    "unrecognized_category": 249,
+    "inactive_or_outside_validity": 70,
+    "outside_department": 243
   },
   "unrecognized_types": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 104,
-    "ns2:ReroutingManagement": 42,
-    "ns2:GeneralNetworkManagement": 35,
-    "ns2:SpeedManagement": 25,
-    "ns2:GeneralInstructionOrMessageToRoadUsers": 13,
-    "ns2:WeatherRelatedRoadConditions": 9,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 128,
+    "ns2:ReroutingManagement": 46,
+    "ns2:GeneralNetworkManagement": 30,
+    "ns2:SpeedManagement": 24,
+    "ns2:GeneralInstructionOrMessageToRoadUsers": 12,
+    "ns2:WeatherRelatedRoadConditions": 7,
     "ns2:RoadsideServiceDisruption": 2
   },
   "inactive_statuses": {
-    "definedByValidityTimeSpec": 62,
-    "suspended": 5
+    "definedByValidityTimeSpec": 66,
+    "suspended": 4
   },
   "unknown_types_in_lorraine": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 2,
-    "ns2:WeatherRelatedRoadConditions": 1
+    "ns2:RoadOrCarriagewayOrLaneManagement": 2
   },
   "unknown_types_in_lorraine_examples": {
     "ns2:RoadOrCarriagewayOrLaneManagement": [
@@ -59,35 +58,18 @@
           "situé 187 m au sud de Pont-à-Mousson"
         ]
       }
-    ],
-    "ns2:WeatherRelatedRoadConditions": [
-      {
-        "situation_id": "261124-000151",
-        "record_id": "261124-000151-1",
-        "department": "57",
-        "road": "A30",
-        "town": "",
-        "coordinates": [
-          6.0520134,
-          49.331425
-        ],
-        "details": [
-          "Traitement en cours",
-          "début : situé 0 m à l'ouest de A30 / A31, fin : situé 218 m à l'est de Knutange"
-        ]
-      }
     ]
   },
   "unknown_types_inactive": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 28,
-    "ns2:ReroutingManagement": 18,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 39,
+    "ns2:ReroutingManagement": 16,
     "ns2:GeneralNetworkManagement": 7,
-    "ns2:SpeedManagement": 6,
-    "ns2:GeneralInstructionOrMessageToRoadUsers": 3,
+    "ns2:SpeedManagement": 5,
+    "ns2:GeneralInstructionOrMessageToRoadUsers": 2,
     "ns2:WeatherRelatedRoadConditions": 1
   },
   "unknown_types_location_rejections": {
-    "outside_department": 164
+    "outside_department": 177
   },
   "precise_department_boundaries": true,
   "boundary_file": "lorraine_departements.geojson"
