@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-11-25T10:49:50.715649+00:00",
-  "accepted": 12,
+  "generated_at": "2026-11-25T20:14:49.713969+00:00",
+  "accepted": 3,
   "management_published_records": {
     "lane": 1
   },
   "management_published_situations": 1,
   "rejected_by_reason": {
-    "unrecognized_category": 278,
-    "inactive_or_outside_validity": 72,
-    "outside_department": 264
+    "unrecognized_category": 233,
+    "inactive_or_outside_validity": 61,
+    "outside_department": 183
   },
   "unrecognized_types": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 157,
-    "ns2:ReroutingManagement": 46,
-    "ns2:GeneralNetworkManagement": 25,
-    "ns2:SpeedManagement": 25,
-    "ns2:GeneralInstructionOrMessageToRoadUsers": 13,
-    "ns2:WeatherRelatedRoadConditions": 11,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 113,
+    "ns2:ReroutingManagement": 47,
+    "ns2:GeneralNetworkManagement": 24,
+    "ns2:SpeedManagement": 23,
+    "ns2:WeatherRelatedRoadConditions": 14,
+    "ns2:GeneralInstructionOrMessageToRoadUsers": 11,
     "ns2:RoadsideServiceDisruption": 1
   },
   "inactive_statuses": {
-    "definedByValidityTimeSpec": 69,
+    "definedByValidityTimeSpec": 58,
     "suspended": 3
   },
   "unknown_types_in_lorraine": {
@@ -61,15 +61,15 @@
     ]
   },
   "unknown_types_inactive": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 33,
-    "ns2:ReroutingManagement": 15,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 20,
+    "ns2:ReroutingManagement": 13,
     "ns2:SpeedManagement": 6,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 3,
-    "ns2:GeneralNetworkManagement": 3,
-    "ns2:WeatherRelatedRoadConditions": 1
+    "ns2:WeatherRelatedRoadConditions": 1,
+    "ns2:GeneralNetworkManagement": 1
   },
   "unknown_types_location_rejections": {
-    "outside_department": 215
+    "outside_department": 187
   },
   "precise_department_boundaries": true,
   "boundary_file": "lorraine_departements.geojson"
