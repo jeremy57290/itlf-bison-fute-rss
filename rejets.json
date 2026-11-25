@@ -1,30 +1,31 @@
 {
-  "generated_at": "2026-11-24T17:57:47.785342+00:00",
-  "accepted": 9,
+  "generated_at": "2026-11-25T01:56:25.658219+00:00",
+  "accepted": 12,
   "management_published_records": {
-    "lane": 1
+    "lane": 7
   },
-  "management_published_situations": 1,
+  "management_published_situations": 4,
   "rejected_by_reason": {
-    "unrecognized_category": 249,
-    "inactive_or_outside_validity": 70,
-    "outside_department": 243
+    "unrecognized_category": 246,
+    "inactive_or_outside_validity": 53,
+    "outside_department": 193
   },
   "unrecognized_types": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 128,
-    "ns2:ReroutingManagement": 46,
-    "ns2:GeneralNetworkManagement": 30,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 126,
+    "ns2:ReroutingManagement": 48,
+    "ns2:GeneralNetworkManagement": 28,
     "ns2:SpeedManagement": 24,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 12,
     "ns2:WeatherRelatedRoadConditions": 7,
-    "ns2:RoadsideServiceDisruption": 2
+    "ns2:RoadsideServiceDisruption": 1
   },
   "inactive_statuses": {
-    "definedByValidityTimeSpec": 66,
-    "suspended": 4
+    "definedByValidityTimeSpec": 51,
+    "suspended": 2
   },
   "unknown_types_in_lorraine": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 2
+    "ns2:RoadOrCarriagewayOrLaneManagement": 10,
+    "ns2:GeneralNetworkManagement": 3
   },
   "unknown_types_in_lorraine_examples": {
     "ns2:RoadOrCarriagewayOrLaneManagement": [
@@ -57,19 +58,111 @@
           "La mesure est obligatoire",
           "situé 187 m au sud de Pont-à-Mousson"
         ]
+      },
+      {
+        "situation_id": "261123-002555",
+        "record_id": "261123-002555-3",
+        "department": "54",
+        "road": "A33",
+        "town": "",
+        "coordinates": [
+          6.186612,
+          48.62396
+        ],
+        "details": [
+          "Coupure avec sortie obligatoire A33/A33 direction Nancy-centre. Remplacement d'un panneau à messages variables au PR 9+670. La mesure est obligatoire",
+          "situé 272 m à l'est de Ludres"
+        ]
+      },
+      {
+        "situation_id": "261123-002555",
+        "record_id": "261123-002555-2",
+        "department": "54",
+        "road": "A33",
+        "town": "",
+        "coordinates": [
+          6.186612,
+          48.62396
+        ],
+        "details": [
+          "Remplacement d'un panneau à messages variables au PR 9+670. La mesure est obligatoire",
+          "début : situé 340 m à l'ouest de Fléville Z.I., fin : situé 272 m à l'est de Ludres"
+        ]
+      },
+      {
+        "situation_id": "261123-002556",
+        "record_id": "261123-002556-3",
+        "department": "54",
+        "road": "A33",
+        "town": "",
+        "coordinates": [
+          6.137225,
+          48.64759
+        ],
+        "details": [
+          "Sortie obligatoire à l'échangeur de Neuves-Maisons (2a) Remplacement d'un panneau à messages variables au PR 9+670. La mesure est obligatoire",
+          "situé 503 m à l'ouest de Neuves-Maisons - Nancy-Brabois"
+        ]
+      }
+    ],
+    "ns2:GeneralNetworkManagement": [
+      {
+        "situation_id": "261123-002555",
+        "record_id": "261123-002555-4",
+        "department": "54",
+        "road": "",
+        "town": "",
+        "coordinates": [
+          6.1834984,
+          48.627064
+        ],
+        "details": [
+          "Sur 400 m à 0 m de la fin de la bretelle. Remplacement d'un panneau à messages variables au PR 9+670. La mesure est obligatoire",
+          "situé 4071 m à l'est de Neuves-Maisons - Nancy-Brabois"
+        ]
+      },
+      {
+        "situation_id": "261123-002556",
+        "record_id": "261123-002556-5",
+        "department": "54",
+        "road": "",
+        "town": "",
+        "coordinates": [
+          6.1391745,
+          48.64574
+        ],
+        "details": [
+          "Sur 400 m au début de la bretelle. Remplacement d'un panneau à messages variables au PR 9+670. La mesure est obligatoire",
+          "situé 4008 m à l'ouest de Ludres"
+        ]
+      },
+      {
+        "situation_id": "261123-002556",
+        "record_id": "261123-002556-4",
+        "department": "54",
+        "road": "",
+        "town": "",
+        "coordinates": [
+          6.1389866,
+          48.645702
+        ],
+        "details": [
+          "Sur 300 m au début de la bretelle. Remplacement d'un panneau à messages variables au PR 9+670. La mesure est obligatoire",
+          "situé 99 m à l'ouest de Neuves-Maisons - Nancy-Brabois"
+        ]
       }
     ]
   },
   "unknown_types_inactive": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 39,
-    "ns2:ReroutingManagement": 16,
-    "ns2:GeneralNetworkManagement": 7,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 23,
+    "ns2:ReroutingManagement": 13,
     "ns2:SpeedManagement": 5,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 2,
+    "ns2:GeneralNetworkManagement": 2,
     "ns2:WeatherRelatedRoadConditions": 1
   },
   "unknown_types_location_rejections": {
-    "outside_department": 177
+    "outside_department": 187
   },
   "precise_department_boundaries": true,
   "boundary_file": "lorraine_departements.geojson"
