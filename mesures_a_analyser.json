@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-26T11:35:47.499262+00:00",
+  "generated_at": "2026-11-26T20:30:18.323867+00:00",
   "purpose": "Diagnostic of unrecognized DATEX types; some explicitly coded lane/contraflow measures are now published",
-  "count": 2,
+  "count": 3,
   "records": [
     {
       "situation_id": "261013-000532",
@@ -748,6 +748,345 @@
         {
           "tag": "situationVersionTime",
           "value": "2026-10-13T10:32:58.912+02:00"
+        }
+      ]
+    },
+    {
+      "situation_id": "261126-001820",
+      "record_id": "261126-001820-103",
+      "record_type": "ns2:RoadOrCarriagewayOrLaneManagement",
+      "department": "54",
+      "road": "A31",
+      "coordinates": [
+        6.111421,
+        48.931007
+      ],
+      "validity_status": "definedByValidityTimeSpec",
+      "details": [
+        "La mesure est obligatoire",
+        "situé 27 m au sud de Aire de Lesménils",
+        "Lesménils"
+      ],
+      "record_fields": [
+        {
+          "tag": "situationRecord",
+          "value": "",
+          "attributes": {
+            "type": "ns2:RoadOrCarriagewayOrLaneManagement",
+            "id": "261126-001820-103",
+            "version": "7"
+          }
+        },
+        {
+          "tag": "situationRecordCreationReference",
+          "value": "EVE_DIRE_Myrabel-S-261126-0035-EVE_DIRE_Myrabel-SR-261126-000046",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordCreationTime",
+          "value": "2026-11-26T16:31:37.889+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordObservationTime",
+          "value": "2026-11-26T18:58:30.978+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordVersionTime",
+          "value": "2026-11-26T18:58:33.738+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordFirstSupplierVersionTime",
+          "value": "2026-11-26T16:31:37.889+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "probabilityOfOccurrence",
+          "value": "certain",
+          "attributes": {}
+        },
+        {
+          "tag": "sourceIdentification",
+          "value": "Direction interdépartementale des routes/DIR Est",
+          "attributes": {}
+        },
+        {
+          "tag": "sourceType",
+          "value": "mobileTelephoneCaller",
+          "attributes": {}
+        },
+        {
+          "tag": "reliable",
+          "value": "true",
+          "attributes": {}
+        },
+        {
+          "tag": "validityStatus",
+          "value": "definedByValidityTimeSpec",
+          "attributes": {}
+        },
+        {
+          "tag": "overallStartTime",
+          "value": "2026-11-26T16:31:37.682+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "numberOfLanesRestricted",
+          "value": "2",
+          "attributes": {}
+        },
+        {
+          "tag": "originalNumberOfLanes",
+          "value": "2",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "La mesure est obligatoire",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "description",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "situé 27 m au sud de Aire de Lesménils",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Hors voie de circulation",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "GE_DIRE/Service régional d’exploitation Grand Est (SREX)/District Metz/CEI Champigneulles",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "De Lyon vers Luxembourg",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "groupOfLocations",
+          "value": "",
+          "attributes": {
+            "type": "ns2:Point"
+          }
+        },
+        {
+          "tag": "carriageway",
+          "value": "mainCarriageway",
+          "attributes": {}
+        },
+        {
+          "tag": "lane",
+          "value": "allLanesCompleteCarriageway",
+          "attributes": {}
+        },
+        {
+          "tag": "lane",
+          "value": "centralReservation",
+          "attributes": {}
+        },
+        {
+          "tag": "lane",
+          "value": "hardShoulder",
+          "attributes": {}
+        },
+        {
+          "tag": "tpegPointLocation",
+          "value": "",
+          "attributes": {
+            "type": "ns2:TpegSimplePoint"
+          }
+        },
+        {
+          "tag": "tpegDirection",
+          "value": "northBound",
+          "attributes": {}
+        },
+        {
+          "tag": "tpegSimplePointLocationType",
+          "value": "nonLinkedPoint",
+          "attributes": {}
+        },
+        {
+          "tag": "point",
+          "value": "",
+          "attributes": {
+            "type": "ns2:TpegNonJunctionPoint"
+          }
+        },
+        {
+          "tag": "latitude",
+          "value": "48.931007",
+          "attributes": {}
+        },
+        {
+          "tag": "longitude",
+          "value": "6.111421",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Lesménils",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "townName",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "A31",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "linkName",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCPoint",
+          "value": "",
+          "attributes": {
+            "type": "ns2:AlertCMethod4Point"
+          }
+        },
+        {
+          "tag": "alertCLocationCountryCode",
+          "value": "F",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLocationTableNumber",
+          "value": "32",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLocationTableVersion",
+          "value": "11.0",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCDirectionCoded",
+          "value": "positive",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Aire de Lesménils",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "specificLocation",
+          "value": "12304",
+          "attributes": {}
+        },
+        {
+          "tag": "offsetDistance",
+          "value": "27",
+          "attributes": {}
+        },
+        {
+          "tag": "directionRelativeAtPoint",
+          "value": "aligned",
+          "attributes": {}
+        },
+        {
+          "tag": "roadNumber",
+          "value": "A0031",
+          "attributes": {}
+        },
+        {
+          "tag": "distanceAlongLinearElement",
+          "value": "",
+          "attributes": {
+            "type": "ns2:DistanceFromLinearElementReferent"
+          }
+        },
+        {
+          "tag": "distanceAlong",
+          "value": "0.0",
+          "attributes": {}
+        },
+        {
+          "tag": "referentIdentifier",
+          "value": "54PR280D",
+          "attributes": {}
+        },
+        {
+          "tag": "referentType",
+          "value": "referenceMarker",
+          "attributes": {}
+        },
+        {
+          "tag": "safetyRelatedMessage",
+          "value": "false",
+          "attributes": {}
+        },
+        {
+          "tag": "complianceOption",
+          "value": "mandatory",
+          "attributes": {}
+        },
+        {
+          "tag": "roadOrCarriagewayOrLaneManagementType",
+          "value": "roadClosed",
+          "attributes": {}
+        }
+      ],
+      "situation_fields": [
+        {
+          "tag": "overallSeverity",
+          "value": "high"
+        },
+        {
+          "tag": "situationVersionTime",
+          "value": "2026-11-26T18:58:33.738+01:00"
         }
       ]
     }
