@@ -1,30 +1,33 @@
 {
-  "generated_at": "2026-11-27T03:08:33.368705+00:00",
-  "accepted": 4,
+  "generated_at": "2026-11-27T12:06:04.602058+00:00",
+  "accepted": 11,
   "management_published_records": {
     "lane": 1
   },
   "management_published_situations": 1,
   "rejected_by_reason": {
-    "unrecognized_category": 219,
-    "inactive_or_outside_validity": 55,
-    "outside_department": 150
+    "unrecognized_category": 222,
+    "inactive_or_outside_validity": 61,
+    "outside_department": 194
   },
   "unrecognized_types": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 106,
-    "ns2:ReroutingManagement": 46,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 117,
+    "ns2:ReroutingManagement": 37,
+    "ns2:GeneralNetworkManagement": 24,
     "ns2:SpeedManagement": 22,
-    "ns2:GeneralNetworkManagement": 19,
-    "ns2:WeatherRelatedRoadConditions": 13,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 11,
-    "ns2:RoadsideServiceDisruption": 2
+    "ns2:WeatherRelatedRoadConditions": 7,
+    "ns2:NonWeatherRelatedRoadConditions": 2,
+    "ns2:RoadsideServiceDisruption": 1,
+    "ns2:PublicEvent": 1
   },
   "inactive_statuses": {
-    "definedByValidityTimeSpec": 54,
+    "definedByValidityTimeSpec": 60,
     "suspended": 1
   },
   "unknown_types_in_lorraine": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 2
+    "ns2:RoadOrCarriagewayOrLaneManagement": 2,
+    "ns2:GeneralNetworkManagement": 2
   },
   "unknown_types_in_lorraine_examples": {
     "ns2:RoadOrCarriagewayOrLaneManagement": [
@@ -58,17 +61,51 @@
           "situé 187 m au sud de Pont-à-Mousson"
         ]
       }
+    ],
+    "ns2:GeneralNetworkManagement": [
+      {
+        "situation_id": "261127-000521",
+        "record_id": "261127-000521-1",
+        "department": "88",
+        "road": "",
+        "town": "",
+        "coordinates": [
+          6.6155205,
+          48.003
+        ],
+        "details": [
+          "La mesure est obligatoire",
+          "situé 7966 m à l'ouest de Vecoux"
+        ]
+      },
+      {
+        "situation_id": "261127-000836",
+        "record_id": "261127-000836-102",
+        "department": "54",
+        "road": "",
+        "town": "",
+        "coordinates": [
+          5.9088655,
+          49.43897
+        ],
+        "details": [
+          "La mesure est obligatoire",
+          "sur bretelle d'entrée"
+        ]
+      }
     ]
   },
   "unknown_types_inactive": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 20,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 23,
     "ns2:ReroutingManagement": 14,
     "ns2:SpeedManagement": 6,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 3,
-    "ns2:WeatherRelatedRoadConditions": 1
+    "ns2:GeneralNetworkManagement": 2,
+    "ns2:WeatherRelatedRoadConditions": 1,
+    "ns2:PublicEvent": 1
   },
   "unknown_types_location_rejections": {
-    "outside_department": 173
+    "outside_department": 168
   },
   "precise_department_boundaries": true,
   "boundary_file": "lorraine_departements.geojson"

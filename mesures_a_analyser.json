@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-27T03:08:33.366826+00:00",
+  "generated_at": "2026-11-27T12:06:04.599418+00:00",
   "purpose": "Diagnostic of unrecognized DATEX types; some explicitly coded lane/contraflow measures are now published",
-  "count": 2,
+  "count": 4,
   "records": [
     {
       "situation_id": "261013-000532",
@@ -748,6 +748,656 @@
         {
           "tag": "situationVersionTime",
           "value": "2026-10-13T10:32:58.912+02:00"
+        }
+      ]
+    },
+    {
+      "situation_id": "261127-000521",
+      "record_id": "261127-000521-1",
+      "record_type": "ns2:GeneralNetworkManagement",
+      "department": "88",
+      "road": "",
+      "coordinates": [
+        6.6155205,
+        48.003
+      ],
+      "validity_status": "definedByValidityTimeSpec",
+      "details": [
+        "La mesure est obligatoire",
+        "situé 7966 m à l'ouest de Vecoux",
+        "sur bretelle d'entrée"
+      ],
+      "record_fields": [
+        {
+          "tag": "situationRecord",
+          "value": "",
+          "attributes": {
+            "type": "ns2:GeneralNetworkManagement",
+            "id": "261127-000521-1",
+            "version": "1"
+          }
+        },
+        {
+          "tag": "situationRecordCreationReference",
+          "value": "EVE_DIRE_Myrabel-S-261127-0008-EVE_DIRE_Myrabel-SR-261127-000008",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordCreationTime",
+          "value": "2026-11-27T08:38:44.108+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordObservationTime",
+          "value": "2026-11-27T08:38:44.808+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordVersionTime",
+          "value": "2026-11-27T08:38:46.229+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordFirstSupplierVersionTime",
+          "value": "2026-11-27T08:38:44.108+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "probabilityOfOccurrence",
+          "value": "certain",
+          "attributes": {}
+        },
+        {
+          "tag": "sourceIdentification",
+          "value": "Direction interdépartementale des routes/DIR Est",
+          "attributes": {}
+        },
+        {
+          "tag": "sourceType",
+          "value": "mobileTelephoneCaller",
+          "attributes": {}
+        },
+        {
+          "tag": "reliable",
+          "value": "true",
+          "attributes": {}
+        },
+        {
+          "tag": "validityStatus",
+          "value": "definedByValidityTimeSpec",
+          "attributes": {}
+        },
+        {
+          "tag": "overallStartTime",
+          "value": "2026-11-27T08:38:43.986+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "numberOfLanesRestricted",
+          "value": "0",
+          "attributes": {}
+        },
+        {
+          "tag": "originalNumberOfLanes",
+          "value": "2",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "La mesure est obligatoire",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "description",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "situé 7966 m à l'ouest de Vecoux",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Hors voie de circulation",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "GE_DIRE/Service régional d’exploitation Grand Est (SREX)/District Nancy/CEI Saint Nabord",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "sur bretelle d'entrée",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "De Remiremont vers Mulhouse",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "groupOfLocations",
+          "value": "",
+          "attributes": {
+            "type": "ns2:Point"
+          }
+        },
+        {
+          "tag": "externalLocationCode",
+          "value": "88N906604_2D--0",
+          "attributes": {}
+        },
+        {
+          "tag": "externalReferencingSystem",
+          "value": "TipiBretelle",
+          "attributes": {}
+        },
+        {
+          "tag": "carriageway",
+          "value": "entrySlipRoad",
+          "attributes": {}
+        },
+        {
+          "tag": "lengthAffected",
+          "value": "0.0",
+          "attributes": {}
+        },
+        {
+          "tag": "tpegPointLocation",
+          "value": "",
+          "attributes": {
+            "type": "ns2:TpegSimplePoint"
+          }
+        },
+        {
+          "tag": "tpegDirection",
+          "value": "southBound",
+          "attributes": {}
+        },
+        {
+          "tag": "tpegSimplePointLocationType",
+          "value": "nonLinkedPoint",
+          "attributes": {}
+        },
+        {
+          "tag": "point",
+          "value": "",
+          "attributes": {
+            "type": "ns2:TpegNonJunctionPoint"
+          }
+        },
+        {
+          "tag": "latitude",
+          "value": "48.003",
+          "attributes": {}
+        },
+        {
+          "tag": "longitude",
+          "value": "6.6155205",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Saint-Étienne-lès-Remiremont",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "townName",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "N66",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "linkName",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCPoint",
+          "value": "",
+          "attributes": {
+            "type": "ns2:AlertCMethod4Point"
+          }
+        },
+        {
+          "tag": "alertCLocationCountryCode",
+          "value": "F",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLocationTableNumber",
+          "value": "32",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCLocationTableVersion",
+          "value": "11.0",
+          "attributes": {}
+        },
+        {
+          "tag": "alertCDirectionCoded",
+          "value": "positive",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Vecoux",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "specificLocation",
+          "value": "63368",
+          "attributes": {}
+        },
+        {
+          "tag": "offsetDistance",
+          "value": "7966",
+          "attributes": {}
+        },
+        {
+          "tag": "directionRelativeAtPoint",
+          "value": "aligned",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "N66",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "distanceAlongLinearElement",
+          "value": "",
+          "attributes": {
+            "type": "ns2:DistanceFromLinearElementReferent"
+          }
+        },
+        {
+          "tag": "distanceAlong",
+          "value": "391.0",
+          "attributes": {}
+        },
+        {
+          "tag": "referentIdentifier",
+          "value": "88PR4D",
+          "attributes": {}
+        },
+        {
+          "tag": "referentType",
+          "value": "referenceMarker",
+          "attributes": {}
+        },
+        {
+          "tag": "safetyRelatedMessage",
+          "value": "false",
+          "attributes": {}
+        },
+        {
+          "tag": "complianceOption",
+          "value": "mandatory",
+          "attributes": {}
+        },
+        {
+          "tag": "generalNetworkManagementType",
+          "value": "other",
+          "attributes": {}
+        }
+      ],
+      "situation_fields": [
+        {
+          "tag": "overallSeverity",
+          "value": "medium"
+        },
+        {
+          "tag": "situationVersionTime",
+          "value": "2026-11-27T08:38:46.229+01:00"
+        }
+      ]
+    },
+    {
+      "situation_id": "261127-000836",
+      "record_id": "261127-000836-102",
+      "record_type": "ns2:GeneralNetworkManagement",
+      "department": "54",
+      "road": "",
+      "coordinates": [
+        5.9088655,
+        49.43897
+      ],
+      "validity_status": "definedByValidityTimeSpec",
+      "details": [
+        "La mesure est obligatoire",
+        "sur bretelle d'entrée",
+        "Bréhain-la-Ville"
+      ],
+      "record_fields": [
+        {
+          "tag": "situationRecord",
+          "value": "",
+          "attributes": {
+            "type": "ns2:GeneralNetworkManagement",
+            "id": "261127-000836-102",
+            "version": "2"
+          }
+        },
+        {
+          "tag": "situationRecordCreationReference",
+          "value": "EVE_DIRE_Myrabel-S-261127-0021-EVE_DIRE_Myrabel-SR-261127-000023",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordCreationTime",
+          "value": "2026-11-27T10:30:29.266+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordObservationTime",
+          "value": "2026-11-27T10:30:45.227+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordVersionTime",
+          "value": "2026-11-27T10:30:46.463+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "situationRecordFirstSupplierVersionTime",
+          "value": "2026-11-27T10:30:29.266+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "probabilityOfOccurrence",
+          "value": "certain",
+          "attributes": {}
+        },
+        {
+          "tag": "sourceIdentification",
+          "value": "Direction interdépartementale des routes/DIR Est",
+          "attributes": {}
+        },
+        {
+          "tag": "sourceType",
+          "value": "mobileTelephoneCaller",
+          "attributes": {}
+        },
+        {
+          "tag": "reliable",
+          "value": "true",
+          "attributes": {}
+        },
+        {
+          "tag": "validityStatus",
+          "value": "definedByValidityTimeSpec",
+          "attributes": {}
+        },
+        {
+          "tag": "overallStartTime",
+          "value": "2026-11-27T10:30:29.095+01:00",
+          "attributes": {}
+        },
+        {
+          "tag": "numberOfLanesRestricted",
+          "value": "0",
+          "attributes": {}
+        },
+        {
+          "tag": "originalNumberOfLanes",
+          "value": "2",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "La mesure est obligatoire",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "description",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Hors voie de circulation",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "GE_DIRE/Service régional d’exploitation Grand Est (SREX)/District Nancy/CEI Saint Nabord",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "sur bretelle d'entrée",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "De Metz vers Arlon - Belgique",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "commentType",
+          "value": "locationDescriptor",
+          "attributes": {}
+        },
+        {
+          "tag": "groupOfLocations",
+          "value": "",
+          "attributes": {
+            "type": "ns2:Point"
+          }
+        },
+        {
+          "tag": "externalLocationCode",
+          "value": "54N905205_2D--0",
+          "attributes": {}
+        },
+        {
+          "tag": "externalReferencingSystem",
+          "value": "TipiBretelle",
+          "attributes": {}
+        },
+        {
+          "tag": "carriageway",
+          "value": "entrySlipRoad",
+          "attributes": {}
+        },
+        {
+          "tag": "lengthAffected",
+          "value": "0.0",
+          "attributes": {}
+        },
+        {
+          "tag": "tpegPointLocation",
+          "value": "",
+          "attributes": {
+            "type": "ns2:TpegSimplePoint"
+          }
+        },
+        {
+          "tag": "tpegDirection",
+          "value": "northBound",
+          "attributes": {}
+        },
+        {
+          "tag": "tpegSimplePointLocationType",
+          "value": "nonLinkedPoint",
+          "attributes": {}
+        },
+        {
+          "tag": "point",
+          "value": "",
+          "attributes": {
+            "type": "ns2:TpegNonJunctionPoint"
+          }
+        },
+        {
+          "tag": "latitude",
+          "value": "49.43897",
+          "attributes": {}
+        },
+        {
+          "tag": "longitude",
+          "value": "5.9088655",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "Bréhain-la-Ville",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "townName",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "N52",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "tpegOtherPointDescriptorType",
+          "value": "linkName",
+          "attributes": {}
+        },
+        {
+          "tag": "directionRelativeAtPoint",
+          "value": "aligned",
+          "attributes": {}
+        },
+        {
+          "tag": "value",
+          "value": "N52",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "tag": "distanceAlongLinearElement",
+          "value": "",
+          "attributes": {
+            "type": "ns2:DistanceFromLinearElementReferent"
+          }
+        },
+        {
+          "tag": "distanceAlong",
+          "value": "995.0",
+          "attributes": {}
+        },
+        {
+          "tag": "referentIdentifier",
+          "value": "54PR2D",
+          "attributes": {}
+        },
+        {
+          "tag": "referentType",
+          "value": "referenceMarker",
+          "attributes": {}
+        },
+        {
+          "tag": "safetyRelatedMessage",
+          "value": "false",
+          "attributes": {}
+        },
+        {
+          "tag": "complianceOption",
+          "value": "mandatory",
+          "attributes": {}
+        },
+        {
+          "tag": "generalNetworkManagementType",
+          "value": "other",
+          "attributes": {}
+        }
+      ],
+      "situation_fields": [
+        {
+          "tag": "overallSeverity",
+          "value": "medium"
+        },
+        {
+          "tag": "situationVersionTime",
+          "value": "2026-11-27T10:30:46.463+01:00"
         }
       ]
     }
