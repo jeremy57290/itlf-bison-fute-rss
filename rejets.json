@@ -1,31 +1,30 @@
 {
-  "generated_at": "2026-11-26T20:30:18.325569+00:00",
-  "accepted": 5,
+  "generated_at": "2026-11-27T03:08:33.368705+00:00",
+  "accepted": 4,
   "management_published_records": {
     "lane": 1
   },
   "management_published_situations": 1,
   "rejected_by_reason": {
-    "unrecognized_category": 240,
-    "inactive_or_outside_validity": 57,
-    "outside_department": 162
+    "unrecognized_category": 219,
+    "inactive_or_outside_validity": 55,
+    "outside_department": 150
   },
   "unrecognized_types": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 119,
-    "ns2:ReroutingManagement": 51,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 106,
+    "ns2:ReroutingManagement": 46,
     "ns2:SpeedManagement": 22,
     "ns2:GeneralNetworkManagement": 19,
     "ns2:WeatherRelatedRoadConditions": 13,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 11,
-    "ns2:WinterDrivingManagement": 3,
     "ns2:RoadsideServiceDisruption": 2
   },
   "inactive_statuses": {
-    "definedByValidityTimeSpec": 56,
+    "definedByValidityTimeSpec": 54,
     "suspended": 1
   },
   "unknown_types_in_lorraine": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 3
+    "ns2:RoadOrCarriagewayOrLaneManagement": 2
   },
   "unknown_types_in_lorraine_examples": {
     "ns2:RoadOrCarriagewayOrLaneManagement": [
@@ -58,21 +57,6 @@
           "La mesure est obligatoire",
           "situé 187 m au sud de Pont-à-Mousson"
         ]
-      },
-      {
-        "situation_id": "261126-001820",
-        "record_id": "261126-001820-103",
-        "department": "54",
-        "road": "A31",
-        "town": "",
-        "coordinates": [
-          6.111421,
-          48.931007
-        ],
-        "details": [
-          "La mesure est obligatoire",
-          "situé 27 m au sud de Aire de Lesménils"
-        ]
       }
     ]
   },
@@ -84,7 +68,7 @@
     "ns2:WeatherRelatedRoadConditions": 1
   },
   "unknown_types_location_rejections": {
-    "outside_department": 193
+    "outside_department": 173
   },
   "precise_department_boundaries": true,
   "boundary_file": "lorraine_departements.geojson"
