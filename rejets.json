@@ -1,33 +1,31 @@
 {
-  "generated_at": "2026-11-27T12:06:04.602058+00:00",
-  "accepted": 11,
+  "generated_at": "2026-11-27T21:07:21.096407+00:00",
+  "accepted": 6,
   "management_published_records": {
     "lane": 1
   },
   "management_published_situations": 1,
   "rejected_by_reason": {
-    "unrecognized_category": 222,
-    "inactive_or_outside_validity": 61,
-    "outside_department": 194
+    "unrecognized_category": 172,
+    "inactive_or_outside_validity": 71,
+    "outside_department": 111
   },
   "unrecognized_types": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 117,
-    "ns2:ReroutingManagement": 37,
-    "ns2:GeneralNetworkManagement": 24,
-    "ns2:SpeedManagement": 22,
-    "ns2:GeneralInstructionOrMessageToRoadUsers": 11,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 81,
+    "ns2:ReroutingManagement": 33,
+    "ns2:SpeedManagement": 20,
+    "ns2:GeneralNetworkManagement": 19,
+    "ns2:GeneralInstructionOrMessageToRoadUsers": 9,
     "ns2:WeatherRelatedRoadConditions": 7,
-    "ns2:NonWeatherRelatedRoadConditions": 2,
     "ns2:RoadsideServiceDisruption": 1,
-    "ns2:PublicEvent": 1
+    "ns2:PublicEvent": 1,
+    "ns2:NonWeatherRelatedRoadConditions": 1
   },
   "inactive_statuses": {
-    "definedByValidityTimeSpec": 60,
-    "suspended": 1
+    "definedByValidityTimeSpec": 71
   },
   "unknown_types_in_lorraine": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 2,
-    "ns2:GeneralNetworkManagement": 2
+    "ns2:RoadOrCarriagewayOrLaneManagement": 2
   },
   "unknown_types_in_lorraine_examples": {
     "ns2:RoadOrCarriagewayOrLaneManagement": [
@@ -61,43 +59,11 @@
           "situé 187 m au sud de Pont-à-Mousson"
         ]
       }
-    ],
-    "ns2:GeneralNetworkManagement": [
-      {
-        "situation_id": "261127-000521",
-        "record_id": "261127-000521-1",
-        "department": "88",
-        "road": "",
-        "town": "",
-        "coordinates": [
-          6.6155205,
-          48.003
-        ],
-        "details": [
-          "La mesure est obligatoire",
-          "situé 7966 m à l'ouest de Vecoux"
-        ]
-      },
-      {
-        "situation_id": "261127-000836",
-        "record_id": "261127-000836-102",
-        "department": "54",
-        "road": "",
-        "town": "",
-        "coordinates": [
-          5.9088655,
-          49.43897
-        ],
-        "details": [
-          "La mesure est obligatoire",
-          "sur bretelle d'entrée"
-        ]
-      }
     ]
   },
   "unknown_types_inactive": {
-    "ns2:RoadOrCarriagewayOrLaneManagement": 23,
-    "ns2:ReroutingManagement": 14,
+    "ns2:RoadOrCarriagewayOrLaneManagement": 24,
+    "ns2:ReroutingManagement": 16,
     "ns2:SpeedManagement": 6,
     "ns2:GeneralInstructionOrMessageToRoadUsers": 3,
     "ns2:GeneralNetworkManagement": 2,
@@ -105,7 +71,7 @@
     "ns2:PublicEvent": 1
   },
   "unknown_types_location_rejections": {
-    "outside_department": 168
+    "outside_department": 117
   },
   "precise_department_boundaries": true,
   "boundary_file": "lorraine_departements.geojson"
